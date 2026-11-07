@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.4">
+    <Package class="MOSFET with Diode" vendor="Infineon" partnumber="IRFB4110PbF">
+        <Variables/>
+        <SemiconductorData type="MOSFET with Diode">
+            <TurnOnLoss>
+                <ComputationMethod>Formula only</ComputationMethod>
+                <Formula>0.5*max(v,0)*max(i,0)*30e-9</Formula>
+                <CurrentAxis> 0</CurrentAxis>
+                <VoltageAxis> 0</VoltageAxis>
+                <TemperatureAxis> 25</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <ComputationMethod>Formula only</ComputationMethod>
+                <Formula>0.5*max(v,0)*max(i,0)*30e-9</Formula>
+                <CurrentAxis> 0</CurrentAxis>
+                <VoltageAxis> 0</VoltageAxis>
+                <TemperatureAxis> 25</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0</Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss gate="on">
+                <ComputationMethod>Formula only</ComputationMethod>
+                <Formula>0.0045*i*(1+0.008*(T-25))</Formula>
+                <CurrentAxis> 2</CurrentAxis>
+                <TemperatureAxis> 25</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0.009</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+            <ConductionLoss gate="off">
+                <ComputationMethod>Formula only</ComputationMethod>
+                <Formula>-0.8</Formula>
+                <CurrentAxis> 0</CurrentAxis>
+                <TemperatureAxis> 25</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0</Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.0987625" Tau="0.000111"/>
+                <RTauElement R="0.2066697" Tau="0.001743"/>
+                <RTauElement R="0.09510464" Tau="0.012269"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+        <GaugeData name="Import 1" tableName="" type="ConductionLoss" positionIndex="1">
+            <XAxis>0 1 0</XAxis>
+            <YAxis>0 1 0</YAxis>
+            <XAxisSnapGrid>0.05 0</XAxisSnapGrid>
+            <CurveVisibility></CurveVisibility>
+            <CoAxesOnScene>0 0 0 0</CoAxesOnScene>
+            <ImageData opacity="1" x="0" y="0" scale="1"></ImageData>
+        </GaugeData>
+    </Package>
+</SemiconductorLibrary>
