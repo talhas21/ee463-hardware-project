@@ -71,9 +71,9 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [0, 23; 1707, 976]
-    ZoomFactor    1.30957
-    SliderPosition [608, 0]
+    Location      [0, 24; 1707, 977]
+    ZoomFactor    0.873843
+    SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  158
     Component {
@@ -171,7 +171,7 @@ Plecs {
       }
       Parameter {
         Variable      "f"
-        Value         "200e3"
+        Value         "100e3"
         Show          off
       }
       Parameter {
