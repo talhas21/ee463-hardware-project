@@ -1,0 +1,31 @@
+* C:\Users\HP\Desktop\ee463-hardware-project\Ltspice\GateDriver.asc
+V1 N008 0 12V
+XU1 N003 N007 N008 N008 0 N004 N001 N005 N009 UCC27282
+C1 N004 N005 470n
+M1 P001 N002 N005 N005 IRFB4110
+M2 N005 N010 0 0 IRFB4110
+V2 P001 0 24
+L1 N006 N005 68µ
+R1 N006 0 2.4
+C2 N006 0 100µ
+V3 N003 0 PULSE(3.3 0 2u 10n 10n {5u+2*DT} 10u)
+V4 N007 0 PULSE(0 3.3 {2u+DT} 10n 10n 5u 10u)
+R2 N002 N001 {Rg}
+R3 N010 N009 {Rg}
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\HP\AppData\Local\LTspice\lib\cmp\standard.mos
+.model IRFB4110 VDMOS(
++ Vto=3 Kp=100
++ Rs=1m Rd=1m Rg=1.3
++ Cgs=9.37n
++ Cgdmax=4n Cgdmin=250p
++ Cjo=3.5n Vj=0.7 M=0.5
++ Is=1e-12 N=1.2 Tt=30n
++)
+.tran 0 2m 0 10n
+.include UCC27282_LTspice.lib
+.param Rg=10
+.step param DT list 150n 250n 350n 500n
+.backanno
+.end
