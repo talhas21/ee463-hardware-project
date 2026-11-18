@@ -1,0 +1,20 @@
+* EE463 synchronous buck - recreated from user screenshot
+* Schematic: GateDriver_recreated.asc
+* Input 24 V, 100 kHz, Infineon IRFB4110PBF manufacturer SPICE subcircuit
+.include UCC27282_LTspice.lib
+.include IRFB4110PBF.spi
+V1 VDD 0 12
+V2 VIN 0 24
+V3 LI 0 PULSE(0 3.3 2.15u 10n 10n 5u 10u)
+V4 HI 0 PULSE(3.3 0 2u 10n 10n 5.3u 10u)
+XU1 LI HI VDD VDD 0 HB HO SW LO UCC27282
+C1 HB SW 470n
+R2 HO GH 4.7
+R3 LO GL 4.7
+X1 VIN GH SW irfb4110pbf
+X2 SW GL 0 irfb4110pbf
+L1 SW VOUT 68u
+C2 VOUT 0 100u
+R1 VOUT 0 2.4
+.tran 0 2m 0 10n
+.end

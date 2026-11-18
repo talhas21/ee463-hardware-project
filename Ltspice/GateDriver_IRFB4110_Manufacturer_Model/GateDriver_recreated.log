@@ -1,0 +1,18 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\HP\Downloads\GateDriver_IRFB4110_Manufacturer_Model\GateDriver_recreated.asc
+Start Time: Wed Nov 18 21:19:24 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Per .tran options, skipping operating point for transient analysis.
+Heightened Def Con from 0.00130201 to 0.00130201
+
+ihs_peak: MAX(ix(x1:d))=99.2519 FROM 0 TO 0.0002
+ils_peak: MAX(ix(x2:d))=94.1329 FROM 0 TO 0.0002
+sw_min: MIN(v(sw))=-0.656302 FROM 0 TO 0.0002
+vout_avg: AVG(v(vout))=13.0485 FROM 0 TO 0.0002
+
+Total elapsed time: 26.979 seconds.
+
