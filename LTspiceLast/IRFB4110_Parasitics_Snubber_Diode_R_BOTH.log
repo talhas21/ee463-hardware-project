@@ -1,0 +1,20 @@
+LTspice 26.0.2 for Windows
+Circuit: C:\Users\mert.oral\Downloads\IRFB4110_Parasitics_Snubber_SeriesR_Schottky\IRFB4110_Parasitics_Snubber_Diode_R_BOTH.net
+Start Time: Thu Nov 19 09:10:45 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+CIN: Increased Cpar to 4.7e-12
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 23.935 seconds.
+
+Files loaded:
+C:\Users\mert.oral\Downloads\IRFB4110_Parasitics_Snubber_SeriesR_Schottky\IRFB4110_Parasitics_Snubber_Diode_R_BOTH.net
+C:\Users\mert.oral\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\mert.oral\Downloads\IRFB4110_Parasitics_Snubber_SeriesR_Schottky\UCC27282_LTspice.lib
+C:\Users\mert.oral\Downloads\IRFB4110_Parasitics_Snubber_SeriesR_Schottky\IRFB4110PBF.spi
+
+ihs_peak: MAX(Ix(X1:D) )=12.5867547989 FROM 0.0018 TO 0.002
+vout_avg: AVG(V(VOUT) )=12.026793629 FROM 0.0018 TO 0.002
