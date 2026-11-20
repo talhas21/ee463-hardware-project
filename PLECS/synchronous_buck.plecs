@@ -72,8 +72,8 @@ Plecs {
   IncompatibleInitialConditionMsg "2"
   Schematic {
     Location      [0, 24; 1707, 977]
-    ZoomFactor    1.49863
-    SliderPosition [1008, 0]
+    ZoomFactor    1.96257
+    SliderPosition [1828, 187]
     ShowBrowser   off
     BrowserWidth  158
     Component {
@@ -749,7 +749,7 @@ Plecs {
       Flipped       off
       LabelPosition south
       Frame         [-15, -15; 15, 15]
-      Location      [0, 24; 1536, 796]
+      Location      [0, 181; 1536, 953]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAAAAPw"
@@ -757,7 +757,7 @@ Plecs {
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":64,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":179,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
@@ -1154,7 +1154,7 @@ Plecs {
       LabelPosition north
       Parameter {
         Variable      "R"
-        Value         "100e3"
+        Value         "68e3"
         Show          off
       }
     }
@@ -1190,6 +1190,15 @@ Plecs {
         Value         "0"
         Show          off
       }
+    }
+    Component {
+      Type          Ground
+      Name          "Ground4"
+      Show          off
+      Position      [1280, 325]
+      Direction     up
+      Flipped       off
+      LabelPosition east
     }
     Connection {
       Type          Wire
@@ -1236,14 +1245,8 @@ Plecs {
         }
         Branch {
           Points        [1245, 300]
-          Branch {
-            DstComponent  "Vm2"
-            DstTerminal   2
-          }
-          Branch {
-            DstComponent  "R6"
-            DstTerminal   2
-          }
+          DstComponent  "Vm2"
+          DstTerminal   2
         }
       }
     }
@@ -1599,6 +1602,14 @@ Plecs {
         DstComponent  "R10"
         DstTerminal   1
       }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "R6"
+      SrcTerminal   2
+      Points        [1280, 300]
+      DstComponent  "Ground4"
+      DstTerminal   1
     }
     Annotation {
       Name          "<html><body>\n<p>Voltage Sensing</p></body></html>"
