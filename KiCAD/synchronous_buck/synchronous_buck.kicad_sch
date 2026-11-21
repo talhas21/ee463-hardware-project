@@ -1172,6 +1172,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Fuse"
 			(pin_numbers
 				(hide yes)
@@ -3025,329 +3191,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "components:BZX55C12_R0G"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at -5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "BZX55C12_R0G"
-				(at -5.08 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "footprints:DIOAD928W47L399D179"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Description" "DO-35, 500mW, 5%, Zener Diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER" "Taiwan Semiconductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "2.28 mm"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MPN" "BZX55C12 R0G"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "PARTREV" "G1804"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Package" "DO-35-2 Taiwan Semiconductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "SOURCE_URL" "https://www.snapeda.com/parts/BZX55C12%20R0G/taiwan/view-part/"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "STANDARD" "IPC-7351B"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(symbol "BZX55C12_R0G_0_0"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.27) (xy 1.27 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.635) (xy 1.905 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "C"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "components:IRF5210PBF"
 			(pin_names
 				(hide yes)
@@ -5015,6 +4858,16 @@
 		)
 		(uuid "020e5945-5b64-4602-82f9-82b434982ab0")
 	)
+	(text "needs offset zeroing by software"
+		(exclude_from_sim no)
+		(at 348.742 71.374 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "04552e4b-b756-4c87-83ed-e0b23178fda3")
+	)
 	(text "Auxiliary Buck & LDO"
 		(exclude_from_sim no)
 		(at 228.6 22.098 0)
@@ -5067,7 +4920,7 @@
 	)
 	(text "LOAD"
 		(exclude_from_sim no)
-		(at 206.248 112.522 0)
+		(at 227.838 112.522 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5134,16 +4987,16 @@
 		(uuid "14594e62-5095-462b-8d05-8b5a5395401a")
 	)
 	(junction
+		(at 180.34 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16217aae-a2d5-447f-b370-cc9850cc598c")
+	)
+	(junction
 		(at 214.63 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "19461dc1-123a-4dc0-8919-b731467e7a32")
-	)
-	(junction
-		(at 86.36 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2223c387-333b-4ad7-b07f-d2c33a420c53")
 	)
 	(junction
 		(at 363.22 95.25)
@@ -5170,16 +5023,22 @@
 		(uuid "3211afcc-5202-41c1-9e99-660f28ee7836")
 	)
 	(junction
-		(at 86.36 38.1)
+		(at 190.5 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3cb203e2-5aa2-4d6f-991b-cec28f406906")
+		(uuid "3ded90d1-65e9-424b-90c2-bbbb7bb4c1f0")
 	)
 	(junction
 		(at 123.19 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41aaca8f-8a66-4821-8f24-8d7df57108d8")
+	)
+	(junction
+		(at 386.08 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46322857-b15a-48dd-8c97-78573c78dcd2")
 	)
 	(junction
 		(at 36.83 38.1)
@@ -5200,10 +5059,22 @@
 		(uuid "4f3d6a1a-2985-40bc-8445-af6cdb32c04c")
 	)
 	(junction
+		(at 330.2 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55e40ba6-8b5b-4884-9fcd-46e0eb53389d")
+	)
+	(junction
 		(at 302.26 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5674fe3b-46e8-497d-9f67-9f61b7da548e")
+	)
+	(junction
+		(at 168.91 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "588608c4-e99e-4f88-b1e6-810a413de1ae")
 	)
 	(junction
 		(at 237.49 38.1)
@@ -5228,12 +5099,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6404c76e-eeb8-4e54-a877-d865107329b6")
-	)
-	(junction
-		(at 166.37 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6a86e2bf-b934-40d1-93f2-93a2cdcb66a4")
 	)
 	(junction
 		(at 90.17 90.17)
@@ -5278,16 +5143,22 @@
 		(uuid "88fc927f-4619-4893-b58e-85368bec28e1")
 	)
 	(junction
+		(at 168.91 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e4ed39e-70d9-421f-8892-ca248ca2a429")
+	)
+	(junction
 		(at 36.83 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f0915da-2688-436c-95ec-b7c9387a7e07")
 	)
 	(junction
-		(at 391.16 88.9)
+		(at 86.36 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "91ef40b3-3dd5-4786-a01c-e54e2445e4fd")
+		(uuid "a16a2a2c-d8ab-44ca-a5da-0d7b596aaad1")
 	)
 	(junction
 		(at 71.12 113.03)
@@ -5314,10 +5185,28 @@
 		(uuid "af9609c1-619f-4fdb-a00a-7afd90a336b2")
 	)
 	(junction
+		(at 180.34 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b09f1734-925a-4ade-9a11-8fa39d2dfa22")
+	)
+	(junction
 		(at 302.26 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b339ae50-a0d8-4315-b638-3bd4cb0fa808")
+	)
+	(junction
+		(at 86.36 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b38d0bb3-b167-402d-8ee1-0a1ade92333e")
+	)
+	(junction
+		(at 190.5 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bce54120-daf2-4bbe-92d8-1a38f647ef84")
 	)
 	(junction
 		(at 123.19 135.89)
@@ -5372,6 +5261,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebe4d691-6b55-4639-973d-053761c674df")
+	)
+	(junction
+		(at 208.28 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec2db23d-9b10-4dc2-b5b0-66b458494b9c")
 	)
 	(junction
 		(at 252.73 38.1)
@@ -5537,7 +5432,17 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 125.73) (xy 200.66 135.89)
+			(xy 208.28 113.03) (xy 208.28 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "088d805e-3dd6-40c7-9c54-d2e0aabeb1e8")
+	)
+	(wire
+		(pts
+			(xy 222.25 125.73) (xy 222.25 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5547,17 +5452,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 48.26) (xy 99.06 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09d30997-1219-49c7-a5c5-4c7f9571957d")
-	)
-	(wire
-		(pts
-			(xy 166.37 135.89) (xy 158.75 135.89)
+			(xy 190.5 135.89) (xy 180.34 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5687,13 +5582,13 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 88.9) (xy 397.51 88.9)
+			(xy 396.24 88.9) (xy 396.24 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d3b1c15-f1ad-4b0d-acb2-42443c654138")
+		(uuid "1c73f67e-1870-46f1-a71d-1941494815ea")
 	)
 	(wire
 		(pts
@@ -5727,6 +5622,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 38.1) (xy 99.06 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26552956-b5ad-4e80-8bf9-e10d43945e51")
+	)
+	(wire
+		(pts
 			(xy 254 93.98) (xy 254 97.79)
 		)
 		(stroke
@@ -5744,6 +5649,16 @@
 			(type default)
 		)
 		(uuid "26e97614-72fd-4f2b-983e-92cbea429ded")
+	)
+	(wire
+		(pts
+			(xy 396.24 106.68) (xy 396.24 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27a15556-9cbc-419c-9e55-0db0f5985add")
 	)
 	(wire
 		(pts
@@ -5827,6 +5742,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 46.99) (xy 86.36 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34516820-850e-43f5-976a-9ded457fb59a")
+	)
+	(wire
+		(pts
 			(xy 210.82 43.18) (xy 214.63 43.18)
 		)
 		(stroke
@@ -5837,6 +5762,16 @@
 	)
 	(wire
 		(pts
+			(xy 386.08 88.9) (xy 388.62 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a7545c7-3b59-47d5-b54b-19607e844ca8")
+	)
+	(wire
+		(pts
 			(xy 99.06 46.99) (xy 99.06 48.26)
 		)
 		(stroke
@@ -5844,6 +5779,16 @@
 			(type default)
 		)
 		(uuid "3a7f0308-c66c-4e2c-897c-bd4d79e939d6")
+	)
+	(wire
+		(pts
+			(xy 280.67 93.98) (xy 280.67 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b5e4216-be14-440a-a1e8-300073abdf74")
 	)
 	(polyline
 		(pts
@@ -5907,6 +5852,26 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 113.03) (xy 222.25 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47b857e1-990f-45c7-af3c-85969f0b084b")
+	)
+	(wire
+		(pts
+			(xy 168.91 135.89) (xy 158.75 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "488e8bcc-d704-48c1-ac22-0abdfe626d64")
+	)
+	(wire
+		(pts
 			(xy 77.47 38.1) (xy 72.39 38.1)
 		)
 		(stroke
@@ -5914,6 +5879,16 @@
 			(type default)
 		)
 		(uuid "49307468-bb0e-4e80-94a3-6863a6cfe69b")
+	)
+	(wire
+		(pts
+			(xy 168.91 113.03) (xy 168.91 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "497da9da-1846-416d-8d33-9945f2c34de4")
 	)
 	(wire
 		(pts
@@ -5947,7 +5922,7 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 86.36) (xy 363.22 86.36)
+			(xy 370.84 86.36) (xy 363.22 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5977,16 +5952,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 113.03) (xy 200.66 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "509614e6-6eb5-4466-986f-36e1b07df925")
-	)
-	(wire
-		(pts
 			(xy 58.42 105.41) (xy 71.12 105.41)
 		)
 		(stroke
@@ -6004,16 +5969,6 @@
 			(type default)
 		)
 		(uuid "51ba7a00-7d82-4c79-b55d-8341cb4abe7c")
-	)
-	(wire
-		(pts
-			(xy 314.96 111.76) (xy 363.22 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "537cc1de-07f3-4eb7-8bc2-4faa860c9613")
 	)
 	(wire
 		(pts
@@ -6047,6 +6002,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 48.26) (xy 99.06 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5835addf-d24d-4be0-b232-a0f3457cd23a")
+	)
+	(wire
+		(pts
 			(xy 288.29 38.1) (xy 302.26 38.1)
 		)
 		(stroke
@@ -6067,6 +6032,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 113.03) (xy 180.34 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aafe3d2-2a7c-42a9-be2f-abb54cbd7baf")
+	)
+	(wire
+		(pts
 			(xy 332.74 105.41) (xy 323.85 105.41)
 		)
 		(stroke
@@ -6077,7 +6052,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 88.9) (xy 391.16 95.25)
+			(xy 386.08 88.9) (xy 386.08 95.25)
 		)
 		(stroke
 			(width 0)
@@ -6137,6 +6112,26 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 113.03) (xy 180.34 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62784fea-2dbe-4d9d-a7ef-3d81118e85c7")
+	)
+	(wire
+		(pts
+			(xy 180.34 125.73) (xy 180.34 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6568527a-6ea0-4e64-80a5-f0fc4447ed97")
+	)
+	(wire
+		(pts
 			(xy 288.29 45.72) (xy 302.26 45.72)
 		)
 		(stroke
@@ -6144,6 +6139,16 @@
 			(type default)
 		)
 		(uuid "668f59b7-7b4e-4088-a9e3-1c4e0d5dba7f")
+	)
+	(wire
+		(pts
+			(xy 330.2 111.76) (xy 363.22 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66e73fd8-de12-4ea6-a626-a73b53c1802e")
 	)
 	(wire
 		(pts
@@ -6164,6 +6169,16 @@
 			(type default)
 		)
 		(uuid "6b04ffbd-938e-4d41-95d9-d7df41250f44")
+	)
+	(wire
+		(pts
+			(xy 180.34 113.03) (xy 190.5 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b1a4f95-c6d5-4cad-87f0-bc98544ba4ef")
 	)
 	(wire
 		(pts
@@ -6237,6 +6252,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 124.46) (xy 168.91 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dc2bece-3871-4e89-9139-d8b72b2edd3a")
+	)
+	(wire
+		(pts
 			(xy 77.47 48.26) (xy 77.47 49.53)
 		)
 		(stroke
@@ -6254,6 +6279,16 @@
 			(type default)
 		)
 		(uuid "7f91f311-d9b8-4f24-aeb7-6a7f811a075c")
+	)
+	(wire
+		(pts
+			(xy 208.28 135.89) (xy 190.5 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8141ebca-cd5d-4bb0-8743-9a2cd6ca8f6d")
 	)
 	(wire
 		(pts
@@ -6357,7 +6392,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 113.03) (xy 200.66 123.19)
+			(xy 222.25 113.03) (xy 222.25 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6427,7 +6462,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 95.25) (xy 372.11 91.44)
+			(xy 367.03 95.25) (xy 367.03 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6504,16 +6539,6 @@
 			(type default)
 		)
 		(uuid "a1a57516-d51f-4264-92b6-179f814fce13")
-	)
-	(wire
-		(pts
-			(xy 99.06 38.1) (xy 86.36 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1f9bf29-23bc-48bb-9145-1397597be088")
 	)
 	(wire
 		(pts
@@ -6617,6 +6642,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 127) (xy 208.28 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab5c98e7-a47f-40fc-b692-b9f9e96173dd")
+	)
+	(wire
+		(pts
 			(xy 123.19 118.11) (xy 123.19 113.03)
 		)
 		(stroke
@@ -6707,7 +6742,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 91.44) (xy 375.92 91.44)
+			(xy 367.03 91.44) (xy 370.84 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6724,6 +6759,16 @@
 			(type default)
 		)
 		(uuid "c529705e-900b-4149-8ea6-6ca3931d7960")
+	)
+	(wire
+		(pts
+			(xy 180.34 135.89) (xy 168.91 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5b3446d-f929-412d-b0b7-c5358efe9315")
 	)
 	(wire
 		(pts
@@ -6757,7 +6802,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 127) (xy 166.37 135.89)
+			(xy 190.5 127) (xy 190.5 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6794,6 +6839,16 @@
 			(type default)
 		)
 		(uuid "d1f0214c-6d63-41ae-97d8-ec15a3efaa6c")
+	)
+	(wire
+		(pts
+			(xy 330.2 111.76) (xy 330.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2d45af4-dbcb-4abf-8103-e793e2c2583b")
 	)
 	(wire
 		(pts
@@ -6837,6 +6892,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 113.03) (xy 208.28 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8ef7151-df1d-4b7a-b490-f662dcd7fe00")
+	)
+	(wire
+		(pts
 			(xy 294.64 92.71) (xy 325.12 92.71)
 		)
 		(stroke
@@ -6847,7 +6912,7 @@
 	)
 	(wire
 		(pts
-			(xy 391.16 95.25) (xy 372.11 95.25)
+			(xy 386.08 95.25) (xy 367.03 95.25)
 		)
 		(stroke
 			(width 0)
@@ -6907,7 +6972,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 113.03) (xy 166.37 119.38)
+			(xy 190.5 113.03) (xy 190.5 119.38)
 		)
 		(stroke
 			(width 0)
@@ -6927,7 +6992,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 113.03) (xy 166.37 113.03)
+			(xy 158.75 113.03) (xy 168.91 113.03)
 		)
 		(stroke
 			(width 0)
@@ -6954,6 +7019,16 @@
 			(type default)
 		)
 		(uuid "e63406f4-96cc-4155-8707-c7ab789bfc09")
+	)
+	(wire
+		(pts
+			(xy 314.96 111.76) (xy 330.2 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e67ce6fe-1dab-49d3-b609-92a193765d12")
 	)
 	(wire
 		(pts
@@ -6997,6 +7072,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 38.1) (xy 86.36 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edf8a6b8-0290-457e-9190-49093796690a")
+	)
+	(wire
+		(pts
 			(xy 314.96 109.22) (xy 314.96 111.76)
 		)
 		(stroke
@@ -7017,7 +7102,17 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 102.87) (xy 330.2 114.3)
+			(xy 280.67 102.87) (xy 280.67 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f738dda8-8d7c-4aa5-9fc8-32030fb5e79e")
+	)
+	(wire
+		(pts
+			(xy 330.2 102.87) (xy 330.2 111.76)
 		)
 		(stroke
 			(width 0)
@@ -7136,7 +7231,7 @@
 		(uuid "68f4f1d0-8132-4c6e-a5af-5209a7d40388")
 	)
 	(label "I_SENSE"
-		(at 396.24 88.9 0)
+		(at 396.24 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7156,7 +7251,7 @@
 		(uuid "728d5903-98d4-44dd-9ce1-3ae8ca66e1e3")
 	)
 	(label "LOAD_RTRN"
-		(at 200.66 135.89 0)
+		(at 222.25 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7376,7 +7471,7 @@
 		)
 	)
 	(symbol
-		(lib_id "components:BZX55C12_R0G")
+		(lib_id "Device:D_Zener")
 		(at 280.67 99.06 90)
 		(unit 1)
 		(body_style 1)
@@ -7397,7 +7492,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Zener 3V3"
+		(property "Value" "BZX55C3V3"
 			(at 281.178 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7408,7 +7503,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "footprints:DIOAD928W47L399D179"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 280.67 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7417,7 +7512,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
@@ -7429,10 +7523,9 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "Description" "DO-35, 500mW, 5%, Zener Diode"
+		(property "Description" "Zener diode"
 			(at 280.67 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7441,7 +7534,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
@@ -7540,10 +7632,10 @@
 				(justify bottom)
 			)
 		)
-		(pin "A"
+		(pin "1"
 			(uuid "685381eb-533a-4a34-bca3-fa13ad48ce1f")
 		)
-		(pin "C"
+		(pin "2"
 			(uuid "78b446d2-2b8f-42ee-802c-0ac6aac8d668")
 		)
 		(instances
@@ -7738,7 +7830,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF 25-50V"
+		(property "Value" "0.1uF 25-50V Ceramic"
 			(at 74.93 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7977,7 +8069,7 @@
 				)
 			)
 		)
-		(property "Value" "150uH 3A"
+		(property "Value" "150uH"
 			(at 219.71 40.894 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7987,7 +8079,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Radial_D10.0mm_P5.00mm_Fastron_07M"
+		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
 			(at 219.71 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8148,7 +8240,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-5_P3.4x3.7mm_StaggerOdd_Lead3.8mm_Vertical"
 			(at 199.39 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8228,7 +8320,7 @@
 				)
 			)
 		)
-		(property "Value" "40-60V 1A Schottky"
+		(property "Value" "1N5819-HT"
 			(at 86.868 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8238,7 +8330,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 			(at 83.82 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8524,6 +8616,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_US")
+		(at 168.91 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2238ce15-9b05-491c-b88f-e59432e0f097")
+		(property "Reference" "C19"
+			(at 164.338 115.062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF 25V"
+			(at 162.56 117.094 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+			(at 168.91 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor, US symbol"
+			(at 168.91 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3be78d3b-6afd-4921-9dad-3909b33d2347")
+		)
+		(pin "1"
+			(uuid "966a1344-812c-446b-b230-1ea7220f4c3e")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 294.64 96.52 0)
 		(unit 1)
@@ -8764,6 +8937,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 392.43 88.9 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b4322db-1b4b-4770-b188-020fb86109b4")
+		(property "Reference" "R15"
+			(at 392.43 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 392.43 93.472 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 392.43 90.678 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 392.43 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 392.43 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d81e6075-ca86-4d59-afbe-f8b22f7ef54d")
+		)
+		(pin "2"
+			(uuid "2fd3b41d-057e-4d95-8992-3aa0fb4cb99e")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 363.22 101.6 0)
 		(unit 1)
@@ -8955,7 +9208,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
 			(at 99.06 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -9604,7 +9857,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 383.54 88.9 0)
+		(at 378.46 88.9 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9615,7 +9868,7 @@
 		(fields_autoplaced yes)
 		(uuid "4758322c-4c65-4a88-937e-3dcc3b9cadde")
 		(property "Reference" "U4"
-			(at 383.54 78.74 0)
+			(at 378.46 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9625,7 +9878,7 @@
 			)
 		)
 		(property "Value" "LM358"
-			(at 383.54 81.28 0)
+			(at 378.46 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9635,7 +9888,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
-			(at 383.54 88.9 0)
+			(at 378.46 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9646,7 +9899,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 383.54 88.9 0)
+			(at 378.46 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9657,7 +9910,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 383.54 88.9 0)
+			(at 378.46 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9734,7 +9987,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 131.7752 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -9861,8 +10114,8 @@
 		)
 	)
 	(symbol
-		(lib_id "components:BZX55C12_R0G")
-		(at 397.51 93.98 90)
+		(lib_id "Device:D_Zener")
+		(at 396.24 102.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9872,7 +10125,7 @@
 		(dnp no)
 		(uuid "4e50ba11-1059-4dd0-89f2-bef5edb00c3b")
 		(property "Reference" "D7"
-			(at 399.542 93.98 90)
+			(at 398.272 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9882,8 +10135,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Zener 3V3"
-			(at 397.764 90.424 90)
+		(property "Value" "BZX55C3V3"
+			(at 396.494 99.314 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9893,8 +10146,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "footprints:DIOAD928W47L399D179"
-			(at 397.51 93.98 0)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9902,11 +10155,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9914,11 +10166,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "Description" "DO-35, 500mW, 5%, Zener Diode"
-			(at 397.51 93.98 0)
+		(property "Description" "Zener diode"
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9926,11 +10177,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9942,7 +10192,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Taiwan Semiconductor"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9954,7 +10204,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.28 mm"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9966,7 +10216,7 @@
 			)
 		)
 		(property "MPN" "BZX55C12 R0G"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9978,7 +10228,7 @@
 			)
 		)
 		(property "PARTREV" "G1804"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9990,7 +10240,7 @@
 			)
 		)
 		(property "Package" "DO-35-2 Taiwan Semiconductor"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10002,7 +10252,7 @@
 			)
 		)
 		(property "SOURCE_URL" "https://www.snapeda.com/parts/BZX55C12%20R0G/taiwan/view-part/"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10014,7 +10264,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 397.51 93.98 0)
+			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10025,16 +10275,97 @@
 				(justify bottom)
 			)
 		)
-		(pin "A"
+		(pin "2"
 			(uuid "6f2b0206-21c4-454e-a5be-0430b806f9be")
 		)
-		(pin "C"
+		(pin "1"
 			(uuid "8c5a3952-bffa-4ca3-908f-102692adb1da")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_US")
+		(at 180.34 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "577e1584-6293-4fff-a6ac-ecc874afea25")
+		(property "Reference" "C21"
+			(at 175.768 116.332 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF 25V"
+			(at 173.99 118.364 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+			(at 180.34 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor, US symbol"
+			(at 180.34 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "108f162f-d2ac-42dc-9945-2a93ffa4be28")
+		)
+		(pin "1"
+			(uuid "a0fc9f15-ecbc-43c8-bf7b-749dbb024130")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -10073,7 +10404,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
 			(at 151.13 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -10232,7 +10563,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 158.75 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -10281,7 +10612,7 @@
 		)
 	)
 	(symbol
-		(lib_id "components:BZX55C12_R0G")
+		(lib_id "Device:D_Zener")
 		(at 86.36 43.18 90)
 		(unit 1)
 		(body_style 1)
@@ -10302,7 +10633,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BZX55C12_R0G"
+		(property "Value" "BZX55C12-HT"
 			(at 80.772 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10313,7 +10644,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "footprints:DIOAD928W47L399D179"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 86.36 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -10322,7 +10653,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
@@ -10334,10 +10664,9 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "Description" "DO-35, 500mW, 5%, Zener Diode"
+		(property "Description" "Zener diode"
 			(at 86.36 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -10346,7 +10675,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
@@ -10445,10 +10773,10 @@
 				(justify bottom)
 			)
 		)
-		(pin "A"
+		(pin "1"
 			(uuid "a3484795-da3c-4bf0-9a54-1c0e21ac0d5e")
 		)
-		(pin "C"
+		(pin "2"
 			(uuid "475f7f8b-c000-4665-a723-4ec641b84f7f")
 		)
 		(instances
@@ -10962,7 +11290,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SR3100 100V 3A"
+		(property "Value" "SR3100-HT"
 			(at 216.408 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11262,7 +11590,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 397.51 99.06 0)
+		(at 396.24 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11272,7 +11600,7 @@
 		(dnp no)
 		(uuid "7fabbdc7-0ee0-4731-8023-985fc83d1004")
 		(property "Reference" "#PWR028"
-			(at 397.51 105.41 0)
+			(at 396.24 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11283,7 +11611,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 402.082 100.33 0)
+			(at 400.812 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11293,7 +11621,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 397.51 99.06 0)
+			(at 396.24 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11304,7 +11632,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 397.51 99.06 0)
+			(at 396.24 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11315,7 +11643,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 397.51 99.06 0)
+			(at 396.24 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11358,7 +11686,7 @@
 				)
 			)
 		)
-		(property "Value" "40-60V 1A Schottky"
+		(property "Value" "1N5819-HT"
 			(at 87.122 93.726 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11368,7 +11696,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 			(at 83.82 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11973,7 +12301,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 205.74 123.19 0)
+		(at 227.33 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11983,7 +12311,7 @@
 		(dnp no)
 		(uuid "9b19508d-6464-47b2-8212-393976fa90cd")
 		(property "Reference" "J2"
-			(at 208.28 123.1899 0)
+			(at 229.87 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11994,7 +12322,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 194.818 120.396 0)
+			(at 216.408 120.396 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12005,7 +12333,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
-			(at 205.74 123.19 0)
+			(at 227.33 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12016,7 +12344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 123.19 0)
+			(at 227.33 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12027,7 +12355,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 205.74 123.19 0)
+			(at 227.33 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12075,7 +12403,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100V 5-10A"
+		(property "Value" "SR5100"
 			(at 125.73 133.3499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12326,7 +12654,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ace4f42f-9daf-42a4-a738-48264efe56a4")
 		(property "Reference" "#PWR018"
 			(at 45.72 93.98 0)
@@ -12340,7 +12667,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 92.71 0)
+			(at 47.752 91.948 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12951,7 +13278,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 166.37 123.19 0)
+		(at 190.5 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12961,7 +13288,7 @@
 		(dnp no)
 		(uuid "b985beeb-83bf-4bc3-9f56-1267ddfefd05")
 		(property "Reference" "C12"
-			(at 167.64 125.984 0)
+			(at 191.77 125.984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12972,7 +13299,7 @@
 			)
 		)
 		(property "Value" "100nF 25V"
-			(at 167.64 128.524 0)
+			(at 191.77 128.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12983,7 +13310,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 167.3352 127 0)
+			(at 191.4652 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12994,7 +13321,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 123.19 0)
+			(at 190.5 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13005,7 +13332,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 166.37 123.19 0)
+			(at 190.5 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13133,7 +13460,7 @@
 				)
 			)
 		)
-		(property "Value" "LM7805_TO220"
+		(property "Value" "L7805CV-DG"
 			(at 276.86 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13268,6 +13595,87 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 208.28 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ccb7a445-69e6-4be7-b770-50e5772d010b")
+		(property "Reference" "C20"
+			(at 209.55 125.984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF 25V"
+			(at 209.55 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 209.2452 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 208.28 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1b8c32b1-e1a6-48f2-8ae2-fa1ab95ae9f5")
+		)
+		(pin "1"
+			(uuid "70a3c249-fb3b-4377-ac76-11b4907557d0")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -13721,10 +14129,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d9ca4282-2edc-4335-b09d-c7109601a215")
 		(property "Reference" "U3"
-			(at 43.18 92.71 0)
+			(at 43.18 93.726 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13733,8 +14140,8 @@
 				)
 			)
 		)
-		(property "Value" "UCC27282D"
-			(at 43.18 95.25 0)
+		(property "Value" "UCC27211DR"
+			(at 43.434 96.266 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13743,7 +14150,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:SOIC127P599X175-8N"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 43.18 110.49 0)
 			(hide yes)
 			(show_name no)
