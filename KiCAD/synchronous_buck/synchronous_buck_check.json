@@ -1,14 +1,14 @@
 {
  "title": "EE463 PCB Check",
  "board": "synchronous_buck",
- "source": "C:\\Users\\Talha\\AppData\\Local\\Temp\\ee463check_f6c_5szq\\synchronous_buck.kicad_pcb",
+ "source": "C:\\Users\\Talha\\AppData\\Local\\Temp\\ee463check_8uprpcpq\\synchronous_buck.kicad_pcb",
  "meta": {
-  "Board size": "no outline",
-  "Copper layers": "2",
+  "Board size": "106.5 x 95.5 mm",
+  "Copper layers": "4",
   "Thickness": "1.6 mm",
   "Copper": "1 oz",
-  "Parts": "52",
-  "Tracks / vias": "0 / 0",
+  "Parts": "56",
+  "Tracks / vias": "214 / 20",
   "Checked for": "5 A out",
   "KiCad file": "10.0"
  },
@@ -17,24 +17,24 @@
   "Project": "EE463 DC-DC converter: 20-48 V in, 12 V / 5 A out (use --overload to check for 7.5 A)",
   "Fab limits": "PCBWay standard price (track/space 0.15 mm, drill 0.3 mm, 2 layers, 1.6 mm, 1 oz)"
  },
- "verdict": "Not ready: 5 problem(s) must be fixed before you send the files.",
+ "verdict": "Almost: fix or explain 18 warning(s) before you send the files.",
  "counts": {
-  "error": 5,
-  "warning": 15,
-  "info": 8
+  "error": 0,
+  "warning": 18,
+  "info": 11
  },
  "detected": [
   {
    "heading": "Parts",
    "lines": [
-    "Topology guess: synchronous buck (two switches on the switch node)",
+    "Topology guess: multi-inductor converter (SEPIC, Cuk, interleaved or with an output filter)",
     "Power switches (MOSFETs): Q1, Q2, Q3",
-    "Power diodes: D1",
-    "Inductors / transformers: L2   (small ones, taken as auxiliary supplies: L1)",
+    "Power diodes: D1, D2",
+    "Inductors / transformers: L1, L2",
     "Controller / driver ICs: U3",
-    "Power connectors: J1, J2",
-    "Input capacitors: C3, C4, C10",
-    "Output capacitors: C12, C15",
+    "Power connectors: J1, J2, U4",
+    "Input capacitors: C1, C2, C3, C4, C10",
+    "Output capacitors: C5, C6, C12, C13, C14, C15, C17, C19, C20, C21",
     "Current-sense shunts: R7, R11",
     "Fuses: F1   TVS: none found",
     "Test points: none found"
@@ -43,9 +43,9 @@
   {
    "heading": "Nets",
    "lines": [
-    "Input side (up to 48 V, ~3.5 A): +48V, /48V_BUS, Net-(Q1-DRAIN), Net-(Q1-GATE)",
-    "Switch node(s) (up to ~60 V peak): Net-(Q2-SOURCE)",
-    "Output side (12 V, 5 A): /V_OUT",
+    "Input side (up to 48 V, ~3.5 A): +48V, /48V_BUS, Net-(D1-A), Net-(Q1-DRAIN)",
+    "Switch node(s) (up to ~60 V peak): Net-(D2-K), Net-(Q2-SOURCE)",
+    "Output side (12 V, 5 A): +12V, /V_OUT",
     "Ground: GND",
     "Other high-current nets (checked as up to 48 V, 5 A): Net-(D5-K)"
    ]
@@ -53,10 +53,10 @@
   {
    "heading": "Gate drive and control",
    "lines": [
-    "Q1 gate (Net-(Q1-GATE)) <- no driver IC found",
+    "Q1 gate (Net-(D1-A)) <- no driver IC found",
     "Q2 gate (Net-(D4-A)) <- U3 pin 3 through R3",
     "Q3 gate (Net-(D3-A)) <- U3 pin 8 through R4",
-    "Bootstrap capacitor C9 (470 nF) -> U3 pin 2"
+    "Bootstrap capacitor C9 (100 nF) -> U3 pin 2"
    ]
   }
  ],
@@ -65,29 +65,29 @@
    "id": "FAB-STACKUP",
    "category": "fab",
    "title": "Layers, thickness and copper weight",
-   "status": "pass",
-   "skipped": "",
-   "findings": []
-  },
-  {
-   "id": "FAB-OUTLINE",
-   "category": "fab",
-   "title": "Board outline (Edge.Cuts)",
-   "status": "error",
+   "status": "warning",
    "skipped": "",
    "findings": [
     {
-     "check": "FAB-OUTLINE",
-     "severity": "error",
-     "title": "Board outline (Edge.Cuts)",
-     "message": "There is no board outline on the Edge.Cuts layer. The fab cannot cut the board.",
-     "fix": "Draw one closed outline on Edge.Cuts (a rectangle with rounded corners is fine).",
-     "rule": "DFM",
+     "check": "FAB-STACKUP",
+     "severity": "warning",
+     "title": "Layers, thickness and copper weight",
+     "message": "The board has 4 copper layers. PCBWay's standard price is for 2 layers; 4 layers cost extra and may not be covered by the sponsored round.",
+     "fix": "Ask the course staff before ordering more than 2 layers, or move the design to 2 layers.",
+     "rule": "PCBWay standard price",
      "refs": [],
      "waived": "",
      "locations": []
     }
    ]
+  },
+  {
+   "id": "FAB-OUTLINE",
+   "category": "fab",
+   "title": "Board outline (Edge.Cuts)",
+   "status": "pass",
+   "skipped": "",
+   "findings": []
   },
   {
    "id": "FAB-ZONES",
@@ -125,100 +125,9 @@
    "id": "FAB-RING",
    "category": "fab",
    "title": "Annular rings",
-   "status": "error",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "FAB-RING",
-     "severity": "error",
-     "title": "Annular rings",
-     "message": "5 hole(s) have a copper ring thinner than the fab minimum (vias 0.13 mm, component pads 0.25 mm). The drill can break out of the pad.",
-     "fix": "Make the pad bigger or the hole smaller. Vias: 0.6 mm pad for a 0.3 mm hole.",
-     "rule": "PCBWay via 0.13 mm, pad 0.25 mm",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 112.005,
-       "y": 135.975,
-       "layer": "",
-       "label": "U1 pad 1: ring 0.087 mm"
-      },
-      {
-       "x": 113.705,
-       "y": 135.975,
-       "layer": "",
-       "label": "U1 pad 2: ring 0.087 mm"
-      },
-      {
-       "x": 115.405,
-       "y": 135.975,
-       "layer": "",
-       "label": "U1 pad 3: ring 0.087 mm"
-      },
-      {
-       "x": 117.105,
-       "y": 135.975,
-       "layer": "",
-       "label": "U1 pad 4: ring 0.087 mm"
-      },
-      {
-       "x": 118.805,
-       "y": 135.975,
-       "layer": "",
-       "label": "U1 pad 5: ring 0.087 mm"
-      }
-     ]
-    },
-    {
-     "check": "FAB-RING",
-     "severity": "info",
-     "title": "Annular rings",
-     "message": "6 hole(s) have a ring just above the minimum. OK for the fab, but tight for hand soldering.",
-     "fix": "",
-     "rule": "PCBWay via 0.13 mm, pad 0.25 mm",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 144.114,
-       "y": 146.94,
-       "layer": "",
-       "label": "D7 pad A: ring 0.254 mm"
-      },
-      {
-       "x": 134.834,
-       "y": 146.94,
-       "layer": "",
-       "label": "D7 pad C: ring 0.254 mm"
-      },
-      {
-       "x": 144.114,
-       "y": 143.6,
-       "layer": "",
-       "label": "D6 pad A: ring 0.254 mm"
-      },
-      {
-       "x": 134.834,
-       "y": 143.6,
-       "layer": "",
-       "label": "D6 pad C: ring 0.254 mm"
-      },
-      {
-       "x": 144.114,
-       "y": 140.26,
-       "layer": "",
-       "label": "D1 pad A: ring 0.254 mm"
-      },
-      {
-       "x": 134.834,
-       "y": 140.26,
-       "layer": "",
-       "label": "D1 pad C: ring 0.254 mm"
-      }
-     ]
-    }
-   ]
+   "findings": []
   },
   {
    "id": "FAB-SLOT",
@@ -240,8 +149,8 @@
    "id": "FAB-EDGE",
    "category": "fab",
    "title": "Copper to board edge",
-   "status": "skipped",
-   "skipped": "no board outline",
+   "status": "pass",
+   "skipped": "",
    "findings": []
   },
   {
@@ -272,9 +181,30 @@
    "id": "PWR-VIAS",
    "category": "power",
    "title": "Vias where the power path changes layer",
-   "status": "pass",
+   "status": "warning",
    "skipped": "",
-   "findings": []
+   "findings": [
+    {
+     "check": "PWR-VIAS",
+     "severity": "warning",
+     "title": "Vias where the power path changes layer",
+     "message": "/48V_BUS: the power path changes layer through 1 via(s), good for about 0.7 A, but this net carries ~3.5 A.",
+     "fix": "Use at least 8 vias of 0.3 mm (or fewer 0.4 mm ones), placed across the current flow, or keep the power path on one layer.",
+     "rule": "~0.5 A per 0.3 mm via",
+     "refs": [
+      "/48V_BUS"
+     ],
+     "waived": "",
+     "locations": [
+      {
+       "x": 133.5,
+       "y": 68.5,
+       "layer": "",
+       "label": "via 0.4 mm"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "PWR-SPACING",
@@ -304,10 +234,70 @@
      "waived": "",
      "locations": [
       {
-       "x": 156.805,
-       "y": 86.36,
+       "x": 179.827,
+       "y": 66.955,
        "layer": "F.Cu",
        "label": "J2"
+      }
+     ]
+    },
+    {
+     "check": "PWR-CONN",
+     "severity": "warning",
+     "title": "Input/output connectors",
+     "message": "U4 (LM358) carries ~5.0 A on GND through 1 pin(s) at 2.54 mm pitch. Connectors with 2.54 mm pitch or less (pin headers, JST) are rated about 1-3 A per pin.",
+     "fix": "Use a 5.08 mm screw terminal, banana jacks or XT30/XT60, or put several pins in parallel.",
+     "rule": "EE463 step 9",
+     "refs": [
+      "U4"
+     ],
+     "waived": "",
+     "locations": [
+      {
+       "x": 176.31,
+       "y": 109.31,
+       "layer": "F.Cu",
+       "label": "U4"
+      }
+     ]
+    },
+    {
+     "check": "PWR-CONN",
+     "severity": "warning",
+     "title": "Input/output connectors",
+     "message": "U4 (LM358) carries ~5.0 A on +12V through 1 pin(s) at 2.54 mm pitch. Connectors with 2.54 mm pitch or less (pin headers, JST) are rated about 1-3 A per pin.",
+     "fix": "Use a 5.08 mm screw terminal, banana jacks or XT30/XT60, or put several pins in parallel.",
+     "rule": "EE463 step 9",
+     "refs": [
+      "U4"
+     ],
+     "waived": "",
+     "locations": [
+      {
+       "x": 176.31,
+       "y": 109.31,
+       "layer": "F.Cu",
+       "label": "U4"
+      }
+     ]
+    },
+    {
+     "check": "PWR-CONN",
+     "severity": "warning",
+     "title": "Input/output connectors",
+     "message": "No polarity/voltage label found on the silkscreen next to U4. Swapped input wires destroy the board.",
+     "fix": "Add silkscreen text such as 'VIN 20-48V +  -' / '12V OUT +  -' next to each pin.",
+     "rule": "EE463 step 9",
+     "refs": [
+      "U4"
+     ],
+     "waived": "",
+     "locations": [
+      {
+       "x": 176.31,
+       "y": 109.31,
+       "layer": "F.Cu",
+       "label": "U4"
       }
      ]
     },
@@ -324,8 +314,8 @@
      "waived": "",
      "locations": [
       {
-       "x": 156.805,
-       "y": 74.235,
+       "x": 78.5,
+       "y": 71.0,
        "layer": "F.Cu",
        "label": "J1"
       }
@@ -337,9 +327,21 @@
    "id": "PWR-CAPV",
    "category": "power",
    "title": "Capacitor voltage ratings",
-   "status": "pass",
+   "status": "info",
    "skipped": "",
-   "findings": []
+   "findings": [
+    {
+     "check": "PWR-CAPV",
+     "severity": "info",
+     "title": "Capacitor voltage ratings",
+     "message": "Voltage rating unknown for 1 power capacitor(s): C2. Check them by hand: input side >= 63 V, output side >= 16 V.",
+     "fix": "Put the rating in the value (e.g. '100uF 63V') or in a 'Voltage' field so the checker can read it.",
+     "rule": "rating >= 1.25 x working voltage",
+     "refs": [],
+     "waived": "",
+     "locations": []
+    }
+   ]
   },
   {
    "id": "PWR-LOOP",
@@ -372,7 +374,7 @@
      "check": "PWR-GATE",
      "severity": "warning",
      "title": "Gate driver close to the MOSFETs",
-     "message": "U3 pin 3 is 47 mm from the gate of Q2. A long gate loop slows switching and picks up noise.",
+     "message": "U3 pin 3 is 20 mm from the gate of Q2. A long gate loop slows switching and picks up noise.",
      "fix": "Move the driver within about 15 mm of the MOSFET, and run the gate and its return (source) side by side.",
      "rule": "SMPS-014",
      "refs": [
@@ -382,14 +384,14 @@
      "waived": "",
      "locations": [
       {
-       "x": 112.865,
-       "y": 124.075,
+       "x": 138.54,
+       "y": 84.0,
        "layer": "",
        "label": "Q2 gate"
       },
       {
-       "x": 159.27,
-       "y": 118.062,
+       "x": 131.365,
+       "y": 103.025,
        "layer": "",
        "label": "U3.3"
       }
@@ -399,26 +401,39 @@
      "check": "PWR-GATE",
      "severity": "warning",
      "title": "Gate driver close to the MOSFETs",
-     "message": "U3 pin 8 is 53 mm from the gate of Q3. A long gate loop slows switching and picks up noise.",
-     "fix": "Move the driver within about 15 mm of the MOSFET, and run the gate and its return (source) side by side.",
+     "message": "The gate drive tracks of Q2 (Net-(D4-A), Net-(U3-HO)) are 39 mm long in total.",
+     "fix": "Keep the gate drive under about 30 mm.",
      "rule": "SMPS-014",
      "refs": [
-      "Q3",
-      "U3"
+      "Q2"
      ],
      "waived": "",
      "locations": [
       {
-       "x": 112.865,
-       "y": 130.025,
+       "x": 138.54,
+       "y": 84.0,
        "layer": "",
-       "label": "Q3 gate"
-      },
+       "label": "Q2"
+      }
+     ]
+    },
+    {
+     "check": "PWR-GATE",
+     "severity": "warning",
+     "title": "Gate driver close to the MOSFETs",
+     "message": "The gate drive tracks of Q3 (Net-(D3-A), Net-(U3-LO)) are 38 mm long in total.",
+     "fix": "Keep the gate drive under about 30 mm.",
+     "rule": "SMPS-014",
+     "refs": [
+      "Q3"
+     ],
+     "waived": "",
+     "locations": [
       {
-       "x": 164.21,
-       "y": 115.522,
+       "x": 130.46,
+       "y": 93.95,
        "layer": "",
-       "label": "U3.8"
+       "label": "Q3"
       }
      ]
     }
@@ -428,36 +443,9 @@
    "id": "PWR-BOOT",
    "category": "power",
    "title": "Bootstrap capacitor at the driver",
-   "status": "warning",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "PWR-BOOT",
-     "severity": "warning",
-     "title": "Bootstrap capacitor at the driver",
-     "message": "Bootstrap capacitor C9 is 41.8 mm from U3 pin 2.",
-     "fix": "Place it right next to the driver's boot/HB and SW/HS pins, on the same side, without vias.",
-     "rule": "SMPS-016",
-     "refs": [
-      "C9"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 122.53,
-       "y": 140.425,
-       "layer": "",
-       "label": "C9"
-      },
-      {
-       "x": 159.27,
-       "y": 116.792,
-       "layer": "",
-       "label": "U3.2"
-      }
-     ]
-    }
-   ]
+   "findings": []
   },
   {
    "id": "PWR-FB",
@@ -471,9 +459,48 @@
    "id": "PWR-MAG",
    "category": "power",
    "title": "No tracks under inductors and transformers",
-   "status": "pass",
+   "status": "warning",
    "skipped": "",
-   "findings": []
+   "findings": [
+    {
+     "check": "PWR-MAG",
+     "severity": "warning",
+     "title": "No tracks under inductors and transformers",
+     "message": "Tracks of /48V_BUS run under L2. The magnetic field couples noise into them.",
+     "fix": "Route around the inductor; only a ground pour should be under it.",
+     "rule": "SMPS-006",
+     "refs": [
+      "L2"
+     ],
+     "waived": "",
+     "locations": [
+      {
+       "x": 131.762,
+       "y": 68.025,
+       "layer": "F.Cu",
+       "label": "/48V_BUS"
+      },
+      {
+       "x": 133.262,
+       "y": 68.263,
+       "layer": "F.Cu",
+       "label": "/48V_BUS"
+      },
+      {
+       "x": 134.75,
+       "y": 69.75,
+       "layer": "B.Cu",
+       "label": "/48V_BUS"
+      },
+      {
+       "x": 136.0,
+       "y": 77.5,
+       "layer": "B.Cu",
+       "label": "/48V_BUS"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "PWR-THERMAL",
@@ -495,8 +522,8 @@
      "waived": "",
      "locations": [
       {
-       "x": 112.865,
-       "y": 118.125,
+       "x": 116.26,
+       "y": 68.75,
        "layer": "F.Cu",
        "label": "Q1"
       }
@@ -515,8 +542,8 @@
      "waived": "",
      "locations": [
       {
-       "x": 112.865,
-       "y": 124.075,
+       "x": 138.54,
+       "y": 84.0,
        "layer": "F.Cu",
        "label": "Q2"
       }
@@ -535,8 +562,8 @@
      "waived": "",
      "locations": [
       {
-       "x": 112.865,
-       "y": 130.025,
+       "x": 130.46,
+       "y": 93.95,
        "layer": "F.Cu",
        "label": "Q3"
       }
@@ -548,70 +575,17 @@
    "id": "PWR-GND",
    "category": "power",
    "title": "Ground pour",
-   "status": "warning",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "PWR-GND",
-     "severity": "warning",
-     "title": "Ground pour",
-     "message": "There is no ground copper pour. A switching converter needs a low-impedance ground (ideally a solid plane under the power stage).",
-     "fix": "Add a GND zone, at least on the bottom layer, and refill (B).",
-     "rule": "STK-003",
-     "refs": [],
-     "waived": "",
-     "locations": []
-    }
-   ]
+   "findings": []
   },
   {
    "id": "LAY-DECAP",
    "category": "layout",
    "title": "Decoupling capacitors at IC supply pins",
-   "status": "warning",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "LAY-DECAP",
-     "severity": "warning",
-     "title": "Decoupling capacitors at IC supply pins",
-     "message": "U2 pin 1 (VI_1) has no small (<= 1 \u00b5F) capacitor to ground on +12V.",
-     "fix": "Add a 100 nF ceramic capacitor right at the pin, with its ground pad going straight to ground.",
-     "rule": "PWR-006",
-     "refs": [
-      "U2"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 112.865,
-       "y": 141.925,
-       "layer": "F.Cu",
-       "label": "U2.1"
-      }
-     ]
-    },
-    {
-     "check": "LAY-DECAP",
-     "severity": "warning",
-     "title": "Decoupling capacitors at IC supply pins",
-     "message": "U3 pin 1 (VDD_1) has no small (<= 1 \u00b5F) capacitor to ground on +12V.",
-     "fix": "Add a 100 nF ceramic capacitor right at the pin, with its ground pad going straight to ground.",
-     "rule": "PWR-006",
-     "refs": [
-      "U3"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 159.27,
-       "y": 115.522,
-       "layer": "F.Cu",
-       "label": "U3.1"
-      }
-     ]
-    }
-   ]
+   "findings": []
   },
   {
    "id": "LAY-ACUTE",
@@ -625,9 +599,46 @@
    "id": "LAY-CORNER",
    "category": "layout",
    "title": "Track corners at 45\u00b0",
-   "status": "pass",
+   "status": "info",
    "skipped": "",
-   "findings": []
+   "findings": [
+    {
+     "check": "LAY-CORNER",
+     "severity": "info",
+     "title": "Track corners at 45\u00b0",
+     "message": "4 track corner(s) are 90\u00b0. Use 45\u00b0 corners (or arcs).",
+     "fix": "",
+     "rule": "EST-001",
+     "refs": [],
+     "waived": "",
+     "locations": [
+      {
+       "x": 84.25,
+       "y": 71.0,
+       "layer": "F.Cu",
+       "label": "90\u00b0 on +48V"
+      },
+      {
+       "x": 126.6,
+       "y": 108.0,
+       "layer": "F.Cu",
+       "label": "90\u00b0 on /HI_PWM"
+      },
+      {
+       "x": 80.0,
+       "y": 153.65,
+       "layer": "B.Cu",
+       "label": "90\u00b0 on /HI_PWM"
+      },
+      {
+       "x": 82.8,
+       "y": 151.45,
+       "layer": "B.Cu",
+       "label": "90\u00b0 on /LO_PWM"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "LAY-DANGLE",
@@ -687,8 +698,8 @@
      "waived": "",
      "locations": [
       {
-       "x": 112.865,
-       "y": 124.075,
+       "x": 138.54,
+       "y": 84.0,
        "layer": "",
        "label": "Q2"
       }
@@ -707,12 +718,25 @@
      "waived": "",
      "locations": [
       {
-       "x": 112.865,
-       "y": 130.025,
+       "x": 130.46,
+       "y": 93.95,
        "layer": "",
        "label": "Q3"
       }
      ]
+    },
+    {
+     "check": "TST-POINTS",
+     "severity": "info",
+     "title": "Test points (EE463: verify supplies and gate signals)",
+     "message": "No test point on the switch node Net-(D2-K). It is useful for checking the switching waveform.",
+     "fix": "",
+     "rule": "TST-001",
+     "refs": [
+      "Net-(D2-K)"
+     ],
+     "waived": "",
+     "locations": []
     },
     {
      "check": "TST-POINTS",
@@ -789,102 +813,96 @@
    "id": "DRC",
    "category": "drc",
    "title": "KiCad design rules check (DRC)",
-   "status": "error",
+   "status": "warning",
    "skipped": "",
    "findings": [
     {
      "check": "DRC",
-     "severity": "error",
-     "title": "KiCad DRC: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0875 mm)",
-     "message": "5 x Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0875 mm) (annular_width)",
-     "fix": "Open the DRC window in KiCad (Inspect > Design Rules Checker) to see each one.",
+     "severity": "info",
+     "title": "KiCad DRC: Footprint 'RaspberryPi_Pico_Common_THT' does not match copy in library 'Module'",
+     "message": "1 x Footprint 'RaspberryPi_Pico_Common_THT' does not match copy in library 'Module' (lib_footprint_mismatch)",
+     "fix": "The footprint differs from the library. Usually harmless; update it if you changed the library.",
      "rule": "KiCad",
      "refs": [],
      "waived": "",
      "locations": [
       {
-       "x": 112.005,
-       "y": 135.975,
+       "x": 78.14,
+       "y": 148.5,
        "layer": "",
-       "label": "PTH pad 1 [/48V_BUS] of U1"
-      },
-      {
-       "x": 113.705,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 2 [Net-(D2-K)] of U1"
-      },
-      {
-       "x": 115.405,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 3 [GND] of U1"
-      },
-      {
-       "x": 117.105,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 4 [+12V] of U1"
-      },
-      {
-       "x": 118.805,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 5 [GND] of U1"
-      }
-     ]
-    },
-    {
-     "check": "DRC",
-     "severity": "error",
-     "title": "KiCad DRC: Board has malformed outline (no edges found on Edge.Cuts layer)",
-     "message": "1 x Board has malformed outline (no edges found on Edge.Cuts layer) (invalid_outline)",
-     "fix": "Open the DRC window in KiCad (Inspect > Design Rules Checker) to see each one.",
-     "rule": "KiCad",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 0.0,
-       "y": 0.0,
-       "layer": "",
-       "label": "PCB"
+       "label": "Footprint A1"
       }
      ]
     },
     {
      "check": "DRC",
      "severity": "info",
-     "title": "KiCad DRC: The current configuration does not include the footprint library 'footprints'",
-     "message": "4 x The current configuration does not include the footprint library 'footprints' (lib_footprint_issues)",
-     "fix": "The footprint's library could not be found. Usually harmless for manufacturing.",
+     "title": "KiCad DRC: Silkscreen clipped by board edge",
+     "message": "10 x Silkscreen clipped by board edge (silk_edge_clearance)",
+     "fix": "Open the DRC window in KiCad (Inspect > Design Rules Checker) to see each one.",
      "rule": "KiCad",
      "refs": [],
      "waived": "",
      "locations": [
       {
-       "x": 139.474,
-       "y": 146.94,
+       "x": 76.0,
+       "y": 62.0,
        "layer": "",
-       "label": "Footprint D7"
+       "label": "Rectangle on Edge.Cuts / Segment of J2 on F.Silkscreen"
       },
       {
-       "x": 139.474,
-       "y": 143.6,
+       "x": 76.0,
+       "y": 62.0,
        "layer": "",
-       "label": "Footprint D6"
+       "label": "Rectangle on Edge.Cuts / Segment of J2 on F.Silkscreen"
       },
       {
-       "x": 161.74,
-       "y": 117.427,
+       "x": 76.0,
+       "y": 62.0,
        "layer": "",
-       "label": "Footprint U3"
+       "label": "Rectangle on Edge.Cuts / Reference field of F1"
       },
       {
-       "x": 139.474,
-       "y": 140.26,
+       "x": 76.0,
+       "y": 62.0,
        "layer": "",
-       "label": "Footprint D1"
+       "label": "Rectangle on Edge.Cuts / Segment of A1 on F.Silkscreen"
+      },
+      {
+       "x": 76.0,
+       "y": 62.0,
+       "layer": "",
+       "label": "Rectangle on Edge.Cuts / Segment of A1 on F.Silkscreen"
+      },
+      {
+       "x": 76.0,
+       "y": 62.0,
+       "layer": "",
+       "label": "Rectangle on Edge.Cuts / Reference field of R11"
+      },
+      {
+       "x": 76.0,
+       "y": 62.0,
+       "layer": "",
+       "label": "Rectangle on Edge.Cuts / Segment of J1 on F.Silkscreen"
+      },
+      {
+       "x": 76.0,
+       "y": 62.0,
+       "layer": "",
+       "label": "Rectangle on Edge.Cuts / Segment of J1 on F.Silkscreen"
+      },
+      {
+       "x": 76.0,
+       "y": 62.0,
+       "layer": "",
+       "label": "Rectangle on Edge.Cuts / Reference field of C7"
+      },
+      {
+       "x": 76.0,
+       "y": 62.0,
+       "layer": "",
+       "label": "Rectangle on Edge.Cuts / Reference field of C15"
       }
      ]
     },
@@ -892,71 +910,53 @@
      "check": "DRC",
      "severity": "warning",
      "title": "KiCad DRC: Silkscreen clipped by solder mask",
-     "message": "10 x Silkscreen clipped by solder mask (silk_over_copper)",
+     "message": "7 x Silkscreen clipped by solder mask (silk_over_copper)",
      "fix": "Silkscreen on a pad is not printed. Move the text or line off the pad.",
      "rule": "KiCad",
      "refs": [],
      "waived": "",
      "locations": [
       {
-       "x": 137.105,
-       "y": 137.625,
+       "x": 104.0,
+       "y": 88.0,
        "layer": "",
-       "label": "Reference field of D1 / Pad 2 [Net-(U3-LO)] of R4 on F.Cu"
+       "label": "Reference field of C3 / Pad 2 [GND] of C4 on F.Cu"
       },
       {
-       "x": 146.505,
-       "y": 128.485,
+       "x": 89.65,
+       "y": 110.5,
        "layer": "",
-       "label": "Reference field of R12 / Pad 2 [GND] of R10 on F.Cu"
+       "label": "Reference field of U2 / Pad 2 [GND] of C6 on F.Cu"
       },
       {
-       "x": 146.505,
-       "y": 131.795,
+       "x": 129.132,
+       "y": 108.75,
        "layer": "",
-       "label": "Reference field of R13 / Pad 2 [Net-(R12-Pad2)] of R12 on F.Cu"
+       "label": "Reference field of C14 / Pad 5 [/HI_PWM] of U3 on F.Cu"
       },
       {
-       "x": 129.655,
-       "y": 135.225,
+       "x": 166.5,
+       "y": 83.35,
        "layer": "",
-       "label": "Reference field of C17 / Pad 2 [GND] of C16 on F.Cu"
+       "label": "Reference field of C12 / Pad 2 [GND] of C20 on F.Cu"
       },
       {
-       "x": 129.655,
-       "y": 128.525,
+       "x": 166.5,
+       "y": 83.35,
        "layer": "",
-       "label": "Reference field of C13 / Pad 2 [GND] of C12 on F.Cu"
+       "label": "Reference field of C12 / Pad 1 [/V_OUT] of C20 on F.Cu"
       },
       {
-       "x": 129.655,
-       "y": 138.575,
+       "x": 132.15,
+       "y": 98.5,
        "layer": "",
-       "label": "Reference field of C18 / Pad 2 [GND] of C17 on F.Cu"
+       "label": "Reference field of C13 / Pad 1 [Net-(U3-HB)] of C9 on F.Cu"
       },
       {
-       "x": 129.655,
-       "y": 131.875,
+       "x": 129.12,
+       "y": 69.0,
        "layer": "",
-       "label": "Reference field of C16 / Pad 2 [GND] of C13 on F.Cu"
-      },
-      {
-       "x": 146.505,
-       "y": 128.485,
-       "layer": "",
-       "label": "Reference field of R12 / Pad 1 [/V_SENSE] of R10 on F.Cu"
-      },
-      {
-       "x": 146.505,
-       "y": 135.105,
-       "layer": "",
-       "label": "Reference field of R14 / Pad 1 [Net-(U4A--)] of R13 on F.Cu"
-      },
-      {
-       "x": 146.505,
-       "y": 131.795,
-       "layer": "",
-       "label": "Reference field of R13 / Pad 1 [Net-(U4A--)] of R12 on F.Cu"
+       "label": "Reference field of D1 / Pad 1 [/48V_BUS] of C2 on F.Cu"
       }
      ]
     },
@@ -964,251 +964,65 @@
      "check": "DRC",
      "severity": "warning",
      "title": "KiCad DRC: Silkscreen clearance",
-     "message": "157 x Silkscreen clearance (silk_overlap)",
+     "message": "9 x Silkscreen clearance (silk_overlap)",
      "fix": "Overlapping silkscreen is unreadable. Move one of them.",
      "rule": "KiCad",
      "refs": [],
      "waived": "",
      "locations": [
       {
-       "x": 138.375,
-       "y": 75.405,
+       "x": 123.91,
+       "y": 70.11,
        "layer": "",
-       "label": "Rectangle of D3 on F.Silkscreen / Reference field of D4"
+       "label": "Segment of Q1 on F.Silkscreen / Reference field of R2"
       },
       {
-       "x": 143.245,
-       "y": 87.905,
+       "x": 115.0,
+       "y": 70.57,
        "layer": "",
-       "label": "Reference field of D5 / Rectangle of D4 on F.Silkscreen"
+       "label": "Reference field of R1 / Segment of Q1 on F.Silkscreen"
       },
       {
-       "x": 127.484,
-       "y": 73.775,
+       "x": 177.64,
+       "y": 110.7,
        "layer": "",
-       "label": "Circle of C10 on F.Silkscreen / Reference field of C14"
+       "label": "Rectangle of U4 on F.Silkscreen / Reference field of C17"
       },
       {
-       "x": 127.484,
-       "y": 79.075,
+       "x": 167.35,
+       "y": 103.0,
        "layer": "",
-       "label": "Reference field of C14 / Segment of C10 on F.Silkscreen"
+       "label": "Reference field of C18 / Rectangle of U4 on F.Silkscreen"
       },
       {
-       "x": 127.484,
-       "y": 79.075,
+       "x": 177.64,
+       "y": 110.7,
        "layer": "",
-       "label": "Reference field of C14 / Segment of C10 on F.Silkscreen"
+       "label": "Rectangle of U4 on F.Silkscreen / Reference field of R13"
       },
       {
-       "x": 127.564,
-       "y": 68.696,
+       "x": 104.0,
+       "y": 101.2,
        "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
+       "label": "Reference field of U1 / Segment of L1 on F.Silkscreen"
       },
       {
-       "x": 127.604,
-       "y": 68.696,
+       "x": 90.09,
+       "y": 108.289,
        "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
+       "label": "Segment of C6 on F.Silkscreen / Reference field of U2"
       },
       {
-       "x": 127.484,
-       "y": 79.075,
+       "x": 167.211,
+       "y": 83.59,
        "layer": "",
-       "label": "Reference field of C14 / Segment of C10 on F.Silkscreen"
+       "label": "Segment of C20 on F.Silkscreen / Reference field of C12"
       },
       {
-       "x": 128.204,
-       "y": 68.746,
+       "x": 129.59,
+       "y": 68.789,
        "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
-      },
-      {
-       "x": 128.244,
-       "y": 68.752,
-       "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
-      },
-      {
-       "x": 128.284,
-       "y": 68.758,
-       "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
-      },
-      {
-       "x": 128.324,
-       "y": 68.764,
-       "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
-      },
-      {
-       "x": 128.364,
-       "y": 68.771,
-       "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
-      },
-      {
-       "x": 127.484,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C14 / Segment of C10 on F.Silkscreen"
-      },
-      {
-       "x": 128.444,
-       "y": 68.786,
-       "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
-      },
-      {
-       "x": 128.484,
-       "y": 68.794,
-       "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
-      },
-      {
-       "x": 128.524,
-       "y": 68.802,
-       "layer": "",
-       "label": "Segment of C10 on F.Silkscreen / Reference field of C14"
-      },
-      {
-       "x": 128.484,
-       "y": 80.344,
-       "layer": "",
-       "label": "Segment of C14 on F.Silkscreen / Reference field of C15"
-      },
-      {
-       "x": 127.484,
-       "y": 90.625,
-       "layer": "",
-       "label": "Reference field of C15 / Segment of C14 on F.Silkscreen"
-      },
-      {
-       "x": 127.484,
-       "y": 90.625,
-       "layer": "",
-       "label": "Reference field of C15 / Segment of C14 on F.Silkscreen"
-      },
-      {
-       "x": 128.604,
-       "y": 80.369,
-       "layer": "",
-       "label": "Segment of C14 on F.Silkscreen / Reference field of C15"
-      },
-      {
-       "x": 128.644,
-       "y": 80.378,
-       "layer": "",
-       "label": "Segment of C14 on F.Silkscreen / Reference field of C15"
-      },
-      {
-       "x": 128.684,
-       "y": 80.388,
-       "layer": "",
-       "label": "Segment of C14 on F.Silkscreen / Reference field of C15"
-      },
-      {
-       "x": 127.484,
-       "y": 90.625,
-       "layer": "",
-       "label": "Reference field of C15 / Segment of C14 on F.Silkscreen"
-      },
-      {
-       "x": 128.804,
-       "y": 86.565,
-       "layer": "",
-       "label": "Segment of C14 on F.Silkscreen / Reference field of C15"
-      },
-      {
-       "x": 127.484,
-       "y": 90.625,
-       "layer": "",
-       "label": "Reference field of C15 / Circle of C14 on F.Silkscreen"
-      },
-      {
-       "x": 128.724,
-       "y": 80.397,
-       "layer": "",
-       "label": "Segment of C14 on F.Silkscreen / Reference field of C15"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 115.75,
-       "y": 68.696,
-       "layer": "",
-       "label": "Segment of C1 on F.Silkscreen / Reference field of C3"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Circle of C1 on F.Silkscreen"
-      },
-      {
-       "x": 116.07,
-       "y": 68.711,
-       "layer": "",
-       "label": "Segment of C1 on F.Silkscreen / Reference field of C3"
-      },
-      {
-       "x": 115.67,
-       "y": 79.075,
-       "layer": "",
-       "label": "Reference field of C3 / Segment of C1 on F.Silkscreen"
-      },
-      {
-       "x": 116.15,
-       "y": 68.718,
-       "layer": "",
-       "label": "Segment of C1 on F.Silkscreen / Reference field of C3"
+       "label": "Segment of C2 on F.Silkscreen / Reference field of D1"
       }
      ]
     }
@@ -1218,262 +1032,9 @@
    "id": "DRC-UNROUTED",
    "category": "drc",
    "title": "Everything routed",
-   "status": "error",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "DRC-UNROUTED",
-     "severity": "error",
-     "title": "Everything routed",
-     "message": "107 connection(s) are not routed yet (ratsnest lines left).",
-     "fix": "Route them, or check that the zones are filled (B) if they should connect through a pour.",
-     "rule": "EST-008",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 118.17,
-       "y": 73.775,
-       "layer": "",
-       "label": "PTH pad 2 [Net-(Q1-GATE)] of C1 / PTH pad 1 [Net-(Q1-GATE)] of Q1"
-      },
-      {
-       "x": 125.48,
-       "y": 127.025,
-       "layer": "",
-       "label": "Pad 2 [Net-(Q1-GATE)] of C2 on F.Cu / Pad 1 [Net-(Q1-GATE)] of R2 on F.Cu"
-      },
-      {
-       "x": 125.48,
-       "y": 127.025,
-       "layer": "",
-       "label": "Pad 2 [Net-(Q1-GATE)] of C2 on F.Cu / PTH pad 1 [Net-(Q1-GATE)] of Q1"
-      },
-      {
-       "x": 133.822,
-       "y": 130.315,
-       "layer": "",
-       "label": "Pad 1 [Net-(Q1-GATE)] of R2 on F.Cu / Pad 2 [Net-(Q1-GATE)] of R1 on F.Cu"
-      },
-      {
-       "x": 133.822,
-       "y": 130.315,
-       "layer": "",
-       "label": "Pad 1 [Net-(Q1-GATE)] of R2 on F.Cu / PTH pad A [Net-(Q1-GATE)] of D1"
-      },
-      {
-       "x": 115.405,
-       "y": 118.125,
-       "layer": "",
-       "label": "PTH pad 2 [Net-(Q1-DRAIN)] of Q1 / PTH pad 2 [Net-(Q1-DRAIN)] of F1"
-      },
-      {
-       "x": 112.005,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 1 [/48V_BUS] of U1 / Pad 1 [/48V_BUS] of C4 on F.Cu"
-      },
-      {
-       "x": 113.17,
-       "y": 73.775,
-       "layer": "",
-       "label": "PTH pad 1 [/48V_BUS] of C1 / PTH pad 1 [/48V_BUS] of C3"
-      },
-      {
-       "x": 115.405,
-       "y": 124.075,
-       "layer": "",
-       "label": "PTH pad 2 [/48V_BUS] of Q2 / Pad 1 [/48V_BUS] of C2 on F.Cu"
-      },
-      {
-       "x": 117.945,
-       "y": 118.125,
-       "layer": "",
-       "label": "PTH pad 3 [/48V_BUS] of Q1 / PTH pad 2 [/48V_BUS] of Q2"
-      },
-      {
-       "x": 117.945,
-       "y": 118.125,
-       "layer": "",
-       "label": "PTH pad 3 [/48V_BUS] of Q1 / PTH pad 1 [/48V_BUS] of C3"
-      },
-      {
-       "x": 122.53,
-       "y": 130.375,
-       "layer": "",
-       "label": "Pad 1 [/48V_BUS] of C4 on F.Cu / Pad 1 [/48V_BUS] of C2 on F.Cu"
-      },
-      {
-       "x": 124.984,
-       "y": 73.775,
-       "layer": "",
-       "label": "PTH pad 1 [/48V_BUS] of C10 / PTH pad 1 [/48V_BUS] of C1"
-      },
-      {
-       "x": 133.822,
-       "y": 127.005,
-       "layer": "",
-       "label": "Pad 1 [/48V_BUS] of R1 on F.Cu / Pad 1 [/48V_BUS] of C2 on F.Cu"
-      },
-      {
-       "x": 134.834,
-       "y": 140.26,
-       "layer": "",
-       "label": "PTH pad C [/48V_BUS] of D1 / Pad 1 [/48V_BUS] of R1 on F.Cu"
-      },
-      {
-       "x": 112.865,
-       "y": 141.925,
-       "layer": "",
-       "label": "PTH pad 1 [+12V] of U2 / PTH pad 4 [+12V] of U1"
-      },
-      {
-       "x": 122.53,
-       "y": 133.725,
-       "layer": "",
-       "label": "Pad 1 [+12V] of C6 on F.Cu / PTH pad 4 [+12V] of U1"
-      },
-      {
-       "x": 122.53,
-       "y": 133.725,
-       "layer": "",
-       "label": "Pad 1 [+12V] of C6 on F.Cu / Pad 1 [+12V] of C17 on F.Cu"
-      },
-      {
-       "x": 124.984,
-       "y": 85.325,
-       "layer": "",
-       "label": "PTH pad 1 [+12V] of C14 / PTH pad 1 [+12V] of C5"
-      },
-      {
-       "x": 128.18,
-       "y": 130.375,
-       "layer": "",
-       "label": "Pad 1 [+12V] of C13 on F.Cu / Pad 1 [+12V] of C6 on F.Cu"
-      },
-      {
-       "x": 128.18,
-       "y": 130.375,
-       "layer": "",
-       "label": "Pad 1 [+12V] of C13 on F.Cu / PTH pad 1 [+12V] of C5"
-      },
-      {
-       "x": 128.18,
-       "y": 137.075,
-       "layer": "",
-       "label": "Pad 1 [+12V] of C17 on F.Cu / PTH pad 2 [+12V] of L1"
-      },
-      {
-       "x": 157.585,
-       "y": 142.955,
-       "layer": "",
-       "label": "PTH pad 2 [+12V] of L1 / PTH pad 8 [+12V] of U4"
-      },
-      {
-       "x": 158.975,
-       "y": 127.455,
-       "layer": "",
-       "label": "PTH pad 8 [+12V] of U4 / Pad 1 [+12V] of U3 on F.Cu"
-      },
-      {
-       "x": 88.675,
-       "y": 96.65,
-       "layer": "",
-       "label": "PTH pad 3 [GND] of A1 / PTH pad 8 [GND] of A1"
-      },
-      {
-       "x": 88.675,
-       "y": 109.35,
-       "layer": "",
-       "label": "PTH pad 8 [GND] of A1 / PTH pad 13 [GND] of A1"
-      },
-      {
-       "x": 88.675,
-       "y": 109.35,
-       "layer": "",
-       "label": "PTH pad 8 [GND] of A1 / PTH pad 33 [GND] of A1"
-      },
-      {
-       "x": 88.675,
-       "y": 122.05,
-       "layer": "",
-       "label": "PTH pad 13 [GND] of A1 / PTH pad 18 [GND] of A1"
-      },
-      {
-       "x": 106.455,
-       "y": 109.35,
-       "layer": "",
-       "label": "PTH pad 33 [GND] of A1 / PTH pad 28 [GND] of A1"
-      },
-      {
-       "x": 106.455,
-       "y": 122.05,
-       "layer": "",
-       "label": "PTH pad 28 [GND] of A1 / PTH pad 23 [GND] of A1"
-      },
-      {
-       "x": 115.405,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 3 [GND] of U1 / PTH pad 5 [GND] of U1"
-      },
-      {
-       "x": 115.405,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 3 [GND] of U1 / PTH pad 2 [GND] of U2"
-      },
-      {
-       "x": 115.405,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 3 [GND] of U1 / PTH pad 23 [GND] of A1"
-      },
-      {
-       "x": 118.17,
-       "y": 85.325,
-       "layer": "",
-       "label": "PTH pad 2 [GND] of C3 / PTH pad 2 [GND] of C5"
-      },
-      {
-       "x": 118.17,
-       "y": 96.875,
-       "layer": "",
-       "label": "PTH pad 2 [GND] of C5 / PTH pad 38 [GND] of A1"
-      },
-      {
-       "x": 118.17,
-       "y": 96.875,
-       "layer": "",
-       "label": "PTH pad 2 [GND] of C5 / PTH pad 2 [GND] of C15"
-      },
-      {
-       "x": 118.17,
-       "y": 108.425,
-       "layer": "",
-       "label": "PTH pad 2 [GND] of C7 / PTH pad 2 [GND] of C5"
-      },
-      {
-       "x": 118.17,
-       "y": 108.425,
-       "layer": "",
-       "label": "PTH pad 2 [GND] of C7 / PTH pad 33 [GND] of A1"
-      },
-      {
-       "x": 118.805,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 5 [GND] of U1 / PTH pad 3 [GND] of Q3"
-      },
-      {
-       "x": 118.805,
-       "y": 135.975,
-       "layer": "",
-       "label": "PTH pad 5 [GND] of U1 / Pad 2 [GND] of C8 on F.Cu"
-      }
-     ]
-    }
-   ]
+   "findings": []
   },
   {
    "id": "DRC-PARITY",
