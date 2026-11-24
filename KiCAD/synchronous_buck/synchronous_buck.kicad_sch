@@ -4940,7 +4940,7 @@
 	)
 	(text "Half-Bridge Gate Driver & Output Filter"
 		(exclude_from_sim no)
-		(at 101.346 67.056 0)
+		(at 101.092 64.516 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4957,16 +4957,6 @@
 			)
 		)
 		(uuid "dd92be5c-c008-4999-b54a-0f4c5ba27d67")
-	)
-	(text "talha was here\n"
-		(exclude_from_sim no)
-		(at 399.796 249.428 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f301600d-d460-41c7-a14e-7ec19b3d672e")
 	)
 	(junction
 		(at 66.04 96.52)
@@ -7824,7 +7814,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF 25-50V Ceramic"
+		(property "Value" "470nF 50V Ceramic"
 			(at 74.93 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9981,7 +9971,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 131.7752 92.71 0)
 			(hide yes)
 			(show_name no)
