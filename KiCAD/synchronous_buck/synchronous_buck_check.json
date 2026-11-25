@@ -1,14 +1,14 @@
 {
  "title": "EE463 PCB Check",
  "board": "synchronous_buck",
- "source": "C:\\Users\\Talha\\AppData\\Local\\Temp\\ee463check_38hnd3ph\\synchronous_buck.kicad_pcb",
+ "source": "C:\\Users\\Talha\\AppData\\Local\\Temp\\ee463check_6bhtq8ul\\synchronous_buck.kicad_pcb",
  "meta": {
   "Board size": "106.5 x 95.5 mm",
   "Copper layers": "4",
   "Thickness": "1.6 mm",
   "Copper": "1 oz",
-  "Parts": "85",
-  "Tracks / vias": "287 / 60",
+  "Parts": "82",
+  "Tracks / vias": "293 / 61",
   "Checked for": "5 A out",
   "KiCad file": "10.0"
  },
@@ -17,10 +17,10 @@
   "Project": "EE463 DC-DC converter: 20-48 V in, 12 V / 5 A out (use --overload to check for 7.5 A)",
   "Fab limits": "PCBWay standard price (track/space 0.15 mm, drill 0.3 mm, 2 layers, 1.6 mm, 1 oz)"
  },
- "verdict": "Almost: fix or explain 6 warning(s) before you send the files.",
+ "verdict": "Almost: fix or explain 5 warning(s) before you send the files.",
  "counts": {
   "error": 0,
-  "warning": 6,
+  "warning": 5,
   "info": 6
  },
  "detected": [
@@ -30,12 +30,12 @@
     "Topology guess: synchronous buck (two switches on the switch node)",
     "Power switches (MOSFETs): Q1, Q2, Q3",
     "Power diodes: D1, D5",
-    "Inductors / transformers: L2   (small ones, taken as auxiliary supplies: L1)",
+    "Inductors / transformers: L2   (small ones, taken as auxiliary supplies: L1, R11)",
     "Controller / driver ICs: U3",
     "Power connectors: J1, J2",
     "Input capacitors: C1, C2, C3, C4, C10, C22, C23",
     "Output capacitors: C12, C15, C19, C20, C21, C24, C25",
-    "Current-sense shunts: R11, R21",
+    "Current-sense shunts: R21",
     "Fuses: F1   TVS: none found",
     "Test points: TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8, TP9, TP10, TP11, TP12, TP13, TP14, TP15"
    ]
@@ -45,7 +45,7 @@
    "lines": [
     "Input side (up to 48 V, ~3.5 A): +48V, /48V_BUS, Net-(D1-A), Net-(Q1-DRAIN)",
     "Switch node(s) (up to ~60 V peak): /SW_NODE",
-    "Output side (12 V, 5 A): /V_OUT",
+    "Output side (12 V, 5 A): /L_OUT, /V_OUT",
     "Ground: GND, GNDD",
     "Other high-current nets (checked as up to 48 V, 5 A): none found"
    ]
@@ -164,7 +164,7 @@
      "check": "FAB-SILK",
      "severity": "info",
      "title": "Silkscreen text size",
-     "message": "12 silkscreen text(s) are under 1.0 mm high.",
+     "message": "9 silkscreen text(s) are under 1.0 mm high.",
      "fix": "",
      "rule": "PCBWay 0.8 mm height, 0.15 mm line",
      "refs": [],
@@ -195,16 +195,10 @@
        "label": "'C19' 0.85 mm (C19)"
       },
       {
-       "x": 155.6,
-       "y": 152.0,
+       "x": 165.0,
+       "y": 120.3,
        "layer": "F.SilkS",
-       "label": "'C18' 0.85 mm (C18)"
-      },
-      {
-       "x": 155.6,
-       "y": 145.0,
-       "layer": "F.SilkS",
-       "label": "'R12' 0.85 mm (R12)"
+       "label": "'C25' 0.85 mm (C25)"
       },
       {
        "x": 154.0,
@@ -219,12 +213,6 @@
        "label": "'R5' 0.85 mm (R5)"
       },
       {
-       "x": 155.6,
-       "y": 148.5,
-       "layer": "F.SilkS",
-       "label": "'R14' 0.85 mm (R14)"
-      },
-      {
        "x": 134.5,
        "y": 91.8,
        "layer": "F.SilkS",
@@ -235,12 +223,6 @@
        "y": 80.8,
        "layer": "F.SilkS",
        "label": "'R17' 0.85 mm (R17)"
-      },
-      {
-       "x": 155.6,
-       "y": 141.7,
-       "layer": "F.SilkS",
-       "label": "'R13' 0.85 mm (R13)"
       }
      ]
     }
@@ -576,33 +558,9 @@
    "id": "DRC",
    "category": "drc",
    "title": "KiCad design rules check (DRC)",
-   "status": "warning",
+   "status": "info",
    "skipped": "",
    "findings": [
-    {
-     "check": "DRC",
-     "severity": "warning",
-     "title": "KiCad DRC: Copper connection too narrow (board setup constraints minimum connection width 0.2500 mm; actual 0.1970 mm) (F.Cu)",
-     "message": "2 x Copper connection too narrow (board setup constraints minimum connection width 0.2500 mm; actual 0.1970 mm) (F.Cu) (connection_width)",
-     "fix": "Open the DRC window in KiCad (Inspect > Design Rules Checker) to see each one.",
-     "rule": "KiCad",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 166.5,
-       "y": 154.7,
-       "layer": "",
-       "label": "Polygon [<no net>] of NT1 on F.Cu / Pad 1 [GND] of NT1 on F.Cu"
-      },
-      {
-       "x": 166.5,
-       "y": 153.7,
-       "layer": "",
-       "label": "Pad 1 [GND] of NT1 on F.Cu / Zone 'POUR_SHUNT_GND_TOP' [GND] on F.Cu, priority 2"
-      }
-     ]
-    },
     {
      "check": "DRC",
      "severity": "info",
@@ -630,19 +588,13 @@
     {
      "check": "DRC",
      "severity": "info",
-     "title": "KiCad DRC: Footprint 'DIP-8_W7.62mm_Socket' does not match copy in library 'Package_DIP'",
-     "message": "3 x Footprint 'DIP-8_W7.62mm_Socket' does not match copy in library 'Package_DIP' (lib_footprint_mismatch)",
+     "title": "KiCad DRC: Footprint 'RaspberryPi_Pico_Common_THT' does not match copy in library 'Module'",
+     "message": "2 x Footprint 'RaspberryPi_Pico_Common_THT' does not match copy in library 'Module' (lib_footprint_mismatch)",
      "fix": "The footprint differs from the library. Usually harmless; update it if you changed the library.",
      "rule": "KiCad",
      "refs": [],
      "waived": "",
      "locations": [
-      {
-       "x": 145.5,
-       "y": 142.5,
-       "layer": "",
-       "label": "Footprint U4"
-      },
       {
        "x": 86.5,
        "y": 146.5,
