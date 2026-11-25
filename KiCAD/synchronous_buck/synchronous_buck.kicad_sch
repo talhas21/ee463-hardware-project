@@ -4,6 +4,15 @@
 	(generator_version "10.0")
 	(uuid "dd5b63c4-46c9-41c5-86ac-2bc14e85278d")
 	(paper "A3")
+	(title_block
+		(title "EE463 Hardware Project - 48V to 12V 5A Synchronous Buck Converter")
+		(date "2026-11-25")
+		(rev "2.0")
+		(company "Buck to the Future")
+		(comment 1 "Members: Talha Sakin, İnciay İlhan, Efe Mert Oral")
+		(comment 2 "Input: 20-48V DC | Output: 12V 5A (60W) | Controller: Raspberry Pi Pico")
+		(comment 3 "4-Layer Split Ground (PGND/DGND Star-Tie via NT1)")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM358"
 			(pin_names
@@ -473,6 +482,129 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1668,6 +1800,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2838,6 +3112,105 @@
 						)
 					)
 					(alternate "VBUS_IN" power_in line)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
 				)
 			)
 			(embedded_fonts no)
@@ -4732,6 +5105,132 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GNDD"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GNDD"
+				(at 0 -3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GNDD_0_1"
+				(rectangle
+					(start -1.27 -1.524)
+					(end 1.27 -2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDD_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
@@ -5309,16 +5808,16 @@
 		(uuid "64e7708d-506f-4a27-bd6d-58a1876cac38")
 	)
 	(no_connect
+		(at 100.33 193.04)
+		(uuid "66645a50-a666-47dd-85fa-002d7a300003")
+	)
+	(no_connect
 		(at 146.05 213.36)
 		(uuid "6771963c-55c8-47f3-9246-2e001a64617e")
 	)
 	(no_connect
 		(at 100.33 208.28)
 		(uuid "6e2fa4fd-eb79-4756-98d8-55faba130c75")
-	)
-	(no_connect
-		(at 146.05 195.58)
-		(uuid "7986377d-a5d0-4dfe-92a7-6099481b25fb")
 	)
 	(no_connect
 		(at 128.27 167.64)
@@ -5339,6 +5838,10 @@
 	(no_connect
 		(at 146.05 208.28)
 		(uuid "a1744fb5-8d39-4796-8313-05a02180ffa0")
+	)
+	(no_connect
+		(at 100.33 190.5)
+		(uuid "a8187911-bcab-4465-8cf6-e3f7247412ad")
 	)
 	(no_connect
 		(at 100.33 195.58)
@@ -5375,10 +5878,6 @@
 	(no_connect
 		(at 100.33 210.82)
 		(uuid "eae26c08-ff34-48e3-b3c3-6e5e01f55d18")
-	)
-	(no_connect
-		(at 146.05 193.04)
-		(uuid "f1abbf6e-8b85-4b52-8833-9b5ecde4cb37")
 	)
 	(no_connect
 		(at 100.33 200.66)
@@ -5616,13 +6115,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 125.73) (xy 123.19 128.27)
+			(xy 261.62 177.8) (xy 264.16 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26e97614-72fd-4f2b-983e-92cbea429ded")
+		(uuid "26b65264-7adf-4e65-a75d-92200101092d")
 	)
 	(wire
 		(pts
@@ -6226,6 +6725,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 177.8) (xy 254 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bbb0aaf-c014-4772-9aa0-3975a286df1d")
+	)
+	(wire
+		(pts
 			(xy 168.91 124.46) (xy 168.91 135.89)
 		)
 		(stroke
@@ -6626,7 +7135,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 118.11) (xy 123.19 113.03)
+			(xy 123.19 113.03) (xy 123.19 128.27)
 		)
 		(stroke
 			(width 0)
@@ -6693,6 +7202,16 @@
 			(type default)
 		)
 		(uuid "b5596c9e-04e6-4df6-96b6-8f8a61cc1706")
+	)
+	(wire
+		(pts
+			(xy 254 177.8) (xy 256.54 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b63fa794-c73f-45f4-b729-aa3cc544a864")
 	)
 	(wire
 		(pts
@@ -6783,6 +7302,16 @@
 			(type default)
 		)
 		(uuid "cc16115d-019d-4dd6-94c6-84bab95ca467")
+	)
+	(wire
+		(pts
+			(xy 264.16 177.8) (xy 264.16 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cccbce1f-7192-4542-8848-e2b9b87ef9f1")
 	)
 	(wire
 		(pts
@@ -7116,6 +7645,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 173.99) (xy 254 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd4db24b-7f31-486f-bc69-73308a840973")
+	)
+	(wire
+		(pts
 			(xy 87.63 96.52) (xy 90.17 96.52)
 		)
 		(stroke
@@ -7144,6 +7683,46 @@
 		)
 		(uuid "ff17d991-3cd2-4f05-8992-f41d58f6aafc")
 	)
+	(label "I_SENSE"
+		(at 368.3 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "063587a7-043f-4eb8-b3d3-541ffa352925")
+	)
+	(label "48V_BUS"
+		(at 228.6 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0734c3b9-7429-48f4-9366-ee0fcab738a7")
+	)
+	(label "V_OUT"
+		(at 312.42 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0941977a-051a-4ae0-896a-f660e0df92e4")
+	)
+	(label "V_OUT"
+		(at 327.66 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1394a3a5-0c06-4429-9837-a36e617c69c7")
+	)
 	(label "LOAD_RTRN"
 		(at 294.64 88.9 0)
 		(effects
@@ -7154,6 +7733,16 @@
 		)
 		(uuid "1b04cb52-cf89-4e7b-8dd0-0476c1cad19a")
 	)
+	(label "LO_PWM"
+		(at 236.22 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b3249ce-099c-44c8-af0a-37d05db4b190")
+	)
 	(label "48V_BUS"
 		(at 120.65 38.1 0)
 		(effects
@@ -7163,6 +7752,16 @@
 			(justify left bottom)
 		)
 		(uuid "29a8bac9-c050-4a59-9f1e-587b110c82d7")
+	)
+	(label "AUX_SW"
+		(at 214.63 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "31421942-1277-42c3-a5dc-1183a71d7133")
 	)
 	(label "I_SENSE"
 		(at 146.05 218.44 0)
@@ -7175,6 +7774,16 @@
 		(uuid "35f95912-a2af-44da-adc0-fa2fa89aba03")
 	)
 	(label "HI_PWM"
+		(at 330.2 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37542bbb-f533-4ed4-b159-d4d49d3ea64a")
+	)
+	(label "HI_PWM"
 		(at 20.32 107.95 0)
 		(effects
 			(font
@@ -7184,15 +7793,65 @@
 		)
 		(uuid "37b0e0ec-2b76-4397-95f4-4ff07b9b00fb")
 	)
-	(label "HI_PWM"
-		(at 100.33 190.5 180)
+	(label "AUX_SW"
+		(at 317.5 205.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "5655cd8f-9e7e-412a-969a-dbdcfbedb3d5")
+		(uuid "388ac245-3d0c-42e6-8573-de7d90ff36c1")
+	)
+	(label "Q3_GATE"
+		(at 205.74 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "38c61bf8-1c34-4e28-aa51-8f4763404fd1")
+	)
+	(label "Q2_GATE"
+		(at 90.17 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a5cdbba-9d53-465e-8980-4f82bd43ba28")
+	)
+	(label "SW_NODE"
+		(at 109.22 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3bc8f53f-fac6-493d-9e45-62cb46a8143e")
+	)
+	(label "HI_PWM"
+		(at 146.05 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43231307-3208-487c-a67c-01b361b105ae")
+	)
+	(label "SW_NODE"
+		(at 304.8 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4874d6ba-cabe-4eb7-b247-c7cd463fde3e")
 	)
 	(label "V_SENSE"
 		(at 146.05 220.98 0)
@@ -7234,6 +7893,16 @@
 		)
 		(uuid "728d5903-98d4-44dd-9ce1-3ae8ca66e1e3")
 	)
+	(label "Q2_GATE"
+		(at 279.4 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9064a3dc-e483-46f3-8108-73284108f4e8")
+	)
 	(label "LOAD_RTRN"
 		(at 222.25 135.89 0)
 		(effects
@@ -7254,15 +7923,55 @@
 		)
 		(uuid "9c1adc40-09a1-4968-83f8-0b5e44634a1d")
 	)
-	(label "LO_PWM"
-		(at 100.33 193.04 180)
+	(label "48V_BUS"
+		(at 281.94 173.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "b4796f7b-ee20-4e31-ab8d-e5f6e565b5db")
+		(uuid "aaaca86a-ba18-4d4d-81b7-e02bb3fdb042")
+	)
+	(label "LOAD_RTRN"
+		(at 358.14 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2087e23-f76a-4a7e-81dd-97590e3dde74")
+	)
+	(label "HI_PWM"
+		(at 220.98 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b62cb0c5-dbac-420c-9553-5b4ddc45da73")
+	)
+	(label "V_OUT"
+		(at 266.7 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9b6a41d-f8c9-4771-9f8b-918c2826fa44")
+	)
+	(label "V_OUT"
+		(at 342.9 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be31da74-ae44-4571-bfb0-01cf21f51e0d")
 	)
 	(label "V_OUT"
 		(at 186.69 113.03 0)
@@ -7274,6 +7983,16 @@
 		)
 		(uuid "c7192510-1fa6-4551-b617-5350c96a800d")
 	)
+	(label "LO_PWM"
+		(at 342.9 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c99c5bf0-fade-4f0b-8ed5-4d2da7c575d6")
+	)
 	(label "48V_BUS"
 		(at 109.22 78.74 0)
 		(effects
@@ -7283,6 +8002,36 @@
 			(justify left bottom)
 		)
 		(uuid "cb77894a-0a79-4430-940e-5554c8bfb26e")
+	)
+	(label "Q3_GATE"
+		(at 292.1 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1ec2fb8-04bd-408b-a7f7-ed8ec39637ea")
+	)
+	(label "V_SENSE"
+		(at 355.6 205.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5801244-f43c-48dc-ac41-52cd7a5fda60")
+	)
+	(label "SW_NODE"
+		(at 190.5 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc23bcec-04c3-4a96-a127-26ac1765a842")
 	)
 	(label "48V_BUS"
 		(at 140.97 38.1 0)
@@ -7294,6 +8043,46 @@
 		)
 		(uuid "e0ee026c-c0c5-4c52-b5c1-6d736495ccbe")
 	)
+	(label "LO_PWM"
+		(at 146.05 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0925200-0946-4bb4-9c81-075415eb40b6")
+	)
+	(label "Q3_GATE"
+		(at 90.17 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1544807-d806-4422-94a3-9eb81da563dc")
+	)
+	(label "Q2_GATE"
+		(at 190.5 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f16359a7-a07c-47ea-ad04-b85929b063a0")
+	)
+	(label "48V_BUS"
+		(at 297.18 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe8f0a98-0abb-43ca-8de5-98166e6bace4")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 36.83 87.63 0)
@@ -7304,9 +8093,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04869592-988f-4c70-a1e1-730be43222ed")
-		(property "Reference" "#PWR019"
+		(uuid "0075f728-8d2d-48f8-8920-c66447a2795d")
+		(property "Reference" "#PWR015"
 			(at 36.83 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7318,7 +8106,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 92.71 0)
+			(at 36.83 90.805 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7349,7 +8137,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
 			(at 36.83 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -7361,12 +8149,241 @@
 			)
 		)
 		(pin "1"
-			(uuid "6bc5422d-9964-4f4b-a14e-4111f6c32d2e")
+			(uuid "35f0655c-d167-4a69-9b1f-f7a1fba93bdc")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR019")
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 342.9 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0186345a-3db2-4fcb-b945-57c7471d6853")
+		(property "Reference" "TP13"
+			(at 342.9 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LO_PWM"
+			(at 342.9 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 342.9 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 342.9 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 342.9 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24563867-e1ef-4791-8a80-c41dac31e18e")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 123.19 241.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "05caf5b8-261f-4819-b550-74c40bac44a2")
+		(property "Reference" "#PWR020"
+			(at 123.19 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 123.19 244.475 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 123.19 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd0d854a-eb7a-4e0d-b764-00fc018ae715")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 266.7 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "06fb58c6-e42f-4368-80a0-1f9526902a74")
+		(property "Reference" "TP7"
+			(at 266.7 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V_OUT"
+			(at 266.7 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 266.7 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 266.7 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45a2f966-f13f-421d-81f9-4ea0a987fa27")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -7395,18 +8412,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 25V"
+		(property "Value" "100nF 50V X7R"
 			(at 49.53 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 46.6852 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -7437,6 +8454,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CL31B104KBCNNNC"
+			(at 45.72 83.82 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 50V X7R Ceramic 1206 U3 VDD Decap"
+			(at 45.72 83.82 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7476,13 +8511,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BZX55C3V3"
+		(property "Value" "BZX55C3V3 (3.3V 0.5W)"
 			(at 280.162 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify right)
 			)
@@ -7556,7 +8591,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" "BZX55C12 R0G"
+		(property "MPN" "BZX55C3V3"
 			(at 280.67 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7616,6 +8651,15 @@
 				(justify bottom)
 			)
 		)
+		(property "Rating" "3.3V 0.5W Zener DO-35 ADC Clamp"
+			(at 280.67 99.06 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "685381eb-533a-4a34-bca3-fa13ad48ce1f")
 		)
@@ -7653,17 +8697,17 @@
 				)
 			)
 		)
-		(property "Value" "2.2"
+		(property "Value" "2.2R 1% 1/4W"
 			(at 73.66 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 73.66 94.742 90)
 			(hide yes)
 			(show_name no)
@@ -7696,6 +8740,24 @@
 				)
 			)
 		)
+		(property "MPN" "RC1206FR-072R2L"
+			(at 73.66 96.52 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "2.2Ohm 1% 0.25W 1206 Gate Off"
+			(at 73.66 96.52 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "920ec81e-daff-44ea-b7ee-e2b2a4cca76b")
 		)
@@ -7706,6 +8768,233 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 327.66 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0cd99317-b1d9-42d5-b42a-584e13632198")
+		(property "Reference" "#PWR039"
+			(at 327.66 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 327.66 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 327.66 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.66 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 327.66 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b22ad6a-019e-41bc-9e65-442823114e41")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 228.6 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0d5b16de-5cfd-465f-9107-42ac6882639e")
+		(property "Reference" "H4"
+			(at 228.6 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3"
+			(at 228.6 225.425 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 228.6 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 228.6 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 264.16 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f0e538f-4f2a-4e08-ac21-3ce885047486")
+		(property "Reference" "#PWR035"
+			(at 264.16 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 264.16 184.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 264.16 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5aaf505-4160-470b-bdd5-f342ef379007")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -7733,17 +9022,17 @@
 				)
 			)
 		)
-		(property "Value" "4.7"
+		(property "Value" "4.7R 1% 1W"
 			(at 144.78 122.174 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 139.192 120.65 90)
 			(hide yes)
 			(show_name no)
@@ -7774,6 +9063,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "RC2512FK-074R7L"
+			(at 140.97 120.65 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "4.7Ohm 1% 1W 2512 Snubber"
+			(at 140.97 120.65 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7814,18 +9121,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF 50V Ceramic"
+		(property "Value" "470nF 50V X7R"
 			(at 74.93 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 72.0852 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7856,6 +9163,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CL31B474KBCNNNC"
+			(at 71.12 109.22 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "470nF 50V X7R Ceramic 1206 Bootstrap"
+			(at 71.12 109.22 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7895,18 +9220,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 50V Ceramic"
+		(property "Value" "100nF 50V X7R"
 			(at 255.778 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 253.6952 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -7937,6 +9262,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CL31B104KBCNNNC"
+			(at 252.73 41.91 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 50V X7R Ceramic 1206 U2 Decap"
+			(at 252.73 41.91 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8053,17 +9396,17 @@
 				)
 			)
 		)
-		(property "Value" "150uH"
+		(property "Value" "150uH 0.8A (7447714151)"
 			(at 219.71 40.894 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
+		(property "Footprint" "footprints:L_Wuerth_WE-PD_1050_HandSolder"
 			(at 219.71 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8094,6 +9437,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "7447714151"
+			(at 219.71 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "150uH 0.8A Shielded Aux Buck Inductor"
+			(at 219.71 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8133,18 +9494,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 16V Electrolytic"
+		(property "Value" "100uF 25V Elec"
 			(at 281.94 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 288.29 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -8175,6 +9536,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "EEU-FR1E101"
+			(at 288.29 41.91 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100uF 25V Electrolytic D6.3"
+			(at 288.29 41.91 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8259,6 +9638,24 @@
 				)
 			)
 		)
+		(property "MPN" "LM2596HVT-12/NOPB"
+			(at 198.12 40.64 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "60V->12V 3A Buck Regulator TO-220-5"
+			(at 198.12 40.64 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "318084b6-079b-4693-9ec6-d137a6dae9fe")
 		)
@@ -8304,13 +9701,13 @@
 				)
 			)
 		)
-		(property "Value" "1N5819-HT"
+		(property "Value" "1N5819 (40V 1A)"
 			(at 86.868 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
@@ -8347,6 +9744,24 @@
 				)
 			)
 		)
+		(property "MPN" "1N5819"
+			(at 83.82 128.27 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "40V 1A Schottky DO-41 Fast Turn-Off"
+			(at 83.82 128.27 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bcba302a-afa2-497e-aaf1-d8f92c49c101")
 		)
@@ -8363,8 +9778,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 123.19 241.3 0)
+		(lib_id "Device:R")
+		(at 358.14 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8372,11 +9787,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19e0897b-1cf5-4137-90f5-48e1e5471a0b")
-		(property "Reference" "#PWR026"
-			(at 123.19 247.65 0)
-			(hide yes)
+		(uuid "1659bf5f-0adc-4b95-9f4e-f7dcb006ed57")
+		(property "Reference" "R21"
+			(at 360.172 177.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8385,18 +9798,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 123.19 246.38 0)
+		(property "Value" "5mR 1W Shunt (DNP)"
+			(at 358.14 177.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 123.19 241.3 0)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
+			(at 358.14 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8407,7 +9820,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 241.3 0)
+			(at 358.14 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8417,8 +9830,105 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 241.3 0)
+		(property "Description" "Resistor"
+			(at 358.14 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CSRL2512-0R005F"
+			(at 358.14 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "DNP Spare Parallel Current Shunt"
+			(at 358.14 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8b92f77-d5df-4997-8027-c09a1c42bb7c")
+		)
+		(pin "2"
+			(uuid "4d38e312-3461-490d-b868-e6abb02f60b8")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 330.2 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "17685d60-b7f5-49df-b71c-dbc8d48f9e0d")
+		(property "Reference" "TP12"
+			(at 330.2 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HI_PWM"
+			(at 330.2 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 330.2 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 330.2 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8429,12 +9939,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3cb84698-9de6-4f8a-8480-8d93dca8212c")
+			(uuid "49705c4d-6dff-46ce-adf4-4c178475cdf3")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR026")
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -8442,7 +9952,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 228.6 90)
+		(at 220.98 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8450,10 +9960,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e2e8efc-bf26-494a-b1d2-f3a5e69f978f")
-		(property "Reference" "#PWR027"
-			(at 152.4 228.6 0)
+		(uuid "1a978bd3-d99a-41b5-99f4-40134a45de65")
+		(property "Reference" "#PWR032"
+			(at 220.98 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8464,18 +9973,17 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 228.5999 90)
+			(at 220.98 184.785 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 228.6 0)
+			(at 220.98 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8486,7 +9994,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 228.6 0)
+			(at 220.98 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8496,8 +10004,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 228.6 0)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 220.98 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8508,12 +10016,264 @@
 			)
 		)
 		(pin "1"
-			(uuid "e17ad76e-ccac-46d3-b9e7-d4a2d57f96e7")
+			(uuid "82a15902-e85d-4eeb-8ee4-47263842a68b")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR027")
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 342.9 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1b953da8-6abd-4ad9-9721-d1c239e86d83")
+		(property "Reference" "#PWR040"
+			(at 342.9 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 342.9 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 342.9 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 342.9 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 342.9 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d9da154-7459-4962-9002-fa9b032a4235")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 281.94 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1d2c6815-acae-4500-b742-40d5052d2cd6")
+		(property "Reference" "C22"
+			(at 282.575 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF 100V Film (DNP)"
+			(at 282.575 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L18.0mm_W7.0mm_P15.00mm_FKS3_FKP3"
+			(at 281.94 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 281.94 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 281.94 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "FKP3D041004D00KSSD"
+			(at 281.94 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "DNP 1uF 100V Polypropylene Film P15"
+			(at 281.94 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24c72bcf-6ec2-4974-b850-eb55cae6aff3")
+		)
+		(pin "1"
+			(uuid "730e2782-1d6e-413a-86c4-c0dd378a6785")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 190.5 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "20c1ebc7-cb4d-417c-9fec-a5a6e74f6fd4")
+		(property "Reference" "TP1"
+			(at 190.5 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PGND"
+			(at 190.5 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 190.5 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "39d60d4d-76d4-443f-a3fe-cbf519bf4f44")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -8541,17 +10301,17 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "68k 1% 1/4W"
 			(at 336.55 110.236 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 336.55 103.632 90)
 			(hide yes)
 			(show_name no)
@@ -8582,6 +10342,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "RC1206FR-0768KL"
+			(at 336.55 105.41 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "68kOhm 1% 0.25W 1206 OpAmp Gain"
+			(at 336.55 105.41 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8621,13 +10399,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF 25V"
+		(property "Value" "100uF 25V Elec"
 			(at 162.56 117.094 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -8663,6 +10441,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "EEU-FR1E101"
+			(at 168.91 120.65 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100uF 25V Low-ESR Electrolytic D6.3"
+			(at 168.91 120.65 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8703,18 +10499,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.005"
+		(property "Value" "5mR 1% 1W Shunt"
 			(at 297.18 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 292.862 96.52 90)
 			(hide yes)
 			(show_name no)
@@ -8745,6 +10541,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CSRL2512-0R005F"
+			(at 294.64 96.52 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "0.005Ohm 1% 1W 2512 Current Shunt"
+			(at 294.64 96.52 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8861,13 +10675,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470uF 25V Electrolytic"
+		(property "Value" "470uF 25V Elec"
 			(at 230.632 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -8903,6 +10717,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "EEU-FR1E471"
+			(at 237.49 41.91 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "470uF 25V Low-ESR Electrolytic D10"
+			(at 237.49 41.91 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8942,17 +10774,17 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1% 1/4W"
 			(at 392.43 93.472 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 392.43 90.678 90)
 			(hide yes)
 			(show_name no)
@@ -8985,6 +10817,24 @@
 				)
 			)
 		)
+		(property "MPN" "RC1206FR-071KL"
+			(at 392.43 88.9 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1kOhm 1% 0.25W 1206 Clamp Limit"
+			(at 392.43 88.9 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d81e6075-ca86-4d59-afbe-f8b22f7ef54d")
 		)
@@ -8995,6 +10845,83 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b8db701-5c53-4803-a7ff-987b63453e2b")
+		(property "Reference" "#PWR018"
+			(at 45.72 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 90.805 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 45.72 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "09a5e815-537d-4509-aa0b-7abfc029a218")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -9022,18 +10949,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 50V Ceramic"
+		(property "Value" "100nF 50V X7R"
 			(at 366.268 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 364.1852 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -9064,6 +10991,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CL31B104KBCNNNC"
+			(at 363.22 101.6 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 50V X7R Ceramic 1206 I-Sense LPF"
+			(at 363.22 101.6 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9160,6 +11105,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 358.14 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2e559be1-be9e-4aaf-8d4b-48fc39544e0e")
+		(property "Reference" "#PWR041"
+			(at 358.14 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 358.14 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 358.14 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 358.14 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 358.14 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e880c175-6a95-4219-ad05-4f7b6784c5dc")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized_US")
 		(at 99.06 43.18 0)
 		(unit 1)
@@ -9181,13 +11203,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF 100V Electrolytic"
+		(property "Value" "100uF 100V Elec"
 			(at 101.346 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -9225,6 +11247,24 @@
 				)
 			)
 		)
+		(property "MPN" "EEU-FR2A101"
+			(at 99.06 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100uF 100V Low-ESR Electrolytic D12.5"
+			(at 99.06 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0d73a14e-1c26-453b-8b46-770d412a10f2")
 		)
@@ -9235,6 +11275,79 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 203.2 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33f9cc06-4512-47e3-a250-e33a11ae73b5")
+		(property "Reference" "H2"
+			(at 203.2 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3"
+			(at 203.2 225.425 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 203.2 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 203.2 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -9340,18 +11453,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 50V Ceramic"
+		(property "Value" "100nF 50V X7R"
 			(at 305.308 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 303.2252 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -9384,6 +11497,24 @@
 				)
 			)
 		)
+		(property "MPN" "CL31B104KBCNNNC"
+			(at 302.26 41.91 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 50V X7R Ceramic 1206"
+			(at 302.26 41.91 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "59ecd108-a241-4467-91d2-cbb16f000a5c")
 		)
@@ -9394,6 +11525,83 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 330.2 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "38f84c86-0bed-4062-abce-1fab06753865")
+		(property "Reference" "#PWR027"
+			(at 330.2 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 330.2 117.475 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 330.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13e3dbe9-5e22-443c-b355-b66541cbba50")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -9420,17 +11628,17 @@
 				)
 			)
 		)
-		(property "Value" "22"
+		(property "Value" "22R 1% 1/4W"
 			(at 73.66 124.206 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 73.66 117.602 90)
 			(hide yes)
 			(show_name no)
@@ -9463,6 +11671,24 @@
 				)
 			)
 		)
+		(property "MPN" "RC1206FR-0722RL"
+			(at 73.66 119.38 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "22Ohm 1% 0.25W 1206 Gate On"
+			(at 73.66 119.38 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1f3a68b7-ec52-4027-9ced-4ed9426c96f9")
 		)
@@ -9473,6 +11699,83 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3ae64794-ada4-4937-b67c-d3922368216b")
+		(property "Reference" "#PWR031"
+			(at 205.74 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d1417782-4e8d-49a5-bee0-adc686e207dd")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -9579,6 +11882,24 @@
 				(justify left bottom)
 			)
 		)
+		(property "MPN" "IRF5210PBF"
+			(at 62.23 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "-100V -40A P-Ch Reverse Polarity TO-220"
+			(at 62.23 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0ba0dba8-443c-4b1d-9c83-c6ba4b1eeaa0")
 		)
@@ -9592,84 +11913,6 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 60.96 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d215270-71e6-42c5-9ac2-447cf8b36760")
-		(property "Reference" "#PWR015"
-			(at 60.96 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "467a2d43-ef6c-4784-bad1-7ae5bba29682")
-		)
-		(instances
-			(project "synchronous_buck"
-				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -9698,18 +11941,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1nF 25V"
+		(property "Value" "1nF 25V X7R"
 			(at 269.24 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 266.3952 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -9742,6 +11985,24 @@
 				)
 			)
 		)
+		(property "MPN" "CL31B102KACNNNC"
+			(at 265.43 99.06 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1nF 25V X7R Ceramic 1206 V-Sense LPF"
+			(at 265.43 99.06 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fb45a528-fc71-41a2-836f-4793e9ed17d2")
 		)
@@ -9752,6 +12013,103 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 190.5 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "43c85341-7ddf-4241-a293-63ac0d230e70")
+		(property "Reference" "R16"
+			(at 192.532 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 1% 1/4W"
+			(at 190.5 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 190.5 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 190.5 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC1206FR-0710KL"
+			(at 190.5 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10kOhm 1% 0.25W 1206 Q2 G-S Pulldown"
+			(at 190.5 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88ada8a5-4275-440a-8a66-309fb0546844")
+		)
+		(pin "2"
+			(uuid "5bcc83bb-8537-47de-b915-d8ee48741f9e")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -9780,18 +12138,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1nF 100V"
+		(property "Value" "1nF 100V C0G/X7R"
 			(at 144.78 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 141.9352 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -9822,6 +12180,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "C1206C102K1RACTU"
+			(at 140.97 130.81 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1nF 100V C0G/X7R Ceramic 1206 Snubber"
+			(at 140.97 130.81 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9904,6 +12280,24 @@
 				)
 			)
 		)
+		(property "MPN" "LM358P"
+			(at 378.46 88.9 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Dual Op-Amp 32V DIP-8 + Socket"
+			(at 378.46 88.9 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "9c010c5a-a694-4f1e-b766-4ebfcbe8a413")
 		)
@@ -9960,13 +12354,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF 100V"
+		(property "Value" "4.7uF 100V X7R"
 			(at 134.62 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -10002,6 +12396,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "C1210C475K1RACTU"
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "4.7uF 100V X7R Ceramic 1210 Input Loop"
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10119,13 +12531,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BZX55C3V3"
+		(property "Value" "BZX55C3V3 (3.3V 0.5W)"
 			(at 395.986 106.426 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify right)
 			)
@@ -10199,7 +12611,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" "BZX55C12 R0G"
+		(property "MPN" "BZX55C3V3"
 			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -10259,6 +12671,15 @@
 				(justify bottom)
 			)
 		)
+		(property "Rating" "3.3V 0.5W Zener DO-35 ADC Clamp"
+			(at 396.24 102.87 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6f2b0206-21c4-454e-a5be-0430b806f9be")
 		)
@@ -10269,6 +12690,315 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 280.67 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "52913a1e-7cc0-4dbc-bf93-85e531cebeca")
+		(property "Reference" "#PWR026"
+			(at 280.67 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 280.67 107.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 280.67 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 280.67 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 280.67 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "36fe0b69-a464-4119-80c8-2236456e7d90")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 259.08 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "52a8fdbf-c245-4277-b1cb-4ad7ade07427")
+		(property "Reference" "NT1"
+			(at 259.08 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND_STAR_TIE"
+			(at 259.08 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad2.0mm"
+			(at 259.08 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 259.08 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf9cfa02-7e5b-46f6-809b-9a129e82e196")
+		)
+		(pin "2"
+			(uuid "f999e2dd-3307-4eb0-b073-0ebecbd27819")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "NT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.3 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5593b902-dc0f-440b-8c0f-528b1110c79c")
+		(property "Reference" "TP15"
+			(at 368.3 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "I_SENSE"
+			(at 368.3 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 368.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 368.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 368.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5597b00-90d6-49ab-9406-456349e45dcd")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 302.26 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "56eafe00-4fa6-4f12-a315-f77a8a99a545")
+		(property "Reference" "#PWR013"
+			(at 302.26 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 302.26 48.895 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 302.26 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 302.26 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 302.26 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e6514a4e-eebe-4e2c-9ce7-f7f8dfb88183")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -10296,13 +13026,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF 25V"
+		(property "Value" "100uF 25V Elec"
 			(at 173.99 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -10338,6 +13068,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "EEU-FR1E101"
+			(at 180.34 121.92 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100uF 25V Low-ESR Electrolytic D6.3"
+			(at 180.34 121.92 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10377,13 +13125,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF 100V Electrolytic"
+		(property "Value" "100uF 100V Elec"
 			(at 153.416 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -10421,6 +13169,24 @@
 				)
 			)
 		)
+		(property "MPN" "EEU-FR2A101"
+			(at 151.13 44.45 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100uF 100V Low-ESR Electrolytic D12.5"
+			(at 151.13 44.45 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4c6975bc-9f8f-4544-9752-89923acd2b52")
 		)
@@ -10431,6 +13197,83 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 146.05 228.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5abf4b0b-6bd0-4637-9c21-8a06cd2824d1")
+		(property "Reference" "#PWR022"
+			(at 152.4 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 149.225 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 146.05 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ca2cfbb-e824-40d3-b28b-f78032ef0388")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -10536,13 +13379,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF 25V"
+		(property "Value" "100uF 25V Elec"
 			(at 152.4 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -10578,6 +13421,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "EEU-FR1E101"
+			(at 158.75 121.92 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100uF 25V Low-ESR Electrolytic D6.3"
+			(at 158.75 121.92 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10617,13 +13478,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BZX55C12-HT"
+		(property "Value" "BZX55C12 (12V 0.5W)"
 			(at 91.948 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify right)
 			)
@@ -10697,7 +13558,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" "BZX55C12 R0G"
+		(property "MPN" "BZX55C12"
 			(at 86.36 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -10757,6 +13618,15 @@
 				(justify bottom)
 			)
 		)
+		(property "Rating" "12V 0.5W Zener DO-35 Q1 Vgs Clamp"
+			(at 86.36 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a3484795-da3c-4bf0-9a54-1c0e21ac0d5e")
 		)
@@ -10767,6 +13637,82 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 317.5 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "65469619-fbff-4c16-9957-bf502140a0fb")
+		(property "Reference" "TP11"
+			(at 317.5 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AUX_SW"
+			(at 317.5 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 317.5 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 317.5 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d5eb9ef-c87b-43a9-b11c-cd36281719b5")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -10795,18 +13741,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "56k 1% 1/4W"
 			(at 256.54 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 252.222 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -10837,6 +13783,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "RC1206FR-0756KL"
+			(at 254 87.63 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "56kOhm 1% 0.25W 1206 V-Sense"
+			(at 254 87.63 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10877,18 +13841,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1% 1/4W"
 			(at 317.5 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 313.182 105.41 90)
 			(hide yes)
 			(show_name no)
@@ -10919,6 +13883,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "RC1206FR-071KL"
+			(at 314.96 105.41 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1kOhm 1% 0.25W 1206 OpAmp Gain"
+			(at 314.96 105.41 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11016,7 +13998,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 342.9 88.9 0)
+		(at 312.42 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11024,9 +14006,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "693ed1e1-26a7-4c17-8a83-1b1f194f053c")
-		(property "Reference" "#PWR024"
-			(at 342.9 95.25 0)
+		(uuid "67ec0244-ad36-4831-803e-719f626b8717")
+		(property "Reference" "#PWR038"
+			(at 312.42 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11037,7 +14019,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 346.202 89.662 0)
+			(at 312.42 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11047,7 +14029,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 342.9 88.9 0)
+			(at 312.42 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11058,7 +14040,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 342.9 88.9 0)
+			(at 312.42 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11069,7 +14051,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 342.9 88.9 0)
+			(at 312.42 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11080,12 +14062,111 @@
 			)
 		)
 		(pin "1"
-			(uuid "29c14fae-5595-436e-b01a-a8fd6f27eec4")
+			(uuid "39f9cab5-0694-46b6-9671-f2ff4467b330")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR024")
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 297.18 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6da78c57-5f34-4e86-9a8b-83313940850e")
+		(property "Reference" "C23"
+			(at 297.815 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF 100V X7R (DNP)"
+			(at 297.815 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1210C475K1RACTU"
+			(at 297.18 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "DNP 4.7uF 100V X7R Ceramic 1210"
+			(at 297.18 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5458fdda-dfac-4128-a02e-0c8e9c306ab4")
+		)
+		(pin "1"
+			(uuid "8068ab23-85a7-490f-b7bc-2562611c42c8")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -11113,17 +14194,17 @@
 				)
 			)
 		)
-		(property "Value" "22"
+		(property "Value" "22R 1% 1/4W"
 			(at 78.74 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 78.74 84.582 90)
 			(hide yes)
 			(show_name no)
@@ -11154,6 +14235,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "RC1206FR-0722RL"
+			(at 78.74 86.36 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "22Ohm 1% 0.25W 1206 Gate On"
+			(at 78.74 86.36 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11193,18 +14292,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF Ceramic"
+		(property "Value" "100nF 100V X7R"
 			(at 116.078 41.402 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 113.9952 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -11237,6 +14336,24 @@
 				)
 			)
 		)
+		(property "MPN" "C1206C104K1RACTU"
+			(at 113.03 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 100V X7R Ceramic 1206"
+			(at 113.03 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "146d91c6-190d-4726-94b5-0945bf3aad14")
 		)
@@ -11247,6 +14364,83 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 281.94 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75f94f4f-2e18-4edd-be20-0270a087ce5d")
+		(property "Reference" "#PWR036"
+			(at 281.94 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 281.94 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 281.94 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 281.94 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 281.94 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2aa5af68-89c9-492c-86df-e86c466518d4")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -11274,13 +14468,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SR3100-HT"
+		(property "Value" "SR3100 (100V 3A)"
 			(at 216.408 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -11316,6 +14510,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "SR3100"
+			(at 214.63 46.99 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100V 3A Schottky DO-201AD Aux Freewheel"
+			(at 214.63 46.99 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11356,18 +14568,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF 50V X7R"
 			(at 346.71 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 343.8652 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -11400,6 +14612,24 @@
 				)
 			)
 		)
+		(property "MPN" "CL31B104KBCNNNC"
+			(at 342.9 85.09 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 50V X7R Ceramic 1206 U4 Decap"
+			(at 342.9 85.09 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e50a5645-7eb9-4238-9554-4df079bf07a8")
 		)
@@ -11410,6 +14640,82 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 279.4 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "797318a8-9277-4a70-8c08-75ed9bcb4246")
+		(property "Reference" "TP8"
+			(at 279.4 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q2_GATE"
+			(at 279.4 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 279.4 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 279.4 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 279.4 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1bdb01d-cf58-4c36-81c0-5947927b5d0b")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -11436,17 +14742,17 @@
 				)
 			)
 		)
-		(property "Value" "68uH"
+		(property "Value" "68uH 7.7A (HCTI-68-7.7)"
 			(at 148.59 110.744 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Inductor_THT:L_Toroid_Vertical_L24.6mm_W15.5mm_P11.44mm_Pulse_KM-4"
+		(property "Footprint" "footprints:L_Toroid_Vertical_L32.5mm_W16.5mm_P13.21mm_HCTI-68-7.7"
 			(at 148.59 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -11479,6 +14785,24 @@
 				)
 			)
 		)
+		(property "MPN" "HCTI-68-7.7"
+			(at 148.59 113.03 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "68uH 7.7A Vertical Toroid Main Inductor"
+			(at 148.59 113.03 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "31c0a019-8eea-4ef7-b9eb-1e66b9022721")
 		)
@@ -11495,8 +14819,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 330.2 114.3 0)
+		(lib_id "Device:C")
+		(at 312.42 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11504,31 +14828,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ed391e6-3847-4fe3-aa6e-fe630e27ddfc")
-		(property "Reference" "#PWR022"
-			(at 330.2 120.65 0)
-			(hide yes)
+		(uuid "7ab70f83-eecc-4184-b04c-1899a86aa83e")
+		(property "Reference" "C24"
+			(at 313.055 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 330.2 119.38 0)
+		(property "Value" "1uF 50V Film (DNP)"
+			(at 313.055 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 330.2 114.3 0)
+		(property "Footprint" "Capacitor_THT:C_Rect_L18.0mm_W7.0mm_P15.00mm_FKS3_FKP3"
+			(at 312.42 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11539,7 +14863,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 330.2 114.3 0)
+			(at 312.42 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11549,8 +14873,105 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 330.2 114.3 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 312.42 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "FKS3D041004D00KSSD"
+			(at 312.42 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "DNP 1uF 50V Film P15 Output"
+			(at 312.42 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52df21a8-b79f-450e-a2ee-9d4e2dd94f08")
+		)
+		(pin "2"
+			(uuid "bca2347d-e57d-49d9-96fc-511d2a7fbcd2")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 215.9 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "80abe0db-766f-4590-9c16-82ef0de6fe90")
+		(property "Reference" "TP3"
+			(at 215.9 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+48V"
+			(at 215.9 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 215.9 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 215.9 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11561,12 +14982,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c8fde002-4f17-4b9c-833f-b005998ac6f6")
+			(uuid "a128c8a7-8e31-4255-bc8a-3d1f7890cc41")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR022")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -11574,7 +14995,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 396.24 110.49 0)
+		(at 297.18 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11582,9 +15003,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "7fabbdc7-0ee0-4731-8023-985fc83d1004")
-		(property "Reference" "#PWR028"
-			(at 396.24 116.84 0)
+		(uuid "81e0b864-3d1e-4941-9192-47c60090a89e")
+		(property "Reference" "#PWR037"
+			(at 297.18 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11595,7 +15016,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 400.812 111.76 0)
+			(at 297.18 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11605,7 +15026,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 396.24 110.49 0)
+			(at 297.18 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11616,7 +15037,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 396.24 110.49 0)
+			(at 297.18 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11627,7 +15048,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 396.24 110.49 0)
+			(at 297.18 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11638,12 +15059,88 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d642498-5d56-4cc1-ba0d-d5e1fcaef8c6")
+			(uuid "279aa5ec-d106-424b-a100-97b9ec1593f8")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR028")
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "876b12fd-104d-457e-b168-a6accc2f9fac")
+		(property "Reference" "TP6"
+			(at 254 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 254 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 254 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 254 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a442843-b7c9-45ff-83b4-158129a3274e")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -11670,13 +15167,13 @@
 				)
 			)
 		)
-		(property "Value" "1N5819-HT"
+		(property "Value" "1N5819 (40V 1A)"
 			(at 87.122 93.726 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
@@ -11711,6 +15208,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "1N5819"
+			(at 83.82 96.52 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "40V 1A Schottky DO-41 Fast Turn-Off"
+			(at 83.82 96.52 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11751,18 +15266,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1% 1/4W"
 			(at 74.93 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 79.248 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -11795,6 +15310,24 @@
 				)
 			)
 		)
+		(property "MPN" "RC1206FR-0710KL"
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10kOhm 1% 0.25W 1206"
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c7462be5-ec9b-4590-9bea-49a934857507")
 		)
@@ -11805,84 +15338,6 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 280.67 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ef8032f-b902-4e0e-9b0d-36c593adf986")
-		(property "Reference" "#PWR029"
-			(at 280.67 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 280.67 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 280.67 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 280.67 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 280.67 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e811dbd5-fbd3-4d3a-9df8-7526e73f5f76")
-		)
-		(instances
-			(project "synchronous_buck"
-				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -11961,6 +15416,82 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 355.6 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91d5c1c1-2b00-42cf-b850-a752533ff06f")
+		(property "Reference" "TP14"
+			(at 355.6 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V_SENSE"
+			(at 355.6 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 355.6 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355.6 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 355.6 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87842dac-57a3-4b2d-8a2e-6323c756d26d")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -12066,17 +15597,17 @@
 				)
 			)
 		)
-		(property "Value" "2.2"
+		(property "Value" "2.2R 1% 1/4W"
 			(at 73.66 133.604 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 73.66 126.492 90)
 			(hide yes)
 			(show_name no)
@@ -12109,6 +15640,24 @@
 				)
 			)
 		)
+		(property "MPN" "RC1206FR-072R2L"
+			(at 73.66 128.27 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "2.2Ohm 1% 0.25W 1206 Gate Off"
+			(at 73.66 128.27 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ec53d6ea-0f64-4e46-afca-bd8bafef984d")
 		)
@@ -12119,6 +15668,83 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 254 205.74 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "97660d64-7097-4194-9d54-815ae6313835")
+		(property "Reference" "#PWR046"
+			(at 254 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 254 209.296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 254 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67b85962-d1be-4dfd-a9e6-51bab8582cd0")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -12146,18 +15772,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 100V Ceramic"
+		(property "Value" "100nF 100V X7R"
 			(at 163.068 42.672 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 160.9852 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -12188,6 +15814,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "C1206C104K1RACTU"
+			(at 160.02 44.45 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 100V X7R Ceramic 1206"
+			(at 160.02 44.45 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12284,6 +15928,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 205.74 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9a756e46-327c-47f8-9042-ab1376b32361")
+		(property "Reference" "R17"
+			(at 207.772 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 1% 1/4W"
+			(at 205.74 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 205.74 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 205.74 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC1206FR-0710KL"
+			(at 205.74 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10kOhm 1% 0.25W 1206 Q3 G-S Pulldown"
+			(at 205.74 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "58268f24-9c09-49f3-a040-144355dfa8f0")
+		)
+		(pin "1"
+			(uuid "ef9b4761-b16f-40bf-a923-ec81bfc880ed")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 227.33 123.19 0)
 		(unit 1)
@@ -12305,13 +16046,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
+		(property "Value" "VOUT 12V 5A 2P"
 			(at 216.408 120.396 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -12347,6 +16088,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "1715721"
+			(at 227.33 123.19 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Phoenix MKDS 1,5/2-5,08 17.5A"
+			(at 227.33 123.19 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12387,13 +16146,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SR5100"
+		(property "Value" "SR5100 (100V 5A)"
 			(at 125.73 133.3499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -12453,6 +16212,24 @@
 				)
 			)
 		)
+		(property "MPN" "SR5100"
+			(at 123.19 132.08 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100V 5A Schottky DO-201AD Buck Test / Freewheel"
+			(at 123.19 132.08 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd00949f-ae89-4349-b60e-29d49b8f36b6")
 		)
@@ -12491,18 +16268,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15k"
+		(property "Value" "15k 1% 1/4W"
 			(at 80.01 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 75.692 53.34 90)
 			(hide yes)
 			(show_name no)
@@ -12535,6 +16312,24 @@
 				)
 			)
 		)
+		(property "MPN" "RC1206FR-0715KL"
+			(at 77.47 53.34 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "15kOhm 1% 0.25W 1206"
+			(at 77.47 53.34 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c81bdf0a-b7dc-4706-8258-b3849a7133b3")
 		)
@@ -12551,8 +16346,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 302.26 45.72 0)
+		(lib_id "Device:R")
+		(at 236.22 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12560,11 +16355,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a662f60d-1c13-4f8a-8fb0-b3b29d672a9a")
-		(property "Reference" "#PWR013"
-			(at 302.26 52.07 0)
-			(hide yes)
+		(uuid "a4d99325-e8da-4440-9ec0-73784f1940a1")
+		(property "Reference" "R19"
+			(at 238.252 177.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12573,18 +16366,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 302.26 50.8 0)
+		(property "Value" "10k 1% 1/4W"
+			(at 236.22 177.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 302.26 45.72 0)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 236.22 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12595,7 +16388,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 302.26 45.72 0)
+			(at 236.22 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12605,8 +16398,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 302.26 45.72 0)
+		(property "Description" "Resistor"
+			(at 236.22 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12614,15 +16407,109 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "RC1206FR-0710KL"
+			(at 236.22 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10kOhm 1% 0.25W 1206 LI Pulldown"
+			(at 236.22 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "633fb04b-138e-4159-8590-fbd9d8c0a9d9")
+			(uuid "12c605dc-8d46-4cc7-b3c3-f671f0503b96")
+		)
+		(pin "2"
+			(uuid "9be3822a-e3ea-4eb4-bfed-1f9d9cc6cb9e")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR013")
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 190.5 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a6ae64c2-de98-4d8a-8eb1-645a4534bf4b")
+		(property "Reference" "H1"
+			(at 190.5 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3"
+			(at 190.5 225.425 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 190.5 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 190.5 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -12630,7 +16517,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 87.63 0)
+		(at 254 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12638,9 +16525,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ace4f42f-9daf-42a4-a738-48264efe56a4")
-		(property "Reference" "#PWR018"
-			(at 45.72 93.98 0)
+		(uuid "a751ac54-b25d-4d49-b456-8bfb913086ac")
+		(property "Reference" "#PWR034"
+			(at 254 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12651,7 +16538,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 47.752 91.948 0)
+			(at 254 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12661,7 +16548,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 87.63 0)
+			(at 254 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12672,7 +16559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 87.63 0)
+			(at 254 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12683,7 +16570,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 87.63 0)
+			(at 254 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12694,12 +16581,165 @@
 			)
 		)
 		(pin "1"
-			(uuid "d5e0e5b9-1f88-485f-b0ac-40ef5a8e2a59")
+			(uuid "5d426f03-3a0f-47a8-8bb1-dd0a70e94e35")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR018")
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 203.2 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a7b94179-ab4b-4b39-9388-33130ba402d4")
+		(property "Reference" "#PWR043"
+			(at 203.2 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 203.2 208.915 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 203.2 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5f3c67d-d4c9-4273-8287-8dee7915576a")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 203.2 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac70a63b-8f6b-4b63-ad3c-25ec0295d3b0")
+		(property "Reference" "TP2"
+			(at 203.2 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DGND"
+			(at 203.2 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 203.2 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 203.2 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5db0c3ef-6dae-4cb9-b115-be35a0bdddaf")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -12769,6 +16809,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "LM358P"
+			(at 332.74 95.25 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Dual Op-Amp 32V DIP-8 + Socket"
+			(at 332.74 95.25 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12949,6 +17007,24 @@
 				)
 			)
 		)
+		(property "MPN" "LM358P"
+			(at 332.74 95.25 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Dual Op-Amp 32V DIP-8 + Socket"
+			(at 332.74 95.25 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "9ac9b8cc-a242-47e5-b0a5-d74c9b067923")
 		)
@@ -12977,86 +17053,6 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 123.19 121.92 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b3625b92-72b2-4bc8-9e2b-c5970f8e65f6")
-		(property "Reference" "R7"
-			(at 127 120.904 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.02"
-			(at 127 123.444 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 121.412 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 123.19 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1ea29e9d-f7f2-443a-b040-0c39f29443e2")
-		)
-		(pin "2"
-			(uuid "a72d726c-7a8b-4d34-8a43-6eb15034eb06")
-		)
-		(instances
-			(project "synchronous_buck"
-				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -13162,6 +17158,24 @@
 					(size 1.8288 1.8288)
 				)
 				(justify left bottom)
+			)
+		)
+		(property "MPN" "IRFB4110PBF"
+			(at 104.14 119.38 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100V 180A 3.7mR N-Ch Low-Side TO-220"
+			(at 104.14 119.38 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13282,18 +17296,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 25V"
+		(property "Value" "100nF 25V X7R"
 			(at 191.77 128.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 191.4652 127 0)
 			(hide yes)
 			(show_name no)
@@ -13324,6 +17338,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "CL31B104KACNNNC"
+			(at 190.5 123.19 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 25V X7R Ceramic 1206 Output"
+			(at 190.5 123.19 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13363,18 +17395,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF 25V"
+		(property "Value" "4.7uF 50V Elec"
 			(at 25.654 84.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 36.83 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -13405,6 +17437,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "EEU-FR1H4R7"
+			(at 36.83 83.82 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "4.7uF 50V Electrolytic D5"
+			(at 36.83 83.82 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13488,6 +17538,24 @@
 				)
 			)
 		)
+		(property "MPN" "L7805CV-DG"
+			(at 276.86 38.1 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "5V 1.5A Linear Regulator TO-220-3"
+			(at 276.86 38.1 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d12f8fe6-3334-47a4-9ef2-c639868162ab")
 		)
@@ -13501,6 +17569,103 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c2455b60-6085-4cd3-b447-1a34df466a53")
+		(property "Reference" "R18"
+			(at 223.012 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 1% 1/4W"
+			(at 220.98 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC1206FR-0710KL"
+			(at 220.98 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10kOhm 1% 0.25W 1206 HI Pulldown"
+			(at 220.98 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e26aab62-c2cb-4b7a-9f2a-0b56f2911df2")
+		)
+		(pin "2"
+			(uuid "ff0cf4d1-f4c4-4a1d-b06a-2939c1b9da5f")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -13585,6 +17750,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 215.9 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c780ba87-4caf-4e12-96c9-af70502b41ce")
+		(property "Reference" "H3"
+			(at 215.9 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3"
+			(at 215.9 225.425 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 215.9 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 215.9 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 208.28 123.19 0)
 		(unit 1)
@@ -13606,18 +17844,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 25V"
+		(property "Value" "100nF 25V X7R"
 			(at 209.55 128.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 209.2452 127 0)
 			(hide yes)
 			(show_name no)
@@ -13650,6 +17888,24 @@
 				)
 			)
 		)
+		(property "MPN" "CL31B104KACNNNC"
+			(at 208.28 123.19 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100nF 25V X7R Ceramic 1206 Output"
+			(at 208.28 123.19 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1b8c32b1-e1a6-48f2-8ae2-fa1ab95ae9f5")
 		)
@@ -13660,84 +17916,6 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 276.86 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2453a9e-9297-42d5-bd59-3a39db178aa2")
-		(property "Reference" "#PWR011"
-			(at 276.86 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 276.86 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 276.86 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 276.86 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 276.86 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "98b220b0-b45f-4e0f-84d4-f12efa47a359")
-		)
-		(instances
-			(project "synchronous_buck"
-				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -13888,6 +18066,24 @@
 				)
 			)
 		)
+		(property "MPN" "SC0915"
+			(at 123.19 205.74 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "RP2040 MCU Module 2x20 Pin Header"
+			(at 123.19 205.74 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "e64d632a-b0fe-4b33-a741-074c0d9f852c")
 		)
@@ -14018,6 +18214,159 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 241.3 205.74 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d41f7e05-82f5-46e2-822d-27416ad4e730")
+		(property "Reference" "#PWR045"
+			(at 241.3 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 241.3 209.296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 241.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4299857-854d-4798-826a-88c264512716")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 292.1 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4dcca87-0de2-4487-be3a-d839603f192d")
+		(property "Reference" "TP9"
+			(at 292.1 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q3_GATE"
+			(at 292.1 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 292.1 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 292.1 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 292.1 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "48561f48-4023-4320-9120-a14134d824c3")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 25.4 38.1 0)
 		(mirror y)
@@ -14040,13 +18389,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
+		(property "Value" "VIN 20-48V 2P"
 			(at 36.322 35.306 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
@@ -14082,6 +18431,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "1715721"
+			(at 25.4 38.1 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "Phoenix MKDS 1,5/2-5,08 17.5A"
+			(at 25.4 38.1 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14122,18 +18489,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1% 1/4W"
 			(at 256.54 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 252.222 101.6 90)
 			(hide yes)
 			(show_name no)
@@ -14164,6 +18531,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "RC1206FR-0710KL"
+			(at 254 101.6 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "10kOhm 1% 0.25W 1206 V-Sense"
+			(at 254 101.6 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14271,7 +18656,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MPN" "UCC27282D"
+		(property "MPN" "UCC27211DR"
 			(at 43.18 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -14319,6 +18704,15 @@
 				(justify bottom)
 			)
 		)
+		(property "Rating" "120V 4A Half-Bridge Gate Driver SOIC-8"
+			(at 43.18 110.49 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "1c4987aa-901f-4f7b-832b-fbafe0999271")
 		)
@@ -14347,6 +18741,389 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+48V")
+		(at 215.9 205.74 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dc640913-1572-4359-ad63-591901cf1f93")
+		(property "Reference" "#PWR044"
+			(at 215.9 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+48V"
+			(at 215.9 209.296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+48V\""
+			(at 215.9 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcb40f72-efa5-4a8c-b6ae-64c0c3134a2e")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 254 173.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df672c53-3daf-4bb3-8d68-774df27d0e89")
+		(property "Reference" "#FLG02"
+			(at 254 172.085 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 254 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 254 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19b2a859-f67e-441f-be86-1a4b4b630611")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 241.3 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e04a54a2-d8a6-464b-bd24-16328000e651")
+		(property "Reference" "TP5"
+			(at 241.3 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 241.3 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 241.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 241.3 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcc9b41b-add3-49ca-aaaf-57f4bdad6fcb")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 396.24 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e23d80b1-1d86-4cee-bdc7-e3372611a97f")
+		(property "Reference" "#PWR029"
+			(at 396.24 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 396.24 113.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 396.24 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 396.24 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 396.24 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f533d439-af0b-4731-b79b-fa8017d58ef1")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 228.6 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e3b914e9-e955-488c-9fa7-761669c64225")
+		(property "Reference" "TP4"
+			(at 228.6 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "48V_BUS"
+			(at 228.6 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 228.6 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 228.6 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3e37c715-6b96-4154-98eb-ea91073c5a51")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -14587,6 +19364,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 342.9 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8790d1f-00f8-4175-bb95-0b96509133e7")
+		(property "Reference" "R20"
+			(at 344.932 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k 1/4W (DNP)"
+			(at 342.9 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 342.9 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 342.9 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 342.9 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC1206FR-071KL"
+			(at 342.9 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "DNP 1kOhm Preload / Bleed"
+			(at 342.9 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05729c3e-4ebb-43e0-b27a-90312dc47cf8")
+		)
+		(pin "2"
+			(uuid "c280da6a-d604-490f-b31e-e91a5c339637")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 185.42 43.18 0)
 		(unit 1)
@@ -14743,6 +19617,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 60.96 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ecdc18b9-e36f-4da1-9457-88b55a9484dd")
+		(property "Reference" "#PWR019"
+			(at 60.96 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 125.095 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 60.96 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "816bbcb6-9feb-4f72-974f-e65a07a67053")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 160.02 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -14841,17 +19792,17 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1% 1/4W"
 			(at 354.33 99.822 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 354.33 97.028 90)
 			(hide yes)
 			(show_name no)
@@ -14884,6 +19835,24 @@
 				)
 			)
 		)
+		(property "MPN" "RC1206FR-071KL"
+			(at 354.33 95.25 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "1kOhm 1% 0.25W 1206 LPF"
+			(at 354.33 95.25 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "32809862-bab6-4fb9-ba9c-063687da7a81")
 		)
@@ -14894,6 +19863,182 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 327.66 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "efdda256-bcbf-43ed-9a6c-379a65a90214")
+		(property "Reference" "C25"
+			(at 328.295 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF 25V X7R (DNP)"
+			(at 328.295 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+			(at 327.66 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.66 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 327.66 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL32B106KAJNNNE"
+			(at 327.66 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "DNP 10uF 25V X7R Ceramic 1210 Output"
+			(at 327.66 177.8 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08f9a4ee-202e-4ffd-bdd0-65ffd885a848")
+		)
+		(pin "2"
+			(uuid "8b765d52-f596-4e46-9f82-f1e02f1f1518")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 342.9 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f5a58554-a9d1-40cd-a760-a98420b21c3e")
+		(property "Reference" "#PWR028"
+			(at 342.9 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 342.9 92.075 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 342.9 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 342.9 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 342.9 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5cb06213-2d74-43c7-ac11-198209831b4b")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -14979,7 +20124,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 254 106.68 0)
+		(at 190.5 205.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14987,10 +20132,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f92bcee9-8a7c-4503-af4c-ba3c23207e43")
-		(property "Reference" "#PWR020"
-			(at 254 113.03 0)
+		(uuid "f8751518-c141-4d3e-9668-2126bfb6fca7")
+		(property "Reference" "#PWR042"
+			(at 190.5 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15001,7 +20145,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 254 111.76 0)
+			(at 190.5 209.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15011,7 +20155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 106.68 0)
+			(at 190.5 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15022,7 +20166,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 106.68 0)
+			(at 190.5 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15033,7 +20177,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 254 106.68 0)
+			(at 190.5 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15044,12 +20188,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a554700c-8d7f-48ee-b75b-830ed5c849c3")
+			(uuid "551d7623-ea9d-407c-9015-28cfdb7ad39f")
 		)
 		(instances
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
-					(reference "#PWR020")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -15076,13 +20220,13 @@
 				)
 			)
 		)
-		(property "Value" "Fuse ?A Slow-Blow"
+		(property "Value" "5A 250V Slow-Blow"
 			(at 50.292 40.132 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.95 0.95)
 				)
 			)
 		)
@@ -15119,6 +20263,24 @@
 				)
 			)
 		)
+		(property "MPN" "0031.8201 + 5A-T"
+			(at 49.53 38.1 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "5x20mm Holder + 5A Slow-Blow Fuse"
+			(at 49.53 38.1 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "87b25fc8-5964-4c82-8cc0-8b1513d2d1e9")
 		)
@@ -15129,6 +20291,159 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fdc07fa0-a479-4536-a3cb-88439b38c1ce")
+		(property "Reference" "#PWR033"
+			(at 236.22 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 184.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 236.22 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61f8ad53-abc5-41cf-b329-43780d4ce7b4")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 304.8 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fdfd18b8-4326-470e-9580-42da9276a0bc")
+		(property "Reference" "TP10"
+			(at 304.8 198.882 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_NODE"
+			(at 304.8 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 304.8 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 304.8 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 304.8 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac7d8f60-eb94-4c10-9f62-2285be610d65")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -15237,6 +20552,24 @@
 				(justify left bottom)
 			)
 		)
+		(property "MPN" "IRFB4110PBF"
+			(at 104.14 87.63 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "100V 180A 3.7mR N-Ch High-Side TO-220"
+			(at 104.14 87.63 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "65729dfe-ba41-42ee-a42b-97568f71cc94")
 		)
@@ -15250,6 +20583,160 @@
 			(project "synchronous_buck"
 				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 254 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fe9feaff-efa4-45d6-a7c9-ec3d9777ec1a")
+		(property "Reference" "#PWR024"
+			(at 254 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 254 109.855 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 254 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eeeb5b53-0866-4a1f-b2c6-d5128fef6602")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 276.86 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ffff9ed7-1c69-4721-9829-9a061b71ed22")
+		(property "Reference" "#PWR011"
+			(at 276.86 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 276.86 48.895 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 276.86 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b1978b5f-fb40-43e3-9e5d-3764dd68bc9d")
+		)
+		(instances
+			(project "synchronous_buck"
+				(path "/dd5b63c4-46c9-41c5-86ac-2bc14e85278d"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)

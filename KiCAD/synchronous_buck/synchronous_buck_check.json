@@ -1,14 +1,14 @@
 {
  "title": "EE463 PCB Check",
  "board": "synchronous_buck",
- "source": "C:\\Users\\Talha\\AppData\\Local\\Temp\\ee463check_eh0ubz8d\\synchronous_buck.kicad_pcb",
+ "source": "C:\\Users\\Talha\\AppData\\Local\\Temp\\ee463check_38hnd3ph\\synchronous_buck.kicad_pcb",
  "meta": {
   "Board size": "106.5 x 95.5 mm",
   "Copper layers": "4",
   "Thickness": "1.6 mm",
   "Copper": "1 oz",
-  "Parts": "56",
-  "Tracks / vias": "216 / 20",
+  "Parts": "85",
+  "Tracks / vias": "287 / 60",
   "Checked for": "5 A out",
   "KiCad file": "10.0"
  },
@@ -17,46 +17,46 @@
   "Project": "EE463 DC-DC converter: 20-48 V in, 12 V / 5 A out (use --overload to check for 7.5 A)",
   "Fab limits": "PCBWay standard price (track/space 0.15 mm, drill 0.3 mm, 2 layers, 1.6 mm, 1 oz)"
  },
- "verdict": "Almost: fix or explain 19 warning(s) before you send the files.",
+ "verdict": "Almost: fix or explain 6 warning(s) before you send the files.",
  "counts": {
   "error": 0,
-  "warning": 19,
-  "info": 13
+  "warning": 6,
+  "info": 6
  },
  "detected": [
   {
    "heading": "Parts",
    "lines": [
-    "Topology guess: multi-inductor converter (SEPIC, Cuk, interleaved or with an output filter)",
+    "Topology guess: synchronous buck (two switches on the switch node)",
     "Power switches (MOSFETs): Q1, Q2, Q3",
-    "Power diodes: D1, D2",
-    "Inductors / transformers: L1, L2",
+    "Power diodes: D1, D5",
+    "Inductors / transformers: L2   (small ones, taken as auxiliary supplies: L1)",
     "Controller / driver ICs: U3",
-    "Power connectors: J1, J2, U4",
-    "Input capacitors: C1, C2, C3, C4, C10",
-    "Output capacitors: C5, C6, C12, C13, C14, C15, C17, C19, C20, C21",
-    "Current-sense shunts: R7, R11",
+    "Power connectors: J1, J2",
+    "Input capacitors: C1, C2, C3, C4, C10, C22, C23",
+    "Output capacitors: C12, C15, C19, C20, C21, C24, C25",
+    "Current-sense shunts: R11, R21",
     "Fuses: F1   TVS: none found",
-    "Test points: none found"
+    "Test points: TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8, TP9, TP10, TP11, TP12, TP13, TP14, TP15"
    ]
   },
   {
    "heading": "Nets",
    "lines": [
     "Input side (up to 48 V, ~3.5 A): +48V, /48V_BUS, Net-(D1-A), Net-(Q1-DRAIN)",
-    "Switch node(s) (up to ~60 V peak): Net-(D2-K), Net-(Q2-SOURCE)",
-    "Output side (12 V, 5 A): +12V, /V_OUT",
-    "Ground: GND",
-    "Other high-current nets (checked as up to 48 V, 5 A): Net-(D5-K)"
+    "Switch node(s) (up to ~60 V peak): /SW_NODE",
+    "Output side (12 V, 5 A): /V_OUT",
+    "Ground: GND, GNDD",
+    "Other high-current nets (checked as up to 48 V, 5 A): none found"
    ]
   },
   {
    "heading": "Gate drive and control",
    "lines": [
     "Q1 gate (Net-(D1-A)) <- no driver IC found",
-    "Q2 gate (Net-(D4-A)) <- U3 pin 3 through R3",
-    "Q3 gate (Net-(D3-A)) <- U3 pin 8 through R4",
-    "Bootstrap capacitor C9 (100 nF) -> U3 pin 2"
+    "Q2 gate (/Q2_GATE) <- U3 pin 3 through R3",
+    "Q3 gate (/Q3_GATE) <- U3 pin 8 through R4",
+    "Bootstrap capacitor C9 (470 nF) -> U3 pin 2"
    ]
   }
  ],
@@ -157,72 +157,90 @@
    "id": "FAB-SILK",
    "category": "fab",
    "title": "Silkscreen text size",
-   "status": "warning",
+   "status": "info",
    "skipped": "",
    "findings": [
     {
      "check": "FAB-SILK",
-     "severity": "warning",
-     "title": "Silkscreen text size",
-     "message": "1 silkscreen text(s) are smaller than 0.8 mm and will not be readable.",
-     "fix": "Make silkscreen text at least 1.0 mm high with a 0.15 mm stroke.",
-     "rule": "PCBWay 0.8 mm height, 0.15 mm line",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 153.5,
-       "y": 154.0,
-       "layer": "F.SilkS",
-       "label": "'Talha Sakin\n\u0130nciay \u0130' 0.6 mm"
-      }
-     ]
-    },
-    {
-     "check": "FAB-SILK",
      "severity": "info",
      "title": "Silkscreen text size",
-     "message": "1 silkscreen text(s) are under 1.0 mm high.",
+     "message": "12 silkscreen text(s) are under 1.0 mm high.",
      "fix": "",
      "rule": "PCBWay 0.8 mm height, 0.15 mm line",
      "refs": [],
      "waived": "",
      "locations": [
       {
-       "x": 153.5,
-       "y": 150.5,
+       "x": 134.5,
+       "y": 85.1,
        "layer": "F.SilkS",
-       "label": "'Synchronous Buck Con' 0.8 mm"
-      }
-     ]
-    },
-    {
-     "check": "FAB-SILK",
-     "severity": "info",
-     "title": "Silkscreen text size",
-     "message": "3 silkscreen text(s) have a stroke under 0.15 mm and may print broken.",
-     "fix": "",
-     "rule": "PCBWay 0.8 mm height, 0.15 mm line",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 153.5,
-       "y": 154.0,
-       "layer": "F.SilkS",
-       "label": "'Talha Sakin\n\u0130nciay \u0130' stroke 0.1 mm"
+       "label": "'R3' 0.85 mm (R3)"
       },
       {
-       "x": 153.5,
-       "y": 150.5,
+       "x": 134.5,
+       "y": 81.3,
        "layer": "F.SilkS",
-       "label": "'Synchronous Buck Con' stroke 0.1 mm"
+       "label": "'R16' 0.85 mm (R16)"
       },
       {
-       "x": 153.5,
-       "y": 147.5,
+       "x": 146.3,
+       "y": 81.2,
        "layer": "F.SilkS",
-       "label": "'EE463 Hardware Proje' stroke 0.1 mm"
+       "label": "'C13' 0.85 mm (C13)"
+      },
+      {
+       "x": 156.7,
+       "y": 139.8,
+       "layer": "F.SilkS",
+       "label": "'C19' 0.85 mm (C19)"
+      },
+      {
+       "x": 155.6,
+       "y": 152.0,
+       "layer": "F.SilkS",
+       "label": "'C18' 0.85 mm (C18)"
+      },
+      {
+       "x": 155.6,
+       "y": 145.0,
+       "layer": "F.SilkS",
+       "label": "'R12' 0.85 mm (R12)"
+      },
+      {
+       "x": 154.0,
+       "y": 83.8,
+       "layer": "F.SilkS",
+       "label": "'R4' 0.85 mm (R4)"
+      },
+      {
+       "x": 151.0,
+       "y": 89.0,
+       "layer": "F.SilkS",
+       "label": "'R5' 0.85 mm (R5)"
+      },
+      {
+       "x": 155.6,
+       "y": 148.5,
+       "layer": "F.SilkS",
+       "label": "'R14' 0.85 mm (R14)"
+      },
+      {
+       "x": 134.5,
+       "y": 91.8,
+       "layer": "F.SilkS",
+       "label": "'R6' 0.85 mm (R6)"
+      },
+      {
+       "x": 154.0,
+       "y": 80.8,
+       "layer": "F.SilkS",
+       "label": "'R17' 0.85 mm (R17)"
+      },
+      {
+       "x": 155.6,
+       "y": 141.7,
+       "layer": "F.SilkS",
+       "label": "'R13' 0.85 mm (R13)"
       }
      ]
     }
@@ -248,30 +266,9 @@
    "id": "PWR-VIAS",
    "category": "power",
    "title": "Vias where the power path changes layer",
-   "status": "warning",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "PWR-VIAS",
-     "severity": "warning",
-     "title": "Vias where the power path changes layer",
-     "message": "/48V_BUS: the power path changes layer through 1 via(s), good for about 0.7 A, but this net carries ~3.5 A.",
-     "fix": "Use at least 8 vias of 0.3 mm (or fewer 0.4 mm ones), placed across the current flow, or keep the power path on one layer.",
-     "rule": "~0.5 A per 0.3 mm via",
-     "refs": [
-      "/48V_BUS"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 133.5,
-       "y": 68.5,
-       "layer": "",
-       "label": "via 0.4 mm"
-      }
-     ]
-    }
-   ]
+   "findings": []
   },
   {
    "id": "PWR-SPACING",
@@ -285,130 +282,17 @@
    "id": "PWR-CONN",
    "category": "power",
    "title": "Input/output connectors",
-   "status": "warning",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "PWR-CONN",
-     "severity": "warning",
-     "title": "Input/output connectors",
-     "message": "No polarity/voltage label found on the silkscreen next to J2. Swapped input wires destroy the board.",
-     "fix": "Add silkscreen text such as 'VIN 20-48V +  -' / '12V OUT +  -' next to each pin.",
-     "rule": "EE463 step 9",
-     "refs": [
-      "J2"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 179.827,
-       "y": 66.955,
-       "layer": "F.Cu",
-       "label": "J2"
-      }
-     ]
-    },
-    {
-     "check": "PWR-CONN",
-     "severity": "warning",
-     "title": "Input/output connectors",
-     "message": "U4 (LM358) carries ~5.0 A on GND through 1 pin(s) at 2.54 mm pitch. Connectors with 2.54 mm pitch or less (pin headers, JST) are rated about 1-3 A per pin.",
-     "fix": "Use a 5.08 mm screw terminal, banana jacks or XT30/XT60, or put several pins in parallel.",
-     "rule": "EE463 step 9",
-     "refs": [
-      "U4"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 176.31,
-       "y": 109.31,
-       "layer": "F.Cu",
-       "label": "U4"
-      }
-     ]
-    },
-    {
-     "check": "PWR-CONN",
-     "severity": "warning",
-     "title": "Input/output connectors",
-     "message": "U4 (LM358) carries ~5.0 A on +12V through 1 pin(s) at 2.54 mm pitch. Connectors with 2.54 mm pitch or less (pin headers, JST) are rated about 1-3 A per pin.",
-     "fix": "Use a 5.08 mm screw terminal, banana jacks or XT30/XT60, or put several pins in parallel.",
-     "rule": "EE463 step 9",
-     "refs": [
-      "U4"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 176.31,
-       "y": 109.31,
-       "layer": "F.Cu",
-       "label": "U4"
-      }
-     ]
-    },
-    {
-     "check": "PWR-CONN",
-     "severity": "warning",
-     "title": "Input/output connectors",
-     "message": "No polarity/voltage label found on the silkscreen next to U4. Swapped input wires destroy the board.",
-     "fix": "Add silkscreen text such as 'VIN 20-48V +  -' / '12V OUT +  -' next to each pin.",
-     "rule": "EE463 step 9",
-     "refs": [
-      "U4"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 176.31,
-       "y": 109.31,
-       "layer": "F.Cu",
-       "label": "U4"
-      }
-     ]
-    },
-    {
-     "check": "PWR-CONN",
-     "severity": "warning",
-     "title": "Input/output connectors",
-     "message": "No polarity/voltage label found on the silkscreen next to J1. Swapped input wires destroy the board.",
-     "fix": "Add silkscreen text such as 'VIN 20-48V +  -' / '12V OUT +  -' next to each pin.",
-     "rule": "EE463 step 9",
-     "refs": [
-      "J1"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 78.5,
-       "y": 71.0,
-       "layer": "F.Cu",
-       "label": "J1"
-      }
-     ]
-    }
-   ]
+   "findings": []
   },
   {
    "id": "PWR-CAPV",
    "category": "power",
    "title": "Capacitor voltage ratings",
-   "status": "info",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "PWR-CAPV",
-     "severity": "info",
-     "title": "Capacitor voltage ratings",
-     "message": "Voltage rating unknown for 1 power capacitor(s): C2. Check them by hand: input side >= 63 V, output side >= 16 V.",
-     "fix": "Put the rating in the value (e.g. '100uF 63V') or in a 'Voltage' field so the checker can read it.",
-     "rule": "rating >= 1.25 x working voltage",
-     "refs": [],
-     "waived": "",
-     "locations": []
-    }
-   ]
+   "findings": []
   },
   {
    "id": "PWR-LOOP",
@@ -441,7 +325,7 @@
      "check": "PWR-GATE",
      "severity": "warning",
      "title": "Gate driver close to the MOSFETs",
-     "message": "U3 pin 3 is 20 mm from the gate of Q2. A long gate loop slows switching and picks up noise.",
+     "message": "U3 pin 3 is 16 mm from the gate of Q2. A long gate loop slows switching and picks up noise.",
      "fix": "Move the driver within about 15 mm of the MOSFET, and run the gate and its return (source) side by side.",
      "rule": "SMPS-014",
      "refs": [
@@ -451,56 +335,16 @@
      "waived": "",
      "locations": [
       {
-       "x": 138.54,
-       "y": 84.0,
+       "x": 135.5,
+       "y": 72.0,
        "layer": "",
        "label": "Q2 gate"
       },
       {
-       "x": 131.365,
-       "y": 103.025,
+       "x": 141.025,
+       "y": 86.635,
        "layer": "",
        "label": "U3.3"
-      }
-     ]
-    },
-    {
-     "check": "PWR-GATE",
-     "severity": "warning",
-     "title": "Gate driver close to the MOSFETs",
-     "message": "The gate drive tracks of Q2 (Net-(D4-A), Net-(U3-HO)) are 39 mm long in total.",
-     "fix": "Keep the gate drive under about 30 mm.",
-     "rule": "SMPS-014",
-     "refs": [
-      "Q2"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 138.54,
-       "y": 84.0,
-       "layer": "",
-       "label": "Q2"
-      }
-     ]
-    },
-    {
-     "check": "PWR-GATE",
-     "severity": "warning",
-     "title": "Gate driver close to the MOSFETs",
-     "message": "The gate drive tracks of Q3 (Net-(D3-A), Net-(U3-LO)) are 38 mm long in total.",
-     "fix": "Keep the gate drive under about 30 mm.",
-     "rule": "SMPS-014",
-     "refs": [
-      "Q3"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 130.46,
-       "y": 93.95,
-       "layer": "",
-       "label": "Q3"
       }
      ]
     }
@@ -526,48 +370,9 @@
    "id": "PWR-MAG",
    "category": "power",
    "title": "No tracks under inductors and transformers",
-   "status": "warning",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "PWR-MAG",
-     "severity": "warning",
-     "title": "No tracks under inductors and transformers",
-     "message": "Tracks of /48V_BUS run under L2. The magnetic field couples noise into them.",
-     "fix": "Route around the inductor; only a ground pour should be under it.",
-     "rule": "SMPS-006",
-     "refs": [
-      "L2"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 131.762,
-       "y": 68.025,
-       "layer": "F.Cu",
-       "label": "/48V_BUS"
-      },
-      {
-       "x": 133.262,
-       "y": 68.263,
-       "layer": "F.Cu",
-       "label": "/48V_BUS"
-      },
-      {
-       "x": 134.75,
-       "y": 69.75,
-       "layer": "B.Cu",
-       "label": "/48V_BUS"
-      },
-      {
-       "x": 136.0,
-       "y": 77.5,
-       "layer": "B.Cu",
-       "label": "/48V_BUS"
-      }
-     ]
-    }
-   ]
+   "findings": []
   },
   {
    "id": "PWR-THERMAL",
@@ -589,8 +394,8 @@
      "waived": "",
      "locations": [
       {
-       "x": 116.26,
-       "y": 68.75,
+       "x": 119.5,
+       "y": 72.0,
        "layer": "F.Cu",
        "label": "Q1"
       }
@@ -609,8 +414,8 @@
      "waived": "",
      "locations": [
       {
-       "x": 138.54,
-       "y": 84.0,
+       "x": 135.5,
+       "y": 72.0,
        "layer": "F.Cu",
        "label": "Q2"
       }
@@ -629,8 +434,8 @@
      "waived": "",
      "locations": [
       {
-       "x": 130.46,
-       "y": 93.95,
+       "x": 151.0,
+       "y": 72.0,
        "layer": "F.Cu",
        "label": "Q3"
       }
@@ -650,9 +455,50 @@
    "id": "LAY-DECAP",
    "category": "layout",
    "title": "Decoupling capacitors at IC supply pins",
-   "status": "pass",
+   "status": "warning",
    "skipped": "",
-   "findings": []
+   "findings": [
+    {
+     "check": "LAY-DECAP",
+     "severity": "warning",
+     "title": "Decoupling capacitors at IC supply pins",
+     "message": "U2 pin 1 (VI_1) has no small (<= 1 \u00b5F) capacitor to ground on +12V.",
+     "fix": "Add a 100 nF ceramic capacitor right at the pin, with its ground pad going straight to ground.",
+     "rule": "PWR-006",
+     "refs": [
+      "U2"
+     ],
+     "waived": "",
+     "locations": [
+      {
+       "x": 83.5,
+       "y": 115.5,
+       "layer": "F.Cu",
+       "label": "U2.1"
+      }
+     ]
+    },
+    {
+     "check": "LAY-DECAP",
+     "severity": "warning",
+     "title": "Decoupling capacitors at IC supply pins",
+     "message": "U3 pin 1 (VDD_1) has no small (<= 1 \u00b5F) capacitor to ground on +12V.",
+     "fix": "Add a 100 nF ceramic capacitor right at the pin, with its ground pad going straight to ground.",
+     "rule": "PWR-006",
+     "refs": [
+      "U3"
+     ],
+     "waived": "",
+     "locations": [
+      {
+       "x": 141.025,
+       "y": 84.095,
+       "layer": "F.Cu",
+       "label": "U3.1"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "LAY-ACUTE",
@@ -666,46 +512,9 @@
    "id": "LAY-CORNER",
    "category": "layout",
    "title": "Track corners at 45\u00b0",
-   "status": "info",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "LAY-CORNER",
-     "severity": "info",
-     "title": "Track corners at 45\u00b0",
-     "message": "4 track corner(s) are 90\u00b0. Use 45\u00b0 corners (or arcs).",
-     "fix": "",
-     "rule": "EST-001",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 84.25,
-       "y": 71.0,
-       "layer": "F.Cu",
-       "label": "90\u00b0 on +48V"
-      },
-      {
-       "x": 126.6,
-       "y": 108.0,
-       "layer": "F.Cu",
-       "label": "90\u00b0 on /HI_PWM"
-      },
-      {
-       "x": 80.0,
-       "y": 153.65,
-       "layer": "B.Cu",
-       "label": "90\u00b0 on /HI_PWM"
-      },
-      {
-       "x": 82.8,
-       "y": 151.45,
-       "layer": "B.Cu",
-       "label": "90\u00b0 on /LO_PWM"
-      }
-     ]
-    }
-   ]
+   "findings": []
   },
   {
    "id": "LAY-DANGLE",
@@ -727,98 +536,9 @@
    "id": "TST-POINTS",
    "category": "test",
    "title": "Test points (EE463: verify supplies and gate signals)",
-   "status": "warning",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "TST-POINTS",
-     "severity": "warning",
-     "title": "Test points (EE463: verify supplies and gate signals)",
-     "message": "The board has no test points. EE463 asks you to check the auxiliary supplies and gate signals before powering the power stage.",
-     "fix": "Add test points (or a small header) for ground, each auxiliary supply, each gate signal and the switch node.",
-     "rule": "TST-001",
-     "refs": [],
-     "waived": "",
-     "locations": []
-    },
-    {
-     "check": "TST-POINTS",
-     "severity": "warning",
-     "title": "Test points (EE463: verify supplies and gate signals)",
-     "message": "No test point on ground. Every probe needs a ground point nearby.",
-     "fix": "Add one or two GND test points (a loop or hook type is easiest for scope probes).",
-     "rule": "TST-001",
-     "refs": [],
-     "waived": "",
-     "locations": []
-    },
-    {
-     "check": "TST-POINTS",
-     "severity": "warning",
-     "title": "Test points (EE463: verify supplies and gate signals)",
-     "message": "No test point on the gate signal of Q2 (Net-(D4-A) / Net-(U3-HO)).",
-     "fix": "Add a test point on the gate (or the driver output) so you can see the gate waveform.",
-     "rule": "TST-001",
-     "refs": [
-      "Q2"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 138.54,
-       "y": 84.0,
-       "layer": "",
-       "label": "Q2"
-      }
-     ]
-    },
-    {
-     "check": "TST-POINTS",
-     "severity": "warning",
-     "title": "Test points (EE463: verify supplies and gate signals)",
-     "message": "No test point on the gate signal of Q3 (Net-(D3-A) / Net-(U3-LO)).",
-     "fix": "Add a test point on the gate (or the driver output) so you can see the gate waveform.",
-     "rule": "TST-001",
-     "refs": [
-      "Q3"
-     ],
-     "waived": "",
-     "locations": [
-      {
-       "x": 130.46,
-       "y": 93.95,
-       "layer": "",
-       "label": "Q3"
-      }
-     ]
-    },
-    {
-     "check": "TST-POINTS",
-     "severity": "info",
-     "title": "Test points (EE463: verify supplies and gate signals)",
-     "message": "No test point on the switch node Net-(D2-K). It is useful for checking the switching waveform.",
-     "fix": "",
-     "rule": "TST-001",
-     "refs": [
-      "Net-(D2-K)"
-     ],
-     "waived": "",
-     "locations": []
-    },
-    {
-     "check": "TST-POINTS",
-     "severity": "info",
-     "title": "Test points (EE463: verify supplies and gate signals)",
-     "message": "No test point on the switch node Net-(Q2-SOURCE). It is useful for checking the switching waveform.",
-     "fix": "",
-     "rule": "TST-001",
-     "refs": [
-      "Net-(Q2-SOURCE)"
-     ],
-     "waived": "",
-     "locations": []
-    }
-   ]
+   "findings": []
   },
   {
    "id": "TST-INFO",
@@ -848,21 +568,9 @@
    "id": "MEC-HOLES",
    "category": "test",
    "title": "Mounting holes",
-   "status": "info",
+   "status": "pass",
    "skipped": "",
-   "findings": [
-    {
-     "check": "MEC-HOLES",
-     "severity": "info",
-     "title": "Mounting holes",
-     "message": "No mounting holes. Holes for M3 standoffs keep the board off the bench and are needed for an enclosure (compactness bonus).",
-     "fix": "",
-     "rule": "MEC-002/011",
-     "refs": [],
-     "waived": "",
-     "locations": []
-    }
-   ]
+   "findings": []
   },
   {
    "id": "DRC",
@@ -873,229 +581,79 @@
    "findings": [
     {
      "check": "DRC",
+     "severity": "warning",
+     "title": "KiCad DRC: Copper connection too narrow (board setup constraints minimum connection width 0.2500 mm; actual 0.1970 mm) (F.Cu)",
+     "message": "2 x Copper connection too narrow (board setup constraints minimum connection width 0.2500 mm; actual 0.1970 mm) (F.Cu) (connection_width)",
+     "fix": "Open the DRC window in KiCad (Inspect > Design Rules Checker) to see each one.",
+     "rule": "KiCad",
+     "refs": [],
+     "waived": "",
+     "locations": [
+      {
+       "x": 166.5,
+       "y": 154.7,
+       "layer": "",
+       "label": "Polygon [<no net>] of NT1 on F.Cu / Pad 1 [GND] of NT1 on F.Cu"
+      },
+      {
+       "x": 166.5,
+       "y": 153.7,
+       "layer": "",
+       "label": "Pad 1 [GND] of NT1 on F.Cu / Zone 'POUR_SHUNT_GND_TOP' [GND] on F.Cu, priority 2"
+      }
+     ]
+    },
+    {
+     "check": "DRC",
      "severity": "info",
-     "title": "KiCad DRC: Footprint 'RaspberryPi_Pico_Common_THT' does not match copy in library 'Module'",
-     "message": "1 x Footprint 'RaspberryPi_Pico_Common_THT' does not match copy in library 'Module' (lib_footprint_mismatch)",
+     "title": "KiCad DRC: The current configuration does not include the footprint library 'footprints'",
+     "message": "2 x The current configuration does not include the footprint library 'footprints' (lib_footprint_issues)",
+     "fix": "The footprint's library could not be found. Usually harmless for manufacturing.",
+     "rule": "KiCad",
+     "refs": [],
+     "waived": "",
+     "locations": [
+      {
+       "x": 106.0,
+       "y": 111.5,
+       "layer": "",
+       "label": "Footprint L1"
+      },
+      {
+       "x": 171.5,
+       "y": 102.5,
+       "layer": "",
+       "label": "Footprint L2"
+      }
+     ]
+    },
+    {
+     "check": "DRC",
+     "severity": "info",
+     "title": "KiCad DRC: Footprint 'DIP-8_W7.62mm_Socket' does not match copy in library 'Package_DIP'",
+     "message": "3 x Footprint 'DIP-8_W7.62mm_Socket' does not match copy in library 'Package_DIP' (lib_footprint_mismatch)",
      "fix": "The footprint differs from the library. Usually harmless; update it if you changed the library.",
      "rule": "KiCad",
      "refs": [],
      "waived": "",
      "locations": [
       {
-       "x": 78.14,
-       "y": 148.5,
+       "x": 145.5,
+       "y": 142.5,
+       "layer": "",
+       "label": "Footprint U4"
+      },
+      {
+       "x": 86.5,
+       "y": 146.5,
        "layer": "",
        "label": "Footprint A1"
-      }
-     ]
-    },
-    {
-     "check": "DRC",
-     "severity": "info",
-     "title": "KiCad DRC: Silkscreen clipped by board edge",
-     "message": "10 x Silkscreen clipped by board edge (silk_edge_clearance)",
-     "fix": "Open the DRC window in KiCad (Inspect > Design Rules Checker) to see each one.",
-     "rule": "KiCad",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Segment of J2 on F.Silkscreen"
       },
       {
-       "x": 76.0,
-       "y": 62.0,
+       "x": 164.5,
+       "y": 153.7,
        "layer": "",
-       "label": "Rectangle on Edge.Cuts / Segment of J2 on F.Silkscreen"
-      },
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Reference field of F1"
-      },
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Segment of A1 on F.Silkscreen"
-      },
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Segment of A1 on F.Silkscreen"
-      },
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Reference field of R11"
-      },
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Segment of J1 on F.Silkscreen"
-      },
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Segment of J1 on F.Silkscreen"
-      },
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Reference field of C7"
-      },
-      {
-       "x": 76.0,
-       "y": 62.0,
-       "layer": "",
-       "label": "Rectangle on Edge.Cuts / Reference field of C15"
-      }
-     ]
-    },
-    {
-     "check": "DRC",
-     "severity": "warning",
-     "title": "KiCad DRC: Silkscreen clipped by solder mask",
-     "message": "7 x Silkscreen clipped by solder mask (silk_over_copper)",
-     "fix": "Silkscreen on a pad is not printed. Move the text or line off the pad.",
-     "rule": "KiCad",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 129.132,
-       "y": 108.75,
-       "layer": "",
-       "label": "Reference field of C14 / Pad 5 [/HI_PWM] of U3 on F.Cu"
-      },
-      {
-       "x": 129.12,
-       "y": 69.0,
-       "layer": "",
-       "label": "Reference field of D1 / Pad 1 [/48V_BUS] of C2 on F.Cu"
-      },
-      {
-       "x": 104.0,
-       "y": 88.0,
-       "layer": "",
-       "label": "Reference field of C3 / Pad 2 [GND] of C4 on F.Cu"
-      },
-      {
-       "x": 166.5,
-       "y": 83.35,
-       "layer": "",
-       "label": "Reference field of C12 / Pad 2 [GND] of C20 on F.Cu"
-      },
-      {
-       "x": 166.5,
-       "y": 83.35,
-       "layer": "",
-       "label": "Reference field of C12 / Pad 1 [/V_OUT] of C20 on F.Cu"
-      },
-      {
-       "x": 132.15,
-       "y": 98.5,
-       "layer": "",
-       "label": "Reference field of C13 / Pad 1 [Net-(U3-HB)] of C9 on F.Cu"
-      },
-      {
-       "x": 89.65,
-       "y": 110.5,
-       "layer": "",
-       "label": "Reference field of U2 / Pad 2 [GND] of C6 on F.Cu"
-      }
-     ]
-    },
-    {
-     "check": "DRC",
-     "severity": "warning",
-     "title": "KiCad DRC: Silkscreen clearance",
-     "message": "9 x Silkscreen clearance (silk_overlap)",
-     "fix": "Overlapping silkscreen is unreadable. Move one of them.",
-     "rule": "KiCad",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 123.91,
-       "y": 70.11,
-       "layer": "",
-       "label": "Segment of Q1 on F.Silkscreen / Reference field of R2"
-      },
-      {
-       "x": 129.59,
-       "y": 68.789,
-       "layer": "",
-       "label": "Segment of C2 on F.Silkscreen / Reference field of D1"
-      },
-      {
-       "x": 115.0,
-       "y": 70.57,
-       "layer": "",
-       "label": "Reference field of R1 / Segment of Q1 on F.Silkscreen"
-      },
-      {
-       "x": 90.09,
-       "y": 108.289,
-       "layer": "",
-       "label": "Segment of C6 on F.Silkscreen / Reference field of U2"
-      },
-      {
-       "x": 104.0,
-       "y": 101.2,
-       "layer": "",
-       "label": "Reference field of U1 / Segment of L1 on F.Silkscreen"
-      },
-      {
-       "x": 167.211,
-       "y": 83.59,
-       "layer": "",
-       "label": "Segment of C20 on F.Silkscreen / Reference field of C12"
-      },
-      {
-       "x": 167.35,
-       "y": 103.0,
-       "layer": "",
-       "label": "Reference field of C18 / Rectangle of U4 on F.Silkscreen"
-      },
-      {
-       "x": 177.64,
-       "y": 110.7,
-       "layer": "",
-       "label": "Rectangle of U4 on F.Silkscreen / Reference field of C17"
-      },
-      {
-       "x": 177.64,
-       "y": 110.7,
-       "layer": "",
-       "label": "Rectangle of U4 on F.Silkscreen / Reference field of R13"
-      }
-     ]
-    },
-    {
-     "check": "DRC",
-     "severity": "info",
-     "title": "KiCad DRC: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)",
-     "message": "1 x Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm) (text_height)",
-     "fix": "Open the DRC window in KiCad (Inspect > Design Rules Checker) to see each one.",
-     "rule": "KiCad",
-     "refs": [],
-     "waived": "",
-     "locations": [
-      {
-       "x": 153.5,
-       "y": 154.0,
-       "layer": "",
-       "label": "PCB text 'Talha Sakin\n\u0130nciay \u0130lhan\nEfe Mert Oral' on F.Silks"
+       "label": "Footprint NT1"
       }
      ]
     }
