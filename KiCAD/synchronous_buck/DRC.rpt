@@ -1,6 +1,6 @@
 ** Drc report for synchronous_buck.kicad_pcb **
-** Created on 2026-11-26T01:41:48 **
-** Report includes: Errors, Warnings, Exclusions **
+** Created on 2026-11-26T01:45:24 **
+** Report includes: Errors, Warnings **
 
 ** Found 5 DRC violations **
 [connection_width]: Copper connection too narrow (board setup constraints minimum connection width 0.2500 mm; actual 0.1970 mm) (F.Cu)
