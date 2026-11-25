@@ -2890,7 +2890,7 @@
 			(uuid "e1db23ef-7b30-4ef5-8a5e-95be06790646")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "62afa352-76be-438d-ada2-d852a56b86f9")
 			(effects
@@ -4491,7 +4491,7 @@
 			)
 		)
 		(pad "1" thru_hole roundrect
-			(at 0 0 -90)
+			(at 0 0 270)
 			(size 2.6 2.6)
 			(drill 1.3)
 			(layers "*.Cu" "*.Mask")
@@ -4503,7 +4503,7 @@
 			(uuid "3ba75c3b-25da-4896-a826-c67ee05fd60e")
 		)
 		(pad "2" thru_hole circle
-			(at 5.08 0 -90)
+			(at 5.08 0 270)
 			(size 2.6 2.6)
 			(drill 1.3)
 			(layers "*.Cu" "*.Mask")
@@ -4544,7 +4544,7 @@
 			)
 		)
 		(property "Value" "100nF 50V X7R"
-			(at 0 1.85 360)
+			(at 0 1.85 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e032e79e-540d-4bf5-bd81-dfd3437a1962")
@@ -4556,7 +4556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b3f638e8-e65c-44ac-8ca4-666fcbe7d183")
@@ -4567,7 +4567,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "18dbb826-fcfe-40af-9183-9ab318e12471")
@@ -4578,7 +4578,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "af64410c-7666-4909-9c3f-28bf27b24e4a")
@@ -4670,7 +4670,7 @@
 			(uuid "ccf1fb53-e75b-47e2-b13b-5a4238f8da92")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d14a7aee-29c4-44f3-a900-85d0ec9ff114")
 			(effects
@@ -5059,7 +5059,7 @@
 			(uuid "7424566a-6918-4451-bc17-cc6884c09268")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 630)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(uuid "8fe5227e-2a8c-415f-bc5d-0431a18bf0fc")
 			(effects
@@ -5070,7 +5070,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.5625 0 -90)
+			(at -1.5625 0 270)
 			(size 1.325 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.188679)
@@ -5079,7 +5079,7 @@
 			(uuid "25e4bfe5-06a4-4a87-ab15-59515970781f")
 		)
 		(pad "2" smd roundrect
-			(at 1.5625 0 -90)
+			(at 1.5625 0 270)
 			(size 1.325 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.188679)
@@ -5831,7 +5831,7 @@
 			(uuid "1fd1c651-2905-4408-ba55-41d48beb481e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "1efccb76-377e-4019-8d09-a359ff685d06")
 			(effects
@@ -8047,7 +8047,7 @@
 			)
 		)
 		(property "Value" "LM358"
-			(at 3.809999 9.95 -180)
+			(at 3.809999 9.95 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "12659c50-b2fd-42ee-97a2-4c9cb7adc65e")
@@ -8059,7 +8059,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bbf75ecb-97f9-4ffb-b01d-f70b86cca742")
@@ -8070,7 +8070,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ab169fec-f473-4622-9e0c-3e3b8ddd13a2")
@@ -8081,7 +8081,7 @@
 			)
 		)
 		(property "KiLib_Generator" "package/DIP/legacy"
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9614f584-fcdd-4365-9906-936c5f529313")
@@ -11146,7 +11146,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/85604/bzx55-series.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11529,7 +11529,7 @@
 			)
 		)
 		(property "Value" "100nF 50V X7R"
-			(at 0 1.85 360)
+			(at 0 1.85 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "577dc1c4-9a2c-4139-8886-6ddd368f2957")
@@ -11541,7 +11541,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6f9efdf5-6a50-4d63-ab9d-5037e5b68a52")
@@ -11552,7 +11552,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f3376fd9-89d8-4afe-938c-87c28de3578b")
@@ -11563,7 +11563,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8f76c063-5bfd-45f1-9784-f7596a152687")
@@ -11655,7 +11655,7 @@
 			(uuid "258a565a-23f7-4db1-b638-a07251756b0a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "3d63e477-a79a-43d3-b5cf-9d47b1a52db7")
 			(effects
@@ -13674,7 +13674,7 @@
 			(uuid "50b6e496-6834-4124-8056-a562c2c9050c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 450)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "1c399b46-3fe0-40c9-95fb-167d446d507c")
 			(effects
@@ -15303,7 +15303,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/85604/bzx55-series.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15871,7 +15871,7 @@
 			)
 		)
 		(property "Value" "100nF 50V X7R"
-			(at 0 1.85 540)
+			(at 0 1.85 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f8119d52-98b6-46a6-9413-f3c5cc1cc6bd")
@@ -15883,7 +15883,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d4fe9f4-91ca-4d0e-bb47-a3802500ae2c")
@@ -15894,7 +15894,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "904aa5d9-d4f0-44e4-b456-7b52ab8e81e7")
@@ -15905,7 +15905,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b0b8963f-bcb5-443a-8f0a-c98fc699f0e5")
@@ -15997,7 +15997,7 @@
 			(uuid "af35d478-0136-4c88-9d9f-091183ac9b4d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "9551ab04-4fa2-4d98-8897-c07a07143d6a")
 			(effects
@@ -16056,7 +16056,7 @@
 			)
 		)
 		(property "Value" "68k 1% 1/4W"
-			(at 0 1.83 360)
+			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d499fa85-c24b-4798-aa48-127a7b6a1321")
@@ -16068,7 +16068,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a0a030bc-2de7-464a-9009-5d0481fe6940")
@@ -16079,7 +16079,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ab468c4d-8d1c-4208-9aaa-b8d52d753a91")
@@ -16090,7 +16090,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "67ae3f25-a7b4-49d1-b62b-9f93f5798fd7")
@@ -16182,7 +16182,7 @@
 			(uuid "ac6daae5-71c7-4819-8e27-ab970f9ee6f2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c6137469-dbf4-4ae7-9b2d-a1a670bd34ba")
 			(effects
@@ -16241,7 +16241,7 @@
 			)
 		)
 		(property "Value" "470nF 50V X7R"
-			(at 0 1.85 -90)
+			(at 0 1.85 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "db980756-cd52-42e1-b4d8-8dac0db7e7f4")
@@ -16253,7 +16253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e99d6f88-111e-4a9d-be83-96f69ff37c81")
@@ -16264,7 +16264,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b09bda39-8061-4111-8c4d-075ed18f220b")
@@ -16275,7 +16275,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "246eb0dd-ab1a-4867-a4e0-47f3bdf30215")
@@ -16367,7 +16367,7 @@
 			(uuid "e836d386-dcbb-47bb-b5ce-6d5d1277540b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 630)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(uuid "62e18d5a-8337-4550-a6bb-fc4f042a5c01")
 			(effects
@@ -16378,7 +16378,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.5625 0 -90)
+			(at -1.5625 0 270)
 			(size 1.325 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.188679)
@@ -16387,7 +16387,7 @@
 			(uuid "b669a4cf-b9fa-4416-9ef5-74099261152d")
 		)
 		(pad "2" smd roundrect
-			(at 1.5625 0 -90)
+			(at 1.5625 0 270)
 			(size 1.325 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.188679)
@@ -16664,7 +16664,7 @@
 			(uuid "5a1958c9-10c1-4213-9484-f90a13385769")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "b43d2a5b-a075-47c1-8914-e2759f553fd8")
 			(effects
@@ -17172,7 +17172,7 @@
 			(uuid "bb066659-59c5-4d9f-8c74-89bbcad8dddd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "4a8be13d-e29f-4a56-a1f4-d2b5ac0805de")
 			(effects
@@ -17357,7 +17357,7 @@
 			(uuid "f0961bad-96ec-45d2-9d8e-a0ff13a1cf94")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "e1368e82-ad4b-4e44-857d-e2309b0270f0")
 			(effects
@@ -17654,7 +17654,7 @@
 			(uuid "7dca50fe-9c3e-45cf-aaa9-a0df59319952")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "9c53edc1-dddd-43ef-99a4-5ceec69cec6d")
 			(effects
@@ -17713,7 +17713,7 @@
 			)
 		)
 		(property "Value" "SR5100 (100V 5A)"
-			(at 7.62 3.72 -270)
+			(at 7.62 3.72 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "82684de1-542a-4e77-bcea-49732c2baaf0")
@@ -17725,7 +17725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "93ec27a2-16ae-4fc1-b552-f28c9eaa1829")
@@ -17736,7 +17736,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 -270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "65b3f031-b024-427d-adaf-ee774024fec2")
@@ -17747,7 +17747,7 @@
 			)
 		)
 		(property "KiLib_Generator" "diode/THT"
-			(at 0 0 -270)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d3702486-5f30-450d-8545-0c7cd08d199f")
@@ -17759,7 +17759,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -17772,7 +17772,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -17989,7 +17989,7 @@
 			)
 		)
 		(pad "1" thru_hole roundrect
-			(at 0 0 -90)
+			(at 0 0 270)
 			(size 3.2 3.2)
 			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
@@ -18001,7 +18001,7 @@
 			(uuid "55f94920-668c-4ef4-b115-95c825b0887d")
 		)
 		(pad "2" thru_hole circle
-			(at 15.24 0 -90)
+			(at 15.24 0 270)
 			(size 3.2 3.2)
 			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
@@ -18042,7 +18042,7 @@
 			)
 		)
 		(property "Value" "100uF 100V Elec"
-			(at 2.499999 7.5 -180)
+			(at 2.499999 7.5 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e7098565-4668-4974-8ff8-2406a3ee487d")
@@ -18054,7 +18054,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c3fcc838-6659-46bc-b203-1b1c9521728a")
@@ -18065,7 +18065,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, US symbol"
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e4834660-1c7c-4917-ad56-4d2d0b04f3b4")
@@ -18076,7 +18076,7 @@
 			)
 		)
 		(property "KiLib_Generator" "capacitor/THT/other"
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e3ee8088-d005-4903-a744-5eeaa8d1f9dc")
@@ -20519,7 +20519,7 @@
 			(uuid "1cb41cf0-c09f-4715-8e98-b229f187074b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 0 -180)
+			(at 2.5 0 180)
 			(layer "F.Fab")
 			(uuid "3cb23260-f3f8-4b21-98e8-0d94fc506706")
 			(effects
@@ -20707,7 +20707,7 @@
 			(uuid "9dbe6893-546e-4593-91d6-0a4c53891095")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "e2d56894-8df6-4ed8-ae3a-fb5508c53dc1")
 			(effects
@@ -20892,7 +20892,7 @@
 			(uuid "7b59876f-f699-4a3d-87af-f352204e8186")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8789773b-4ba2-4dc1-87f1-2d3c7388ba14")
 			(effects
@@ -21077,7 +21077,7 @@
 			(uuid "8b903269-ece1-4f4d-9856-c4f2fdf5b322")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "470c58f0-4564-4c9f-8104-71edb5934afb")
 			(effects
@@ -21136,7 +21136,7 @@
 			)
 		)
 		(property "Value" "5mR 1% 1W Shunt"
-			(at 0 2.63 540)
+			(at 0 2.63 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4e4e11ee-b41d-4ef9-85e4-6486830a0b5a")
@@ -21148,7 +21148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8f7dd1a2-0b5c-4044-978f-5516a5128554")
@@ -21159,7 +21159,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0277cb5c-3c2c-44f1-9c3d-fe04718013ba")
@@ -21170,7 +21170,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "389d80c5-0806-48cc-91fa-7ee47922a7d7")
@@ -21262,7 +21262,7 @@
 			(uuid "d56e982b-45aa-48d9-833d-650d9c35799e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 540)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "4b18b496-12d5-48ba-84cd-623d84c65b7b")
 			(effects
@@ -21321,7 +21321,7 @@
 			)
 		)
 		(property "Value" "IRFB4110"
-			(at 2.539999 2.2 -180)
+			(at 2.539999 2.2 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "76f41f23-69a6-43a2-810b-edd8e0c4954f")
@@ -21333,7 +21333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "72319b60-e9ab-4ab1-8a64-8183032e9ab3")
@@ -21344,7 +21344,7 @@
 			)
 		)
 		(property "Description" "OptiMOS 3 Power-Transistor, VDS 100V"
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6bb77758-86b5-4734-848d-cce790f8c4e8")
@@ -21355,7 +21355,7 @@
 			)
 		)
 		(property "KiLib_Generator" "package/TO_SOT/THT"
-			(at 0 0 -180)
+			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c1cad62f-5dea-4e55-b1f9-0d1166302ce4")
@@ -22495,7 +22495,7 @@
 			)
 		)
 		(property "Value" "1k 1% 1/4W"
-			(at 0 1.83 360)
+			(at 0 1.83 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fa259d64-b939-4cfc-803b-d276bb76aa3f")
@@ -22507,7 +22507,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5b7ef33b-39dd-497b-982a-df845a287d05")
@@ -22518,7 +22518,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "81e6749d-3bc8-4f2b-a9f4-2b20d1df7fa8")
@@ -22529,7 +22529,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "bdbd605e-8efe-46bc-b059-ef1068f5e448")
@@ -22621,7 +22621,7 @@
 			(uuid "60c7aa25-235b-437a-866b-155e323ec7b8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "66a70d30-5dd7-4fd0-becd-b436834c24ef")
 			(effects
@@ -22806,7 +22806,7 @@
 			(uuid "fc26141e-739f-49ec-a3cc-e775e7003a33")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "bf74eb43-9f77-4c74-9320-954460c1e3a7")
 			(effects
@@ -23182,7 +23182,7 @@
 			(uuid "31ec9a2f-9cb8-490f-a2af-fad10da7932f")
 		)
 		(fp_text user "K"
-			(at 0 -2.6 360)
+			(at 0 -2.6 0)
 			(layer "F.SilkS")
 			(uuid "c58b5681-610c-47ae-a2fd-4bdf7e57cdbb")
 			(effects
@@ -23193,7 +23193,7 @@
 			)
 		)
 		(fp_text user "K"
-			(at 0 -2.6 360)
+			(at 0 -2.6 0)
 			(layer "F.Fab")
 			(uuid "c5e11114-1d3e-43a4-97e4-a5bea3ed3b40")
 			(effects
@@ -23204,7 +23204,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 8.3325 0 360)
+			(at 8.3325 0 0)
 			(layer "F.Fab")
 			(uuid "d07d4c2c-96be-4307-9528-296948a730ab")
 			(effects
@@ -23384,7 +23384,7 @@
 			)
 		)
 		(property "Value" "100nF 100V X7R"
-			(at 0 1.85 360)
+			(at 0 1.85 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cc975845-9d5d-4021-83f7-26d9d55f0f2d")
@@ -23396,7 +23396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "07f3739a-adf1-4cda-9e6e-78574a4f8f4d")
@@ -23407,7 +23407,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "63620279-7969-4bf0-bbe3-f3b6b5ab6c77")
@@ -23418,7 +23418,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3966538c-ba26-4197-b23e-7b0ac94c57fb")
@@ -23510,7 +23510,7 @@
 			(uuid "d195cc20-d78b-4f6b-bd87-97c6a6579fdb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "58929b86-5da3-4377-a7dc-cb4ff7f644ef")
 			(effects
@@ -26565,7 +26565,7 @@
 			(uuid "16273b79-78af-4f6c-95bc-1551af7bed03")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "0ed71b30-1203-46d4-9f52-45778c42ac15")
 			(effects
@@ -26670,7 +26670,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Texas Instruments"
-			(at 0 0 360)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -26683,7 +26683,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.75mm"
-			(at 0 0 360)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -26696,7 +26696,7 @@
 			)
 		)
 		(property "MPN" "UCC27211DR"
-			(at 0 0 360)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -26709,7 +26709,7 @@
 			)
 		)
 		(property "PARTREV" "A"
-			(at 0 0 360)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -26722,7 +26722,7 @@
 			)
 		)
 		(property "SOURCE_URL" "https://www.snapeda.com/parts/UCC27282D/Texas+Instruments/view-part/"
-			(at 0 0 360)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -26735,7 +26735,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 360)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -27756,7 +27756,7 @@
 			)
 		)
 		(pad "1" thru_hole roundrect
-			(at 0 0 -90)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -27768,7 +27768,7 @@
 			(uuid "31c1cf75-1a12-4553-af31-4aba1cbf36fa")
 		)
 		(pad "2" thru_hole circle
-			(at 7.62 0 -90)
+			(at 7.62 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -27935,7 +27935,7 @@
 			(uuid "648fa665-973b-4de7-9b25-5c4c47bed5d0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "dee0ad5e-7416-4f84-8322-180e71e6eca1")
 			(effects
@@ -30112,7 +30112,7 @@
 				)
 			)
 		)
-		(property "Value" "LM2596HVT-12"
+		(property "Value" "LM2576HVT-12"
 			(at 3.399999 1.85 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -30124,7 +30124,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2596.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm2576hv.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -30135,7 +30135,7 @@
 				)
 			)
 		)
-		(property "Description" "12V 3A 150kHz Step-Down Voltage Regulator, TO-220"
+		(property "Description" "12V 3A 52kHz 60V HV Step-Down Voltage Regulator, TO-220-5"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -30158,7 +30158,7 @@
 				)
 			)
 		)
-		(property "MPN" "LM2596HVT-12/NOPB"
+		(property "MPN" "LM2576HVT-12/NOPB"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30723,7 +30723,7 @@
 			(uuid "709630fb-f239-46f6-8ecc-96c22814f973")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.4 -5.999999 450)
+			(at 3.4 -5.999999 90)
 			(layer "F.Fab")
 			(uuid "2acb8ef7-c876-4853-b79d-0edee56d6076")
 			(effects
@@ -33989,134 +33989,6 @@
 		(uuid "fdad622f-2c9a-4b48-929c-6335e83e0c38")
 	)
 	(segment
-		(start 160.562 152)
-		(end 160.562 154)
-		(width 0.55)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "2d899acb-033b-4ace-b822-a0577072df3f")
-	)
-	(segment
-		(start 146.562 128)
-		(end 148.062 128)
-		(width 0.55)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "2f1744f2-bd06-4d1d-b04c-a348ad5d32b1")
-	)
-	(segment
-		(start 92.562 122)
-		(end 94.161999 122)
-		(width 0.55)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "39c0e509-b910-46b6-a1f0-af395e431adc")
-	)
-	(segment
-		(start 146.55 124.5)
-		(end 148.05 124.5)
-		(width 0.55)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "65b452f3-b7c0-4024-a864-57466c6a1fd8")
-	)
-	(segment
-		(start 162.5 153.7)
-		(end 160.562 154)
-		(width 0.9)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "708d1fe1-cb3f-44fc-ab2e-ed67c31a4e35")
-	)
-	(segment
-		(start 159.55 140.5)
-		(end 159.5 140.5)
-		(width 0.45)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "906a30d7-305a-4b29-bd8a-bac5c745b758")
-	)
-	(segment
-		(start 160.55 141.5)
-		(end 159.55 140.5)
-		(width 0.45)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "b4202982-d2d1-4ff5-a67e-015cc4721a4b")
-	)
-	(segment
-		(start 160.562 154)
-		(end 159.62 154.5)
-		(width 0.9)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "ba58fc2b-3396-4a10-aa14-ee3b166ac6d9")
-	)
-	(segment
-		(start 146.062 136)
-		(end 147.562 136)
-		(width 0.55)
-		(layer "F.Cu")
-		(net "GNDD")
-		(uuid "c98d71ee-f952-4173-84df-9102edfa7a77")
-	)
-	(via
-		(at 148.05 124.5)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "GNDD")
-		(uuid "564814df-2183-4e76-9719-39c525ce509e")
-	)
-	(via
-		(at 148.062 128)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "GNDD")
-		(uuid "5d16d048-2c1d-41c3-bd0a-25e992c53f75")
-	)
-	(via
-		(at 160.562 154)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "GNDD")
-		(uuid "6f9c99d2-18c6-4bd2-8c93-971bdc8398d5")
-	)
-	(via
-		(at 161.4 154.7)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "GNDD")
-		(uuid "94fe025e-4043-4804-a86d-3ae4f4937cbe")
-	)
-	(via
-		(at 159.5 140.5)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "GNDD")
-		(uuid "98bc18b8-c33b-4eef-9ec4-846643dc44dd")
-	)
-	(via
-		(at 147.562 136)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "GNDD")
-		(uuid "ce7f2b9b-93ef-4c2c-ae96-1ba3245b1c5a")
-	)
-	(via
-		(at 94.161999 122)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "GNDD")
-		(uuid "f21ef09c-9008-427a-be0f-44eea23f0cc6")
-	)
-	(segment
 		(start 107.619999 126.3)
 		(end 106.82 127.1)
 		(width 0.35)
@@ -34795,6 +34667,134 @@
 		(layer "F.Cu")
 		(net "+5V")
 		(uuid "cbf8c7cf-b7bc-46df-aeea-55480719b750")
+	)
+	(segment
+		(start 160.562 152)
+		(end 160.562 154)
+		(width 0.55)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "2d899acb-033b-4ace-b822-a0577072df3f")
+	)
+	(segment
+		(start 146.562 128)
+		(end 148.062 128)
+		(width 0.55)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "2f1744f2-bd06-4d1d-b04c-a348ad5d32b1")
+	)
+	(segment
+		(start 92.562 122)
+		(end 94.161999 122)
+		(width 0.55)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "39c0e509-b910-46b6-a1f0-af395e431adc")
+	)
+	(segment
+		(start 146.55 124.5)
+		(end 148.05 124.5)
+		(width 0.55)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "65b452f3-b7c0-4024-a864-57466c6a1fd8")
+	)
+	(segment
+		(start 162.5 153.7)
+		(end 160.562 154)
+		(width 0.9)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "708d1fe1-cb3f-44fc-ab2e-ed67c31a4e35")
+	)
+	(segment
+		(start 159.55 140.5)
+		(end 159.5 140.5)
+		(width 0.45)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "906a30d7-305a-4b29-bd8a-bac5c745b758")
+	)
+	(segment
+		(start 160.55 141.5)
+		(end 159.55 140.5)
+		(width 0.45)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "b4202982-d2d1-4ff5-a67e-015cc4721a4b")
+	)
+	(segment
+		(start 160.562 154)
+		(end 159.62 154.5)
+		(width 0.9)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "ba58fc2b-3396-4a10-aa14-ee3b166ac6d9")
+	)
+	(segment
+		(start 146.062 136)
+		(end 147.562 136)
+		(width 0.55)
+		(layer "F.Cu")
+		(net "GNDD")
+		(uuid "c98d71ee-f952-4173-84df-9102edfa7a77")
+	)
+	(via
+		(at 148.05 124.5)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "GNDD")
+		(uuid "564814df-2183-4e76-9719-39c525ce509e")
+	)
+	(via
+		(at 148.062 128)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "GNDD")
+		(uuid "5d16d048-2c1d-41c3-bd0a-25e992c53f75")
+	)
+	(via
+		(at 160.562 154)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "GNDD")
+		(uuid "6f9c99d2-18c6-4bd2-8c93-971bdc8398d5")
+	)
+	(via
+		(at 161.4 154.7)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "GNDD")
+		(uuid "94fe025e-4043-4804-a86d-3ae4f4937cbe")
+	)
+	(via
+		(at 159.5 140.5)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "GNDD")
+		(uuid "98bc18b8-c33b-4eef-9ec4-846643dc44dd")
+	)
+	(via
+		(at 147.562 136)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "GNDD")
+		(uuid "ce7f2b9b-93ef-4c2c-ae96-1ba3245b1c5a")
+	)
+	(via
+		(at 94.161999 122)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "GNDD")
+		(uuid "f21ef09c-9008-427a-be0f-44eea23f0cc6")
 	)
 	(segment
 		(start 172.67 141.08)

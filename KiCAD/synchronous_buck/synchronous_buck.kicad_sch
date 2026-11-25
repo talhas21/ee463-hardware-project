@@ -8458,20 +8458,24 @@
 		)
 		(property "MPN" "CL31B104KBCNNNC"
 			(at 45.72 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 50V X7R Ceramic 1206 U3 VDD Decap"
 			(at 45.72 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8533,7 +8537,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/85604/bzx55-series.pdf"
 			(at 280.67 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -8653,11 +8657,13 @@
 		)
 		(property "Rating" "3.3V 0.5W Zener DO-35 ADC Clamp"
 			(at 280.67 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8742,20 +8748,24 @@
 		)
 		(property "MPN" "RC1206FR-072R2L"
 			(at 73.66 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "2.2Ohm 1% 0.25W 1206 Gate Off"
 			(at 73.66 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9067,20 +9077,24 @@
 		)
 		(property "MPN" "RC2512FK-074R7L"
 			(at 140.97 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "4.7Ohm 1% 1W 2512 Snubber"
 			(at 140.97 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9167,20 +9181,24 @@
 		)
 		(property "MPN" "CL31B474KBCNNNC"
 			(at 71.12 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "470nF 50V X7R Ceramic 1206 Bootstrap"
 			(at 71.12 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9266,20 +9284,24 @@
 		)
 		(property "MPN" "CL31B104KBCNNNC"
 			(at 252.73 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 50V X7R Ceramic 1206 U2 Decap"
 			(at 252.73 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9441,20 +9463,24 @@
 		)
 		(property "MPN" "7447714151"
 			(at 219.71 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "150uH 0.8A Shielded Aux Buck Inductor"
 			(at 219.71 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9540,20 +9566,24 @@
 		)
 		(property "MPN" "EEU-FR1E101"
 			(at 288.29 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100uF 25V Electrolytic D6.3"
 			(at 288.29 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9593,7 +9623,7 @@
 				)
 			)
 		)
-		(property "Value" "LM2596HVT-12"
+		(property "Value" "LM2576HVT-12"
 			(at 198.12 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9616,7 +9646,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2596.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm2576hv.pdf"
 			(at 198.12 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -9627,7 +9657,7 @@
 				)
 			)
 		)
-		(property "Description" "12V 3A 150kHz Step-Down Voltage Regulator, TO-220"
+		(property "Description" "12V 3A 52kHz 60V HV Step-Down Voltage Regulator, TO-220-5"
 			(at 198.12 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -9638,22 +9668,26 @@
 				)
 			)
 		)
-		(property "MPN" "LM2596HVT-12/NOPB"
+		(property "MPN" "LM2576HVT-12/NOPB"
 			(at 198.12 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "60V->12V 3A Buck Regulator TO-220-5"
 			(at 198.12 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "3"
@@ -9746,20 +9780,24 @@
 		)
 		(property "MPN" "1N5819"
 			(at 83.82 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "40V 1A Schottky DO-41 Fast Turn-Off"
 			(at 83.82 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9843,20 +9881,24 @@
 		)
 		(property "MPN" "CSRL2512-0R005F"
 			(at 358.14 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "DNP Spare Parallel Current Shunt"
 			(at 358.14 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10172,20 +10214,24 @@
 		)
 		(property "MPN" "FKP3D041004D00KSSD"
 			(at 281.94 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "DNP 1uF 100V Polypropylene Film P15"
 			(at 281.94 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10346,20 +10392,24 @@
 		)
 		(property "MPN" "RC1206FR-0768KL"
 			(at 336.55 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "68kOhm 1% 0.25W 1206 OpAmp Gain"
 			(at 336.55 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10445,20 +10495,24 @@
 		)
 		(property "MPN" "EEU-FR1E101"
 			(at 168.91 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100uF 25V Low-ESR Electrolytic D6.3"
 			(at 168.91 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10545,20 +10599,24 @@
 		)
 		(property "MPN" "CSRL2512-0R005F"
 			(at 294.64 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "0.005Ohm 1% 1W 2512 Current Shunt"
 			(at 294.64 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10721,20 +10779,24 @@
 		)
 		(property "MPN" "EEU-FR1E471"
 			(at 237.49 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "470uF 25V Low-ESR Electrolytic D10"
 			(at 237.49 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10819,20 +10881,24 @@
 		)
 		(property "MPN" "RC1206FR-071KL"
 			(at 392.43 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "1kOhm 1% 0.25W 1206 Clamp Limit"
 			(at 392.43 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10995,20 +11061,24 @@
 		)
 		(property "MPN" "CL31B104KBCNNNC"
 			(at 363.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 50V X7R Ceramic 1206 I-Sense LPF"
 			(at 363.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11249,20 +11319,24 @@
 		)
 		(property "MPN" "EEU-FR2A101"
 			(at 99.06 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100uF 100V Low-ESR Electrolytic D12.5"
 			(at 99.06 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11499,20 +11573,24 @@
 		)
 		(property "MPN" "CL31B104KBCNNNC"
 			(at 302.26 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 50V X7R Ceramic 1206"
 			(at 302.26 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11673,20 +11751,24 @@
 		)
 		(property "MPN" "RC1206FR-0722RL"
 			(at 73.66 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "22Ohm 1% 0.25W 1206 Gate On"
 			(at 73.66 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11884,20 +11966,24 @@
 		)
 		(property "MPN" "IRF5210PBF"
 			(at 62.23 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "-100V -40A P-Ch Reverse Polarity TO-220"
 			(at 62.23 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11987,20 +12073,24 @@
 		)
 		(property "MPN" "CL31B102KACNNNC"
 			(at 265.43 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "1nF 25V X7R Ceramic 1206 V-Sense LPF"
 			(at 265.43 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12084,20 +12174,24 @@
 		)
 		(property "MPN" "RC1206FR-0710KL"
 			(at 190.5 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "10kOhm 1% 0.25W 1206 Q2 G-S Pulldown"
 			(at 190.5 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12184,20 +12278,24 @@
 		)
 		(property "MPN" "C1206C102K1RACTU"
 			(at 140.97 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "1nF 100V C0G/X7R Ceramic 1206 Snubber"
 			(at 140.97 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12282,20 +12380,24 @@
 		)
 		(property "MPN" "LM358P"
 			(at 378.46 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "Dual Op-Amp 32V DIP-8 + Socket"
 			(at 378.46 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "7"
@@ -12400,20 +12502,24 @@
 		)
 		(property "MPN" "C1210C475K1RACTU"
 			(at 130.81 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "4.7uF 100V X7R Ceramic 1210 Input Loop"
 			(at 130.81 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12553,7 +12659,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/BZX55C12_R0G_Taiwan_Semiconductor.pdf"
+		(property "Datasheet" "https://www.vishay.com/docs/85604/bzx55-series.pdf"
 			(at 396.24 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -12673,11 +12779,13 @@
 		)
 		(property "Rating" "3.3V 0.5W Zener DO-35 ADC Clamp"
 			(at 396.24 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13072,20 +13180,24 @@
 		)
 		(property "MPN" "EEU-FR1E101"
 			(at 180.34 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100uF 25V Low-ESR Electrolytic D6.3"
 			(at 180.34 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13171,20 +13283,24 @@
 		)
 		(property "MPN" "EEU-FR2A101"
 			(at 151.13 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100uF 100V Low-ESR Electrolytic D12.5"
 			(at 151.13 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13425,20 +13541,24 @@
 		)
 		(property "MPN" "EEU-FR1E101"
 			(at 158.75 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100uF 25V Low-ESR Electrolytic D6.3"
 			(at 158.75 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13620,11 +13740,13 @@
 		)
 		(property "Rating" "12V 0.5W Zener DO-35 Q1 Vgs Clamp"
 			(at 86.36 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13787,20 +13909,24 @@
 		)
 		(property "MPN" "RC1206FR-0756KL"
 			(at 254 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "56kOhm 1% 0.25W 1206 V-Sense"
 			(at 254 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13887,20 +14013,24 @@
 		)
 		(property "MPN" "RC1206FR-071KL"
 			(at 314.96 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "1kOhm 1% 0.25W 1206 OpAmp Gain"
 			(at 314.96 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14141,20 +14271,24 @@
 		)
 		(property "MPN" "C1210C475K1RACTU"
 			(at 297.18 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "DNP 4.7uF 100V X7R Ceramic 1210"
 			(at 297.18 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -14239,20 +14373,24 @@
 		)
 		(property "MPN" "RC1206FR-0722RL"
 			(at 78.74 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "22Ohm 1% 0.25W 1206 Gate On"
 			(at 78.74 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14338,20 +14476,24 @@
 		)
 		(property "MPN" "C1206C104K1RACTU"
 			(at 113.03 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 100V X7R Ceramic 1206"
 			(at 113.03 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14514,20 +14656,24 @@
 		)
 		(property "MPN" "SR3100"
 			(at 214.63 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100V 3A Schottky DO-201AD Aux Freewheel"
 			(at 214.63 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -14614,20 +14760,24 @@
 		)
 		(property "MPN" "CL31B104KBCNNNC"
 			(at 342.9 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 50V X7R Ceramic 1206 U4 Decap"
 			(at 342.9 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14787,20 +14937,24 @@
 		)
 		(property "MPN" "HCTI-68-7.7"
 			(at 148.59 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "68uH 7.7A Vertical Toroid Main Inductor"
 			(at 148.59 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14886,20 +15040,24 @@
 		)
 		(property "MPN" "FKS3D041004D00KSSD"
 			(at 312.42 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "DNP 1uF 50V Film P15 Output"
 			(at 312.42 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15212,20 +15370,24 @@
 		)
 		(property "MPN" "1N5819"
 			(at 83.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "40V 1A Schottky DO-41 Fast Turn-Off"
 			(at 83.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -15312,20 +15474,24 @@
 		)
 		(property "MPN" "RC1206FR-0710KL"
 			(at 77.47 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "10kOhm 1% 0.25W 1206"
 			(at 77.47 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15642,20 +15808,24 @@
 		)
 		(property "MPN" "RC1206FR-072R2L"
 			(at 73.66 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "2.2Ohm 1% 0.25W 1206 Gate Off"
 			(at 73.66 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15818,20 +15988,24 @@
 		)
 		(property "MPN" "C1206C104K1RACTU"
 			(at 160.02 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 100V X7R Ceramic 1206"
 			(at 160.02 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15993,20 +16167,24 @@
 		)
 		(property "MPN" "RC1206FR-0710KL"
 			(at 205.74 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "10kOhm 1% 0.25W 1206 Q3 G-S Pulldown"
 			(at 205.74 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -16092,20 +16270,24 @@
 		)
 		(property "MPN" "1715721"
 			(at 227.33 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "Phoenix MKDS 1,5/2-5,08 17.5A"
 			(at 227.33 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16214,20 +16396,24 @@
 		)
 		(property "MPN" "SR5100"
 			(at 123.19 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100V 5A Schottky DO-201AD Buck Test / Freewheel"
 			(at 123.19 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16314,20 +16500,24 @@
 		)
 		(property "MPN" "RC1206FR-0715KL"
 			(at 77.47 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "15kOhm 1% 0.25W 1206"
 			(at 77.47 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -16411,20 +16601,24 @@
 		)
 		(property "MPN" "RC1206FR-0710KL"
 			(at 236.22 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "10kOhm 1% 0.25W 1206 LI Pulldown"
 			(at 236.22 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16813,20 +17007,24 @@
 		)
 		(property "MPN" "LM358P"
 			(at 332.74 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "Dual Op-Amp 32V DIP-8 + Socket"
 			(at 332.74 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17009,20 +17207,24 @@
 		)
 		(property "MPN" "LM358P"
 			(at 332.74 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "Dual Op-Amp 32V DIP-8 + Socket"
 			(at 332.74 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "5"
@@ -17162,20 +17364,24 @@
 		)
 		(property "MPN" "IRFB4110PBF"
 			(at 104.14 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100V 180A 3.7mR N-Ch Low-Side TO-220"
 			(at 104.14 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17342,20 +17548,24 @@
 		)
 		(property "MPN" "CL31B104KACNNNC"
 			(at 190.5 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 25V X7R Ceramic 1206 Output"
 			(at 190.5 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -17441,20 +17651,24 @@
 		)
 		(property "MPN" "EEU-FR1H4R7"
 			(at 36.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "4.7uF 50V Electrolytic D5"
 			(at 36.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -17540,20 +17754,24 @@
 		)
 		(property "MPN" "L7805CV-DG"
 			(at 276.86 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "5V 1.5A Linear Regulator TO-220-3"
 			(at 276.86 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -17640,20 +17858,24 @@
 		)
 		(property "MPN" "RC1206FR-0710KL"
 			(at 220.98 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "10kOhm 1% 0.25W 1206 HI Pulldown"
 			(at 220.98 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17890,20 +18112,24 @@
 		)
 		(property "MPN" "CL31B104KACNNNC"
 			(at 208.28 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100nF 25V X7R Ceramic 1206 Output"
 			(at 208.28 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -18068,20 +18294,24 @@
 		)
 		(property "MPN" "SC0915"
 			(at 123.19 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "RP2040 MCU Module 2x20 Pin Header"
 			(at 123.19 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "8"
@@ -18435,20 +18665,24 @@
 		)
 		(property "MPN" "1715721"
 			(at 25.4 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "Phoenix MKDS 1,5/2-5,08 17.5A"
 			(at 25.4 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -18535,20 +18769,24 @@
 		)
 		(property "MPN" "RC1206FR-0710KL"
 			(at 254 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "10kOhm 1% 0.25W 1206 V-Sense"
 			(at 254 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -18706,11 +18944,13 @@
 		)
 		(property "Rating" "120V 4A Half-Bridge Gate Driver SOIC-8"
 			(at 43.18 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -19429,20 +19669,24 @@
 		)
 		(property "MPN" "RC1206FR-071KL"
 			(at 342.9 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "DNP 1kOhm Preload / Bleed"
 			(at 342.9 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -19837,20 +20081,24 @@
 		)
 		(property "MPN" "RC1206FR-071KL"
 			(at 354.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "1kOhm 1% 0.25W 1206 LPF"
 			(at 354.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -19936,20 +20184,24 @@
 		)
 		(property "MPN" "CL32B106KAJNNNE"
 			(at 327.66 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "DNP 10uF 25V X7R Ceramic 1210 Output"
 			(at 327.66 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -20265,20 +20517,24 @@
 		)
 		(property "MPN" "0031.8201 + 5A-T"
 			(at 49.53 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "5x20mm Holder + 5A Slow-Blow Fuse"
 			(at 49.53 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -20554,20 +20810,24 @@
 		)
 		(property "MPN" "IRFB4110PBF"
 			(at 104.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rating" "100V 180A 3.7mR N-Ch High-Side TO-220"
 			(at 104.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.0 1.0)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "3"
