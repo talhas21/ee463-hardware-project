@@ -1,6 +1,6 @@
 ** Drc report for synchronous_buck.kicad_pcb **
-** Created on 2026-11-26T01:19:01 **
-** Report includes: Errors, Warnings **
+** Created on 2026-11-26T01:37:12 **
+** Report includes: Errors, Warnings, Exclusions **
 
 ** Found 2 DRC violations **
 [lib_footprint_mismatch]: Footprint 'RaspberryPi_Pico_Common_THT' does not match copy in library 'Module'
