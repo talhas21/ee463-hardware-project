@@ -1,0 +1,117 @@
+================================================================================
+EE463 HARDWARE PROJECT — 48V -> 12V / 5A SYNCHRONOUS BUCK CONVERTER
+TEST POINTS (TP1 - TP15) QUICK REFERENCE GUIDE
+Group: Buck to the Future
+================================================================================
+
+IMPORTANT PROBING RULES (READ BEFORE TOUCHING WITH OSCILLOSCOPE):
+1. Power / Switching signals (TP3, TP4, TP5, TP7, TP8, TP9, TP10, TP11):
+   -> Clip scope GND to TP1 (PGND) (short ground spring recommended for TP8-TP11).
+2. MCU / Logic / ADC signals (TP6, TP12, TP13, TP14, TP15):
+   -> Clip scope GND to TP2 (DGND).
+3. HIGH-VOLTAGE WARNING on TP8 (/Q2_GATE) & TP10 (/SW_NODE):
+   -> TP8 is the HIGH-SIDE gate referenced to /SW_NODE (swings 0V .. ~60V wrt PGND!).
+   -> NEVER connect a grounded oscilloscope alligator clip to /SW_NODE (TP10)!
+   -> To measure Q2 Vgs, use a differential probe OR Math (Ch1=TP8 - Ch2=TP10)
+      with both probes grounded at TP1 (PGND).
+
+--------------------------------------------------------------------------------
+1) GROUND REFERENCES
+--------------------------------------------------------------------------------
+TP1  | Net: GND (PGND)     | PCB: (160.30,  90.00)
+     | Function : Power Ground reference (near Q3, U3, L2 power stage).
+     | Expected : 0 V reference for all power rails and switching waveforms.
+
+TP2  | Net: GNDD (DGND)    | PCB: (140.50, 114.00)
+     | Function : Digital / Analog quiet ground reference (tied to PGND at NT1).
+     | Expected : 0 V reference for Pico, PWM logic, and ADC sense signals.
+
+--------------------------------------------------------------------------------
+2) POWER RAILS (DC MULTIMETER / RIPPLE CHECKS)
+--------------------------------------------------------------------------------
+TP3  | Net: +48V           | PCB: ( 87.00,  67.50)
+     | Function : Raw input supply BEFORE fuse F1 and reverse-polarity MOSFET Q1.
+     | Expected : 20 V .. 48 V DC (matches bench supply). Check first at bring-up.
+
+TP4  | Net: /48V_BUS       | PCB: (126.50,  66.00)
+     | Function : Main DC input bus AFTER fuse F1 & reverse-polarity Q1 (at Q2 drain).
+     | Expected : Same as TP3 (~20 V .. 48 V DC). If TP3=48V & TP4=0V -> check F1 or Q1!
+
+TP5  | Net: +12V           | PCB: (131.50, 114.50)
+     | Function : Auxiliary 12 V rail from U1 (LM2576HVT-12); feeds U3 gate driver & U2.
+     | Expected : 12.0 V DC (+/- 4%, ~11.5 V .. 12.5 V). Verify BEFORE enabling PWM!
+
+TP6  | Net: +5V            | PCB: ( 96.50, 122.00)
+     | Function : Logic 5 V rail from U2 (L7805CV); feeds Raspberry Pi Pico VSYS.
+     | Expected : 5.0 V DC (+/- 4%, ~4.8 V .. 5.2 V). Verify BEFORE plugging in Pico!
+
+TP7  | Net: /V_OUT         | PCB: v2 (150.20, 130.50) | v1 (176.50, 127.50)
+     | Function : Regulated buck converter output voltage (12 V / 5 A rail).
+     | Expected : 12.0 V DC; AC-coupled ripple < 120 mVpp (1% target).
+
+--------------------------------------------------------------------------------
+3) POWER SWITCHING & GATE DRIVE SIGNALS (OSCILLOSCOPE)
+--------------------------------------------------------------------------------
+TP8  | Net: /Q2_GATE       | PCB: (131.00,  72.00)
+     | Function : High-side MOSFET Q2 Gate (after R3 gate resistor).
+     | Expected : Pulsed waveform swinging 0 V (Q2 OFF) to V_IN + ~11.3 V (Q2 ON),
+     |            i.e. up to ~59-60 V peak wrt PGND when V_IN = 48 V!
+     |            (Check Vgs = TP8 - TP10 -> clean ~11.3 V pulse, minimal ringing.)
+
+TP9  | Net: /Q3_GATE       | PCB: (146.40,  71.20)
+     | Function : Low-side synchronous MOSFET Q3 Gate (after R4 gate resistor).
+     | Expected : Clean 0 V .. +12 V square wave wrt PGND, complementary to TP8
+     |            with dead-time gap between Q2 OFF and Q3 ON (and vice versa).
+
+TP10 | Net: /SW_NODE       | PCB: (159.50,  96.00)
+     | Function : Main buck switching node (Q2 source / Q3 drain / L2 pin 1 / D5 cathode).
+     | Expected : 0 V .. V_IN (e.g., 0 V .. 48 V) PWM square wave at f_sw.
+     |            Check rising/falling edge overshoot (< 65-70 V, Q2/Q3 rated 100 V)
+     |            and dead-time body-diode/Schottky dip (~ -0.5 V during dead-time).
+
+TP11 | Net: /AUX_SW        | PCB: ( 96.00, 110.00)
+     | Function : Auxiliary buck U1 (LM2576HVT-12) switch node (pin 2 / L1 / D2).
+     | Expected : ~52 kHz switching square wave swinging ~ -0.5 V to V_IN (20-48 V).
+     |            Confirms U1 auxiliary regulator is switching cleanly.
+
+--------------------------------------------------------------------------------
+4) MCU PWM INPUTS & ADC FEEDBACK SIGNALS (REF TO TP2 / DGND)
+--------------------------------------------------------------------------------
+TP12 | Net: /HI_PWM        | PCB: (135.50, 121.00)
+     | Function : High-side PWM logic command from Pico (GP2) -> U3 HI input (pin 5).
+     | Expected : 0 V .. 3.3 V logic PWM at f_sw, duty cycle D ~ V_OUT / V_IN
+     |            (e.g., D ~ 25% at 48 V in, D ~ 60% at 20 V in).
+
+TP13 | Net: /LO_PWM        | PCB: (131.50, 121.00)
+     | Function : Low-side PWM logic command from Pico (GP3) -> U3 LI input (pin 6).
+     | Expected : 0 V .. 3.3 V logic PWM complementary to TP12 with dead-time.
+     |            Verify TP12 and TP13 are NEVER simultaneously HIGH!
+
+TP14 | Net: /V_SENSE       | PCB: (106.50, 123.50)
+     | Function : Scaled output voltage feedback to Pico ADC0 (GP26) via R9=56k, R10=10k.
+     | Scaling  : V_SENSE = V_OUT * (10k / (56k + 10k)) = V_OUT * 0.15152
+     | Expected : 1.818 V at V_OUT = 12.0 V (3.30 V full-scale = 21.78 V; D6 clamps 3.3V).
+
+TP15 | Net: /I_SENSE       | PCB: (111.50, 123.50)
+     | Function : Amplified current-sense feedback to Pico ADC1 (GP27).
+     | Scaling (v2 - Cascade Control, High-Side L2 Inductor Current via TSC2011IDT):
+     |   -> Shunt R11 = 5 mOhm, Gain = 60 V/V => 0.30 V/A (fc = 159 kHz via R15=1k, C18=1nF)
+     |   -> 0.0 A = 0.00 V | 5.0 A avg = 1.50 V (+ triangle ripple) | 7.5 A avg = 2.25 V
+     |   -> Full-scale clip ~ 11.0 A (3.30 V). Powered from Pico +3V3 (safe for ADC).
+     | Scaling (v1 - main branch, Low-Side Load Return Current via LM358):
+     |   -> Shunt R11 = 5 mOhm, Gain = 69 V/V => 0.345 V/A (heavy LPF -> DC average)
+     |   -> 0.0 A = 0.00 V | 5.0 A = 1.725 V | 7.5 A = 2.59 V.
+
+--------------------------------------------------------------------------------
+RECOMMENDED BRING-UP CHECKLIST ORDER
+--------------------------------------------------------------------------------
+1. Power OFF: Check continuity / shorts between TP3-TP1, TP4-TP1, TP5-TP1, TP6-TP2, TP7-TP1.
+2. Apply 20 V (current limit 0.3 A) WITHOUT Pico inserted:
+   -> Verify TP3 = 20 V, TP4 = 20 V, TP11 = ~52 kHz switching, TP5 = 12.0 V, TP6 = 5.0 V.
+3. Insert Pico (PWM disabled / open-loop low duty):
+   -> Verify TP12 & TP13 (0-3.3 V PWM with dead-time, never both high!).
+4. Enable power stage at light load (20 V in):
+   -> Verify TP9 (0-12 V), TP10 (clean 0-20 V square wave), TP8 (Vgs = TP8 - TP10 ~ 11.3 V),
+      TP7 = 12.0 V, TP14 = 1.82 V, TP15 matches load/inductor current.
+5. Ramp input to 48 V and load to 5 A (2.4 Ohm), re-check TP10 overshoot & TP7 ripple.
+================================================================================
